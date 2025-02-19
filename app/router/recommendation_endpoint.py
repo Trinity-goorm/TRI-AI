@@ -47,5 +47,5 @@ def recommendation():
     if filtered_df.empty:
         return jsonify({"error": "해당 선호 카테고리에 해당하는 식당 데이터가 없습니다."}), 400
     
-    result_json = generate_recommendations(filtered_df, globals_dict["stacking_reg"], globals_dict["model_features"], user_id)
+    result_json = generate_recommendations(filtered_df, globals_dict["stacking_reg"], globals_dict["model_features"], user_id, globals_dict["scaler"])
     return Response(result_json, mimetype='application/json')

@@ -50,7 +50,6 @@ def train_model(df_final):
         ('mlp', best_mlp)
     ]
     stacking_reg, cv_stacking = train_stacking(estimators, X_train, y_train)
-    print("Stacking 앙상블 CV R²:", cv_stacking)
     
     # (옵션) 각 모델의 평가 지표도 출력할 수 있습니다.
     # 예: evaluate_model(best_ridge, X_test, y_test)

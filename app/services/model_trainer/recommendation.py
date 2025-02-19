@@ -17,7 +17,7 @@ def compute_composite_score(row, review_weight, caution_weight, convenience_weig
 def sigmoid_transform(x, a, b):
     return 5 * (1 / (1 + np.exp(-a * (x - b))))
 
-def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_features: list, user_id: str) -> dict:
+def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_features: list, user_id: str, scaler) -> dict:
     # 필요한 모든 피처가 있는지 확인하고 없으면 추가 (0으로 채움)
     for feature in model_features:
         if feature not in data_filtered.columns:
@@ -28,9 +28,11 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
 
     # 학습 시 사용한 피처 순서대로 DataFrame 생성
     X_pred = data_filtered[model_features].copy()
+    # 스케일러를 사용하여 피처 스케일링 적용
+    X_pred_scaled = pd.DataFrame(scaler.transform(X_pred), columns=X_pred.columns)
 
     # 예측 수행
-    data_filtered['predicted_score'] = stacking_reg.predict(X_pred)
+    data_filtered['predicted_score'] = stacking_reg.predict(X_pred_scaled)
     data_filtered['final_score'] = data_filtered['score']
 
     # 유의사항 관련 컬럼이 없으면 0으로 채움
@@ -51,11 +53,11 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
 
     # composite_score 기준 오름차순 정렬 후 상위 15개 추천 추출
     recommendations_all = data_filtered.sort_values(by='composite_score', ascending=False)
-    top15 = recommendations_all[['restaurant_id', 'category_id', 'score', 'predicted_score', 'composite_score']].head(15).copy()
+    top15 = recommendations_all[['category_id', 'restaurant_id', 'score', 'predicted_score', 'composite_score']].head(15).copy()
     
     # 추천 결과 추출 후, 필요한 컬럼을 정수로 변환
-    top15['restaurant_id'] = top15['restaurant_id'].astype(int)
     top15['category_id'] = top15['category_id'].astype(int)
+    top15['restaurant_id'] = top15['restaurant_id'].astype(int)
     top15['score'] = top15['score'].astype(float)  # 만약 score가 정수여야 한다면
 
     top15['predicted_score'] = top15['predicted_score'].round(3)
