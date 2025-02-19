@@ -1,0 +1,10 @@
+Flask
+pydantic
+pandas
+numpy
+scikit-learn
+xgboost
+lightgbm
+python-decouple
+python-dotenv
+catboost==1.2.7
