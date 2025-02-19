@@ -1,15 +1,32 @@
 # app/models/recommendation_schema.py
 
-from pydantic import BaseModel
+from pydantic import BaseModel, conlist
 from typing import List
 
 class RecommendationItem(BaseModel):
-    id: str
     category_id: int
+    restaurant_id: int
     score: float
     predicted_score: float
     composite_score: float
 
-class RecommendationResponse(BaseModel):
-    user: str
-    recommendations: List[RecommendationItem]
+# 카테고리 매핑 참고용 (선택 사항)
+CATEGORY_MAPPING = {
+    "중식": 1,
+    "일식집": 2,
+    "브런치카페": 3,
+    "파스타": 4,
+    "이탈리안": 5,
+    "이자카야": 6,
+    "한식집": 7,
+    "치킨": 8,
+    "스테이크": 9,
+    "고깃집": 10,
+    "다이닝바": 11,
+    "오마카세": 12
+}
+
+class UserData(BaseModel):
+    user_id: str
+    # 선호 카테고리는 최소 1개, 최대 3개
+    preferred_categories: conlist(str, min_items=1, max_items=3)
