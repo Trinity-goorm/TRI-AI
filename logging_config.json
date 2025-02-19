@@ -1,0 +1,66 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+      "default": {
+        "format": "%(asctime)s - %(levelname)s - %(name)s - %(message)s"
+      },
+      "access": {
+        "format": "%(asctime)s - %(levelname)s - %(message)s"
+      }
+    },
+    "handlers": {
+      "console": {
+        "class": "logging.StreamHandler",
+        "formatter": "default",
+        "stream": "ext://sys.stdout"
+      },
+      "file": {
+        "class": "logging.FileHandler",
+        "formatter": "default",
+        "filename": "logs/app.log",
+        "encoding": "utf8"
+      },
+      "error_file": {
+        "class": "logging.FileHandler",
+        "formatter": "default",
+        "filename": "logs/error.log",
+        "encoding": "utf8"
+      },
+      "access_file": {
+        "class": "logging.FileHandler",
+        "formatter": "access",
+        "filename": "logs/access.log",
+        "encoding": "utf8"
+      }
+    },
+    "loggers": {
+      "flask": {
+        "handlers": ["console", "file", "error_file"],
+        "level": "DEBUG",
+        "propagate": false
+        },
+        "app": {
+            "handlers": ["console", "file", "error_file"],
+            "level": "DEBUG",
+            "propagate": false
+        },
+        "app.router": {
+            "level": "DEBUG",
+            "propagate": true
+        },
+        "app.service": {
+            "level": "DEBUG",
+            "propagate": true
+        },
+        "app.config": { 
+            "level": "DEBUG",
+            "propagate": true
+        }
+    },
+    "root": {
+      "level": "INFO",
+      "handlers": ["console", "file"]
+    }
+  }
+  

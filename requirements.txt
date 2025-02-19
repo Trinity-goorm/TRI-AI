@@ -7,4 +7,6 @@ xgboost
 lightgbm
 python-decouple
 python-dotenv
+pillow
+jsonify
 catboost==1.2.7

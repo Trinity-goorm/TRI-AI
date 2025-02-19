@@ -6,6 +6,9 @@ import os
 import json
 import glob
 import pandas as pd
+import logging
+
+logger = logging.getLogger(__name__)
 
 def load_and_merge_json_files(directory: str) -> pd.DataFrame:
     """
@@ -16,21 +19,28 @@ def load_and_merge_json_files(directory: str) -> pd.DataFrame:
     file_pattern = os.path.join(directory, "restaurants_table*.json")
     json_files = glob.glob(file_pattern)
     
+    if not json_files:
+        logger.error(f"No JSON files found in directory: {directory}", exc_info=True)
+
     merged_data = []
     for file_path in json_files:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            # 각 파일의 데이터가 리스트 형태라면 병합, 그렇지 않으면 단일 데이터로 추가
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            # 데이터가 리스트인지 아닌지 확인
             if isinstance(data, list):
                 merged_data.extend(data)
             else:
                 merged_data.append(data)
+        except Exception as e:
+            logger.error(f"Error reading {file_path}: {e}", exc_info=True)
+            # 필요에 따라 계속 진행하거나 예외를 재발생할 수 있음.
+            raise e
     
-    # 리스트를 DataFrame으로 변환하여 반환
-    return pd.DataFrame(merged_data)
-
-if __name__ == "__main__":
-    directory_path = "data/crawling_2nd_data/json"
-    df_merged = load_and_merge_json_files(directory_path)
-    print("Merged DataFrame columns:", df_merged.columns.tolist())
-    print(df_merged.head())
+    try:
+        df = pd.DataFrame(merged_data)
+    except Exception as e:
+        logger.error(f"Error converting merged data to DataFrame: {e}", exc_info=True)
+        raise e  # 에러 발생 시 예외를 재발생시킵니다.
+    
+    return df

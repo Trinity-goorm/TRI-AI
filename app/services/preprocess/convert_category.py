@@ -1,5 +1,9 @@
 # app/services/preprocess/convert_category.py
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 category_mapping = {
     "중식": 1,
     "일식집": 2,
@@ -17,9 +21,11 @@ category_mapping = {
 
 def convert_category(cat):
     """카테고리 값을 매핑 딕셔너리를 사용하여 변환합니다."""
-    if cat in category_mapping:
-        return category_mapping[cat]
     try:
+        if cat in category_mapping:
+            return category_mapping[cat]
         return int(cat)
-    except:
-        return cat
+    except Exception as e:
+        # 예외 발생 시, 로깅 후 원래 값을 반환하거나, 사용자 정의 예외 발생
+        logging.getLogger(__name__).error(f"Error converting category {cat}: {e}", exc_info=True)
+        raise e
