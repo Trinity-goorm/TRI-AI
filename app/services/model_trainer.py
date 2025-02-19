@@ -1,6 +1,7 @@
 # app/services/model_trainer.py
 
 import numpy as np
+from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer
 from sklearn.linear_model import Ridge, BayesianRidge
 from sklearn.ensemble import StackingRegressor, RandomForestRegressor

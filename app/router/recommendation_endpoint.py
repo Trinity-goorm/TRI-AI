@@ -1,4 +1,4 @@
-# app/api/recommendation_endpoint.py
+# app/router/recommendation_endpoint.py
 
 from flask import Blueprint, request, jsonify
 from app.services.data_loader import load_data
