@@ -1,0 +1,16 @@
+# 기타 무시할 파일 또는 폴더
+.env
+.DS_Store
+
+# 가상환경 파일 무시
+venv/
+
+# 파이썬 캐시 파일 무시
+*.pyc
+
+# Ignore all __pycache__ directories
+__pycache__/
+**/__pycache__/
+
+# Ignore logs directory
+logs/

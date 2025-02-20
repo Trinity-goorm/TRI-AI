@@ -1,0 +1,221 @@
+restaurant_id,menu_id,menu_name,price,is_deleted,is_active
+10-01,1,Raclette,99000,False,True
+10-01,2,Sweet Pumpkin Sujebi,19000,False,True
+10-01,3,More veggies pasta,24000,False,True
+10-01,4,Muggerbo Ragu Pasta,21000,False,True
+10-01,5,Ulleung rice,25000,False,True
+10-01,6,Hangover stew,27000,False,True
+10-01,7,Rrata Rrata Burrata,27000,False,True
+10-01,8,Oh! Lasagna sagna!,21000,False,True
+10-01,9,Not Cola It's Rucola,17000,False,True
+10-01,10,Spring Naeng-e Oil Pasta,21000,False,True
+10-01,11,Grape and Olive,11000,False,True
+10-01,12,Just mushrooms,6000,False,True
+10-01,13,Dried snack,7000,False,True
+10-01,14,Very Berry Cream,8000,False,True
+10-01,15,Happy birthday bread,6000,False,True
+10-01,16,Monkey Brulee,9000,False,True
+10-01,17,Salty Ice cream,14000,False,True
+10-03,18,감자 그라탕,18000,False,True
+10-03,19,가지 그라탕,18000,False,True
+10-03,20,감바스 알 아히요,27000,False,True
+10-03,21,페퍼로니 감자 뢰스티,25000,False,True
+10-03,22,새우 오일 파스타,19000,False,True
+10-03,23,매콤 로제 파스타,19000,False,True
+10-03,24,차돌박이 깻잎 파스타,23000,False,True
+10-03,25,해산물 토마토 국물 파스타,20000,False,True
+10-03,26,머쉬룸 트러플 크림 파스타,19000,False,True
+10-03,27,토마토 파스타,19000,False,True
+10-03,28,등심 버섯 크림 리조또,27000,False,True
+10-03,29,비프 찹스테이크,29000,False,True
+10-03,30,한우 안심 스테이크 (200g),75000,False,True
+10-03,31,한우 채끝등심 스테이크 (200g),67000,False,True
+10-03,32,아이올리 샐러드,16000,False,True
+10-03,33,버섯구이 샐러드,18000,False,True
+10-03,34,부라타 치즈 샐러드,19000,False,True
+10-03,35,큐브 스테이크 샐러드,22000,False,True
+10-03,36,베이컨 배추구이,15000,False,True
+10-03,37,콘노이 플레이트,28000,False,True
+10-03,38,메론 프로슈토&올리브,17000,False,True
+10-04,39,양파 : soup,12000,False,True
+10-04,40,단호박과 호박고구마 : soup,12000,False,True
+10-04,41,가지와 토마토 : melanzane,19000,False,True
+10-04,42,"메밀과 버섯, 부지갱이 : noodle",22000,False,True
+10-04,43,"닭가슴갈과 브로콜리, 그리고 유럽상추 : salad",21000,False,True
+10-04,44,닭다리살과 병아리콩 : confit and hummus,24000,False,True
+10-04,45,연어와 아보카도 : gravlax and guacamole,20000,False,True
+10-04,46,제철 생선 : ceviche,23000,False,True
+10-04,47,세 가지 자연치즈 : cheese plate,29000,False,True
+10-04,48,제철 과일 : sabayon,8000,False,True
+10-04,49,크림치즈 : basque cheesecake,8000,False,True
+10-05,50,커피,7000,False,True
+10-06,51,Lunch 회오리 오므라이스,12000,False,True
+10-06,52,Lunch 알리오 올리오 파스타,15000,False,True
+10-06,53,Lunch봉골레 파스타,16000,False,True
+10-06,54,Lunch 명란 로제 파스타,16000,False,True
+10-06,55,Lunch 페퍼로니 피자,15000,False,True
+10-06,56,Lunch 마르게리타 피자,16000,False,True
+10-09,57,글라스와인,0,False,True
+10-09,58,한우차돌떡볶이,0,False,True
+10-09,59,소시지플레이트,0,False,True
+10-09,60,버터새우볶음밥,0,False,True
+10-09,61,오아시스터즈 핑거푸드,0,False,True
+10-09,62,트러플짜파게티,0,False,True
+10-12,63,마르게리따 피자 (3조각),9000,False,True
+10-12,64,페퍼로니 피자 (3조각),9000,False,True
+10-12,65,콰트로치즈 피자 (3조각),9500,False,True
+10-12,66,샐러드 피자 (3조각),9500,False,True
+10-12,67,시저샐러드,10000,False,True
+10-16,68,아메리카노(HOT),4500,False,True
+10-16,69,카페라떼(HOT),5800,False,True
+10-16,70,레몬티(HOT),6000,False,True
+10-16,71,초코 라떼(HOT),6500,False,True
+10-16,72,후르츠 에이드,6500,False,True
+10-19,73,쭈꾸미 갈릭파스타,19000,False,True
+10-19,74,프로슈또 루꼴라 샐러드,12000,False,True
+10-19,75,프레쉬 모짜렐라 샐러드,13000,False,True
+10-19,76,알리오 올리오,15000,False,True
+10-19,77,아라비아따,16000,False,True
+10-20,78,치킨라따뚜이,22000,False,True
+10-22,79,스페인 토마토 바게트,8800,False,True
+10-22,80,감자 스프레드,8800,False,True
+10-22,81,벌꿀 치즈 스프레드,8800,False,True
+10-22,82,칼몬드 카프레제,12800,False,True
+10-22,83,매콤 쌀떡볶이,9800,False,True
+10-22,84,슈림프 로제 푸실리,14800,False,True
+10-23,85,칠리 콘 카르네,18000,False,True
+10-23,86,몰리's 파스타,16000,False,True
+10-23,87,부라타 치즈와 수제 선드라이 토마토,15000,False,True
+10-23,88,치즈 플래터,20000,False,True
+10-23,89,홈메이드 브라우니 케이크,8000,False,True
+10-23,90,호두파이,8000,False,True
+10-23,91,똠얌라면,6500,False,True
+10-23,92,와인,0,False,True
+10-25,93,위스키,260000,False,True
+10-28,94,아메리카노,5000,False,True
+10-28,95,에스프레소,5000,False,True
+10-28,96,카푸치노,6000,False,True
+10-28,97,카페모카,6000,False,True
+10-28,98,카페라떼,6000,False,True
+10-28,99,아이스 아메리카노,6000,False,True
+10-28,100,아이스 카푸치노,7000,False,True
+10-28,101,잉글랜드 홍차,6000,False,True
+10-28,102,블루베리 홍차,6000,False,True
+10-28,103,딸기 홍차,6000,False,True
+10-28,104,벨벳 그린티,6000,False,True
+10-31,105,Butchers Steak<USA PEIME>,33000,False,True
+10-31,106,H/H Pizza,22000,False,True
+10-31,107,Buffalo Wings,18000,False,True
+10-31,108,Drink Flatter,28000,False,True
+10-31,109,Stella Artois,10000,False,True
+10-31,110,Guinness Draft,12000,False,True
+10-31,111,Cocktails 50',15000,False,True
+10-31,112,SHOOTER CALENDER,11000,False,True
+10-31,113,Weekly BOMB,11000,False,True
+10-31,114,"Wine, Wiskey, Champagne",0,False,True
+10-32,115,와인,0,False,True
+10-33,116,시저 샐러드,28000,False,True
+10-33,117,그래비티 버거,34000,False,True
+10-33,118,에너지 부스팅 샐러드,30000,False,True
+10-33,119,치오피노,26000,False,True
+10-33,120,마르게리타 피자,37000,False,True
+10-35,121,바스크치즈케이크,7500,False,True
+10-37,122,칵테일,0,False,True
+10-37,123,위스키,0,False,True
+10-37,124,맥주,0,False,True
+10-38,125,기네스,0,False,True
+10-39,126,우럭젓국(소),35000,False,True
+10-39,127,아귀탕(소),35000,False,True
+10-39,128,애호박두부젓국(소),25000,False,True
+10-39,129,간재미탕(소),30000,False,True
+10-39,130,병어조림(소),45000,False,True
+10-39,131,민어조림(소),49000,False,True
+10-39,132,서대조림(소),45000,False,True
+10-41,133,위스키,0,False,True
+10-50,134,칵테일,8000,False,True
+10-50,135,피자,19000,False,True
+10-50,136,핑거푸드,8000,False,True
+10-50,137,샐러드,8000,False,True
+10-50,138,가라아게&감자,19000,False,True
+10-51,139,깔루아,110000,False,True
+10-51,140,마타니,100000,False,True
+10-51,141,앱솔루트,110000,False,True
+10-51,142,SKYY,110000,False,True
+10-54,143,칵테일,9900,False,True
+10-58,144,제임스 6년 (Glass),7000,False,True
+10-58,145,크라운 로얄 (Glass),8000,False,True
+10-58,146,호세쿠엘보 에스페샬 (Glass),7000,False,True
+10-58,147,예거 마이스터 (Glass),7000,False,True
+10-58,148,잭다니엘 (Glass),8000,False,True
+10-58,149,조니워커 레드 (Glass),8000,False,True
+10-58,150,발렌타인 12년 (Glass),8000,False,True
+10-58,151,글렌피딕 12년 (Glass),9000,False,True
+10-58,152,발베니 12년 (Glass),9000,False,True
+10-58,153,예거밤,8000,False,True
+10-58,154,버드 와이저,7000,False,True
+10-58,155,롱아일랜드 아이스티,8000,False,True
+10-58,156,마가리타,9000,False,True
+10-58,157,바카디 151 (Glass),7000,False,True
+10-58,158,복숭아아이스티,6000,False,True
+10-58,159,아이스크림 샌드위치,8000,False,True
+10-58,160,후르츠 펀치,6000,False,True
+10-58,161,신데렐라,6000,False,True
+10-58,162,블랙 러시안,7000,False,True
+10-58,163,캡틴 아메리카,7000,False,True
+10-59,164,그릴드 치즈,24000,False,True
+10-64,165,양주,0,False,True
+10-66,166,칵테일,20000,False,True
+10-66,167,위스키글라스,0,False,True
+10-69,168,K-HERITAGE,19000,False,True
+10-69,169,PINE WHISPER,19000,False,True
+10-69,170,OKINAWA ESSENCE,19000,False,True
+10-69,171,TANCHEON MULE,19000,False,True
+10-69,172,JEONGJA SUMMER BLANC,19000,False,True
+10-69,173,PINK MUHLY,19000,False,True
+10-69,174,WINNER WINNER CHIPS DINNER,19000,False,True
+10-69,175,ZEN IN A GLASS,19000,False,True
+10-70,176,본인립아이(567g),89900,False,True
+10-70,177,클래식햄버거,15900,False,True
+10-70,178,아메리칸치즈버거,16900,False,True
+10-70,179,베이컨치즈버거,17900,False,True
+10-70,180,포터하우스(23oz),139900,False,True
+10-71,181,바틀,0,False,True
+10-71,182,칵테일,0,False,True
+10-71,183,맥주,0,False,True
+10-71,184,안주,0,False,True
+10-72,185,싱글몰트,0,False,True
+10-75,186,카스 맥주,15000,False,True
+10-75,187,하이네켄 맥주,20000,False,True
+10-75,188,아시히 맥주,20000,False,True
+10-75,189,기네스 맥주,20000,False,True
+10-75,190,과일,30000,False,True
+10-75,191,치즈,30000,False,True
+10-75,192,오징어,30000,False,True
+10-75,193,윙 + 감자튀김,30000,False,True
+10-75,194,나쵸,10000,False,True
+10-75,195,라면,10000,False,True
+10-75,196,참치카나페,20000,False,True
+10-75,197,찹스테이크,30000,False,True
+10-75,198,치즈구이,30000,False,True
+10-76,199,치즈,20000,False,True
+10-76,200,카나페,20000,False,True
+10-76,201,과일,20000,False,True
+10-76,202,피자,15000,False,True
+10-76,203,카프리제,15000,False,True
+10-77,204,과실차(Hot),4500,False,True
+10-77,205,과실차(Iced),4900,False,True
+10-77,206,고구마라떼(Hot),4500,False,True
+10-77,207,고구마라떼(Iced),4900,False,True
+10-77,208,곡물라떼(Hot),4500,False,True
+10-77,209,곡물라떼(Iced),4900,False,True
+10-78,210,발베니,0,False,True
+10-80,211,모듬회,70000,False,True
+10-80,212,특치즈과일,60000,False,True
+10-80,213,후라이드 치킨,60000,False,True
+10-80,214,마과,60000,False,True
+10-80,215,아지트 수제피자,60000,False,True
+10-81,216,Martini,23000,False,True
+10-81,217,Gimlet,20000,False,True
+10-81,218,Black Russian,20000,False,True
+10-81,219,Mojito,20000,False,True
+10-81,220,Margarita,20000,False,True

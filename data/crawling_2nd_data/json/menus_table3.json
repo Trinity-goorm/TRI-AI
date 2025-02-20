@@ -1,0 +1,4835 @@
+[
+    {
+        "category_id": 3,
+        "restaurant_id": 1,
+        "menu_id": 1,
+        "menu_name": "아메리카노",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 1,
+        "menu_id": 2,
+        "menu_name": "카페라떼",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 1,
+        "menu_id": 3,
+        "menu_name": "바닐라라떼",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 1,
+        "menu_id": 4,
+        "menu_name": "B.핑크",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 2,
+        "menu_id": 1,
+        "menu_name": "아메리카노",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 2,
+        "menu_id": 2,
+        "menu_name": "카페라떼",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 2,
+        "menu_id": 3,
+        "menu_name": "바닐라빈라떼(Only Hot)",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 2,
+        "menu_id": 4,
+        "menu_name": "말리부 콘파냐",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 2,
+        "menu_id": 5,
+        "menu_name": "바나나푸딩",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 2,
+        "menu_id": 6,
+        "menu_name": "소세지빵",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 3,
+        "menu_id": 1,
+        "menu_name": "아메리카노",
+        "price": 3000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 3,
+        "menu_id": 2,
+        "menu_name": "카페라떼",
+        "price": 3500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 4,
+        "menu_id": 1,
+        "menu_name": "에스프레소",
+        "price": 4000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 4,
+        "menu_id": 2,
+        "menu_name": "아메리카노",
+        "price": 4500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 4,
+        "menu_id": 3,
+        "menu_name": "에스프레소 꼰빠냐",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 4,
+        "menu_id": 4,
+        "menu_name": "에스프레소 마끼야또",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 4,
+        "menu_id": 5,
+        "menu_name": "카페 아인스 페너",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 4,
+        "menu_id": 6,
+        "menu_name": "카페라떼",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 4,
+        "menu_id": 7,
+        "menu_name": "카페 프레도 (ICE)",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 5,
+        "menu_id": 1,
+        "menu_name": "미트 러버 라자냐",
+        "price": 23000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 5,
+        "menu_id": 2,
+        "menu_name": "쉬림프 명란 크림 파스타",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 5,
+        "menu_id": 3,
+        "menu_name": "포지티브 샌드위치",
+        "price": 13000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 5,
+        "menu_id": 4,
+        "menu_name": "치.치.카도",
+        "price": 13000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 5,
+        "menu_id": 5,
+        "menu_name": "우유 생크림 팥빙수",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 5,
+        "menu_id": 6,
+        "menu_name": "우유 생크림 인절미 빙수",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 6,
+        "menu_id": 1,
+        "menu_name": "당근케익",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 6,
+        "menu_id": 2,
+        "menu_name": "클래식 샌드위치",
+        "price": 9500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 6,
+        "menu_id": 3,
+        "menu_name": "살라미 샌드위치",
+        "price": 9500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 6,
+        "menu_id": 4,
+        "menu_name": "에그머스타드 샌드위치",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 6,
+        "menu_id": 5,
+        "menu_name": "피칸파이",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 7,
+        "menu_id": 1,
+        "menu_name": "빅 블랙퍼스트(2인)",
+        "price": 27000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 7,
+        "menu_id": 2,
+        "menu_name": "연어 에그 베네딕트",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 7,
+        "menu_id": 3,
+        "menu_name": "베이컨 에그베네딕트",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 7,
+        "menu_id": 4,
+        "menu_name": "풀드포크 에그베네딕트",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 7,
+        "menu_id": 5,
+        "menu_name": "버섯크림파스타",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 7,
+        "menu_id": 6,
+        "menu_name": "새우로제파스타",
+        "price": 20000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 7,
+        "menu_id": 7,
+        "menu_name": "올리브오일파스타",
+        "price": 19500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 7,
+        "menu_id": 8,
+        "menu_name": "봉골래파스타",
+        "price": 21000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 7,
+        "menu_id": 9,
+        "menu_name": "클래식프랜치토스트",
+        "price": 17500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 7,
+        "menu_id": 10,
+        "menu_name": "크림치즈프렌치토스트",
+        "price": 17500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 7,
+        "menu_id": 11,
+        "menu_name": "살치살스테이크",
+        "price": 42000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 7,
+        "menu_id": 12,
+        "menu_name": "아보카도비엘티샌드위치",
+        "price": 17500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 8,
+        "menu_id": 1,
+        "menu_name": "Mamas Signature",
+        "price": 23000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 8,
+        "menu_id": 2,
+        "menu_name": "Ricotta Cheese Salad",
+        "price": 15800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 8,
+        "menu_id": 3,
+        "menu_name": "Mozzarella & Tomato Panini",
+        "price": 14800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 8,
+        "menu_id": 4,
+        "menu_name": "Club Sandwich",
+        "price": 14800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 8,
+        "menu_id": 5,
+        "menu_name": "Kale Green Grape Juice",
+        "price": 7800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 1,
+        "menu_name": "잠봉 뵈르",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 2,
+        "menu_name": "잠봉 트러플",
+        "price": 13000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 3,
+        "menu_name": "스모크드 베이컨 할라피뇨",
+        "price": 12500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 4,
+        "menu_name": "풀드포크 그릴 샌드위치",
+        "price": 14000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 5,
+        "menu_name": "치즈 그릴 샌드위치와 트러플 칠리소스",
+        "price": 13000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 6,
+        "menu_name": "머쉬룸 스프",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 7,
+        "menu_name": "맨해튼 클램 차우더",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 8,
+        "menu_name": "칠리에그와 포카치아",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 9,
+        "menu_name": "구운야채와 후무스, 사워도우",
+        "price": 15000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 10,
+        "menu_name": "알감자",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 11,
+        "menu_name": "4가지 버섯 생면 파스타",
+        "price": 21000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 12,
+        "menu_name": "피넛 오리엔탈 생면 파스타",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 13,
+        "menu_name": "오늘의 커피",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 14,
+        "menu_name": "아메리카노",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 15,
+        "menu_name": "라떼",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 16,
+        "menu_name": "바닐라빈라떼",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 17,
+        "menu_name": "바닐라소다",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 18,
+        "menu_name": "스퀴즈 레몬에이드",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 19,
+        "menu_name": "얼그레이",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 20,
+        "menu_name": "그린루바브",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 9,
+        "menu_id": 21,
+        "menu_name": "루이보스 바닐라",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 10,
+        "menu_id": 1,
+        "menu_name": "아메리카노",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 10,
+        "menu_id": 2,
+        "menu_name": "카페라떼",
+        "price": 5300,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 10,
+        "menu_id": 3,
+        "menu_name": "초코라떼",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 10,
+        "menu_id": 4,
+        "menu_name": "루이보스",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 10,
+        "menu_id": 5,
+        "menu_name": "오픈샌드위치",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 10,
+        "menu_id": 6,
+        "menu_name": "오일파스타",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 11,
+        "menu_id": 1,
+        "menu_name": "에스프레소",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 11,
+        "menu_id": 2,
+        "menu_name": "아메리카노",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 11,
+        "menu_id": 3,
+        "menu_name": "카페라떼",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 11,
+        "menu_id": 4,
+        "menu_name": "아포가토",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 11,
+        "menu_id": 5,
+        "menu_name": "플렛화이트",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 1,
+        "menu_name": "랍스터 비스큐 파스타",
+        "price": 38000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 2,
+        "menu_name": "라클렛 4인",
+        "price": 119000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 3,
+        "menu_name": "시금치 페스토 타르틴",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 4,
+        "menu_name": "에그 포테이토 타르틴",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 5,
+        "menu_name": "베이컨 아보카도 타르틴",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 6,
+        "menu_name": "잠봉뵈르 타르틴",
+        "price": 20000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 7,
+        "menu_name": "레몬리코타 샐러드",
+        "price": 22000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 8,
+        "menu_name": "카피콜라 샐러드",
+        "price": 24000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 9,
+        "menu_name": "시저 샐러드",
+        "price": 25000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 10,
+        "menu_name": "베이컨 크림 파스타",
+        "price": 25000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 11,
+        "menu_name": "치폴레 라구 파스타",
+        "price": 26000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 12,
+        "menu_name": "보타르가 파스타",
+        "price": 32000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 13,
+        "menu_name": "블랙 트러플 포르치니 리조또",
+        "price": 36000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 14,
+        "menu_name": "그린커리",
+        "price": 25000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 15,
+        "menu_name": "페퍼로니 피자",
+        "price": 26000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 16,
+        "menu_name": "콰트로 포르마지 피자",
+        "price": 28000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 17,
+        "menu_name": "디아볼라 피자",
+        "price": 28000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 18,
+        "menu_name": "블랙 트러플 피자",
+        "price": 34000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 19,
+        "menu_name": "라클렛 2인",
+        "price": 59000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 13,
+        "menu_id": 20,
+        "menu_name": "우꽃갈비 스테이크",
+        "price": 149000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 14,
+        "menu_id": 1,
+        "menu_name": "크런치 프렌치 토스트",
+        "price": 20000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 14,
+        "menu_id": 2,
+        "menu_name": "그릴드 치킨 시저샐러드",
+        "price": 21000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 14,
+        "menu_id": 3,
+        "menu_name": "뢰스티(유럽식 감자전)",
+        "price": 16000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 14,
+        "menu_id": 4,
+        "menu_name": "바질 페스토 파스타",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 14,
+        "menu_id": 5,
+        "menu_name": "부라타 대저토마토 샐러드",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 14,
+        "menu_id": 6,
+        "menu_name": "에그인헬",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 15,
+        "menu_id": 1,
+        "menu_name": "분지우",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 15,
+        "menu_id": 2,
+        "menu_name": "양지 쌀국수",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 15,
+        "menu_id": 3,
+        "menu_name": "소고기볶음면",
+        "price": 12000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 15,
+        "menu_id": 4,
+        "menu_name": "새우 볶음밥",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 15,
+        "menu_id": 5,
+        "menu_name": "남딩 볶음밥",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 15,
+        "menu_id": 6,
+        "menu_name": "전통 분짜",
+        "price": 13000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 15,
+        "menu_id": 7,
+        "menu_name": "씨즐링 분짜",
+        "price": 15000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 16,
+        "menu_id": 1,
+        "menu_name": "리코타 토마토 파스타 Ricotta Tomato Pasta",
+        "price": 15000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 16,
+        "menu_id": 2,
+        "menu_name": "에그 베네딕트 Eggs Benedict",
+        "price": 13000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 16,
+        "menu_id": 3,
+        "menu_name": "새우 쪽파 파스타 Shrimp Scallion Pasta",
+        "price": 16000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 16,
+        "menu_id": 4,
+        "menu_name": "할라피뇨 잠봉 파스타 Jalapeno Jambon Pasta",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 16,
+        "menu_id": 5,
+        "menu_name": "트리플 치즈 리조또 Triple Cheese Risotto",
+        "price": 15000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 16,
+        "menu_id": 6,
+        "menu_name": "콥 샐러드 Cobb Salad",
+        "price": 15000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 16,
+        "menu_id": 7,
+        "menu_name": "훈제 연어 샐러드 Smoked Salmon Salad",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 16,
+        "menu_id": 8,
+        "menu_name": "새우 아보카도 샌드위치 Shrimp Avocado Sandwich",
+        "price": 13000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 16,
+        "menu_id": 9,
+        "menu_name": "트러플 버섯 수프 Truffle Mushroom Soup",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 16,
+        "menu_id": 10,
+        "menu_name": "감자 수프 Potato Soup",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 17,
+        "menu_id": 1,
+        "menu_name": "에스프레소",
+        "price": 4300,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 17,
+        "menu_id": 2,
+        "menu_name": "에스프레소마끼아또",
+        "price": 4300,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 17,
+        "menu_id": 3,
+        "menu_name": "아메리카노",
+        "price": 4800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 17,
+        "menu_id": 4,
+        "menu_name": "카페라떼",
+        "price": 4800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 17,
+        "menu_id": 5,
+        "menu_name": "카페모카",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 17,
+        "menu_id": 6,
+        "menu_name": "바닐라라떼",
+        "price": 5300,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 18,
+        "menu_id": 1,
+        "menu_name": "프론트 데일리 샌드위치",
+        "price": 9500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 18,
+        "menu_id": 2,
+        "menu_name": "사과브리치즈 샌드위치",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 18,
+        "menu_id": 3,
+        "menu_name": "더블데이컨에그 샌드위치",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 18,
+        "menu_id": 4,
+        "menu_name": "새우포케",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 19,
+        "menu_id": 1,
+        "menu_name": "칠리플랩잭",
+        "price": 20900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 19,
+        "menu_id": 2,
+        "menu_name": "올데이브런치",
+        "price": 16900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 19,
+        "menu_id": 3,
+        "menu_name": "플랩잭샌드위치",
+        "price": 10900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 19,
+        "menu_id": 4,
+        "menu_name": "수제리코타샐러드",
+        "price": 13900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 19,
+        "menu_id": 5,
+        "menu_name": "포크벨리버거",
+        "price": 12900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 19,
+        "menu_id": 6,
+        "menu_name": "채끝/구운야채or감자튀김",
+        "price": 28900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 20,
+        "menu_id": 1,
+        "menu_name": "오리지날 까르보나라",
+        "price": 16000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 22,
+        "menu_id": 1,
+        "menu_name": "아메리카노",
+        "price": 3000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 22,
+        "menu_id": 2,
+        "menu_name": "카페라떼",
+        "price": 4000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 22,
+        "menu_id": 3,
+        "menu_name": "카푸치노",
+        "price": 4000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 22,
+        "menu_id": 4,
+        "menu_name": "콜드브루",
+        "price": 4000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 22,
+        "menu_id": 5,
+        "menu_name": "콜드브루라떼",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 22,
+        "menu_id": 6,
+        "menu_name": "카페모카",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 23,
+        "menu_id": 1,
+        "menu_name": "빅브랙퍼스트",
+        "price": 16800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 24,
+        "menu_id": 1,
+        "menu_name": "단호박 고구마 샐러드",
+        "price": 8900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 24,
+        "menu_id": 2,
+        "menu_name": "훈제 오리 샐러드",
+        "price": 9900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 24,
+        "menu_id": 3,
+        "menu_name": "귀리 연어 샐러드",
+        "price": 9900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 24,
+        "menu_id": 4,
+        "menu_name": "코코넛 단호박 스프",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 24,
+        "menu_id": 5,
+        "menu_name": "루이보스티",
+        "price": 3500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 24,
+        "menu_id": 6,
+        "menu_name": "닭 안심 샐러드",
+        "price": 8900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 25,
+        "menu_id": 1,
+        "menu_name": "시그니처 라자냐",
+        "price": 23000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 25,
+        "menu_id": 2,
+        "menu_name": "프렌치 블루베리 크레페&바나나브륄레",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 25,
+        "menu_id": 3,
+        "menu_name": "시즈널 티라미수",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 25,
+        "menu_id": 4,
+        "menu_name": "멀멀 라떼",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 28,
+        "menu_id": 1,
+        "menu_name": "머쉬룸 스프",
+        "price": 6900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 28,
+        "menu_id": 2,
+        "menu_name": "크로와상 샌드위치",
+        "price": 5400,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 28,
+        "menu_id": 3,
+        "menu_name": "아보카도 샌드위치",
+        "price": 6900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 28,
+        "menu_id": 4,
+        "menu_name": "리코타치즈 샐러드",
+        "price": 13900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 28,
+        "menu_id": 5,
+        "menu_name": "샐러드 파스타",
+        "price": 14900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 28,
+        "menu_id": 6,
+        "menu_name": "시저 샐러드",
+        "price": 10900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 29,
+        "menu_id": 1,
+        "menu_name": "아보카도쉬림프살사",
+        "price": 10900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 29,
+        "menu_id": 2,
+        "menu_name": "애플브리햄",
+        "price": 10900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 29,
+        "menu_id": 3,
+        "menu_name": "아스파라거스머쉬룸샐러드",
+        "price": 11800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 29,
+        "menu_id": 4,
+        "menu_name": "페스토치킨파니니",
+        "price": 10900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 29,
+        "menu_id": 5,
+        "menu_name": "알밤콕콕밤무스",
+        "price": 10900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 29,
+        "menu_id": 6,
+        "menu_name": "그릴머쉬룸햄치즈파니니",
+        "price": 10900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 29,
+        "menu_id": 7,
+        "menu_name": "트리플치즈파니니",
+        "price": 10900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 29,
+        "menu_id": 8,
+        "menu_name": "닭가슴살BLT샌드위치",
+        "price": 10900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 29,
+        "menu_id": 9,
+        "menu_name": "고구마무스파니니",
+        "price": 10900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 30,
+        "menu_id": 1,
+        "menu_name": "카페라떼",
+        "price": 5300,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 30,
+        "menu_id": 2,
+        "menu_name": "플랫화이트",
+        "price": 5300,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 30,
+        "menu_id": 3,
+        "menu_name": "바닐라라떼",
+        "price": 5400,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 30,
+        "menu_id": 4,
+        "menu_name": "카페모카",
+        "price": 5400,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 30,
+        "menu_id": 5,
+        "menu_name": "카푸치노",
+        "price": 5100,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 30,
+        "menu_id": 6,
+        "menu_name": "카라멜마끼야또",
+        "price": 5400,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 1,
+        "menu_name": "홍새우&비스크소스 먹물 카펠리니",
+        "price": 23000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 2,
+        "menu_name": "바스크치즈케이크",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 3,
+        "menu_name": "잠봉 프로마쥬",
+        "price": 14000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 4,
+        "menu_name": "시오샌드위치",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 5,
+        "menu_name": "쿼드러플치즈 그릴샌드위치",
+        "price": 14500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 6,
+        "menu_name": "파스트라미 그릴샌드위치",
+        "price": 16000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 7,
+        "menu_name": "풀드포크 그릴샌드위치",
+        "price": 14000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 8,
+        "menu_name": "잠봉뵈르",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 9,
+        "menu_name": "스모크드 베이컨 할라피뇨 바게트",
+        "price": 12500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 10,
+        "menu_name": "잠봉 트러플",
+        "price": 13000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 11,
+        "menu_name": "아메리카노",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 12,
+        "menu_name": "체리사워",
+        "price": 6800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 13,
+        "menu_name": "시트러스에이드",
+        "price": 6800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 14,
+        "menu_name": "TEA",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 15,
+        "menu_name": "하우스 레드 와인",
+        "price": 12000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 16,
+        "menu_name": "하우스 화이트 와인",
+        "price": 15000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 17,
+        "menu_name": "100% 당근쥬스",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 18,
+        "menu_name": "100% 케일사과쥬스",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 19,
+        "menu_name": "바닐라소다에이드",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 31,
+        "menu_id": 20,
+        "menu_name": "스퀴즈 레몬에이드",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 1,
+        "menu_name": "에스프레소 뱅업",
+        "price": 4500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 2,
+        "menu_name": "에스프레소 버티팻 트리오",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 3,
+        "menu_name": "아메리카노 뱅업 HOT",
+        "price": 4500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 4,
+        "menu_name": "아메리카노 버티펫 트리오 HOT",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 5,
+        "menu_name": "카페라떼 HOT",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 6,
+        "menu_name": "바닐라라떼 HOT",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 7,
+        "menu_name": "카푸치노",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 8,
+        "menu_name": "바닐라 펀치",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 9,
+        "menu_name": "초코라떼 HOT",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 10,
+        "menu_name": "메도우 HOT",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 11,
+        "menu_name": "라벤더 HOT",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 12,
+        "menu_name": "히비스커스 HOT",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 13,
+        "menu_name": "자스민 HOT",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 14,
+        "menu_name": "패퍼민트 HOT",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 15,
+        "menu_name": "레드 글래스 와인",
+        "price": 12000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 16,
+        "menu_name": "화이트 글래스 와인",
+        "price": 12000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 17,
+        "menu_name": "레몬에이드",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 32,
+        "menu_id": 18,
+        "menu_name": "블루레몬에이드",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 33,
+        "menu_id": 1,
+        "menu_name": "시저샐러드 with 크루톤 and 베이컨",
+        "price": 10000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 33,
+        "menu_id": 2,
+        "menu_name": "로제 파스타",
+        "price": 16000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 33,
+        "menu_id": 3,
+        "menu_name": "로제 리조또",
+        "price": 17000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 33,
+        "menu_id": 4,
+        "menu_name": "알리 올리오 파스타",
+        "price": 15000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 33,
+        "menu_id": 5,
+        "menu_name": "크림 리조또",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 1,
+        "menu_name": "아메리카노",
+        "price": 4500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 2,
+        "menu_name": "카페라떼",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 3,
+        "menu_name": "발로나카페모카",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 4,
+        "menu_name": "바닐라빈라떼",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 5,
+        "menu_name": "토피넛라떼",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 6,
+        "menu_name": "카라멜크림라떼",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 7,
+        "menu_name": "그린티모카라떼",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 8,
+        "menu_name": "애플밀크티",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 9,
+        "menu_name": "발로나초코라떼",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 10,
+        "menu_name": "블루베리라떼",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 11,
+        "menu_name": "망고라떼",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 12,
+        "menu_name": "요거베리라떼",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 13,
+        "menu_name": "그린티초코라떼",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 14,
+        "menu_name": "말차크림망고라떼",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 15,
+        "menu_name": "말차레몬에이드",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 16,
+        "menu_name": "청포도라임에이드",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 17,
+        "menu_name": "망고자몽에이드",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 18,
+        "menu_name": "자몽에이드",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 19,
+        "menu_name": "블루보스시나몬티",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 20,
+        "menu_name": "페퍼민트피치아이스티",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 34,
+        "menu_id": 21,
+        "menu_name": "자몽티",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 1,
+        "menu_name": "꿀 단호박 리코타 샐러드",
+        "price": 10900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 2,
+        "menu_name": "오렌지 치킨 텐더 샐러드",
+        "price": 9900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 3,
+        "menu_name": "에그 콤 샐러드",
+        "price": 11900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 4,
+        "menu_name": "불고기 머쉬룸 샐러드",
+        "price": 11900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 5,
+        "menu_name": "불고기 샐러드 비빔밥",
+        "price": 14900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 6,
+        "menu_name": "머쉬룸 샐러드",
+        "price": 11900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 7,
+        "menu_name": "아보카도 비건 샐러드",
+        "price": 12500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 8,
+        "menu_name": "새우 할라피뇨 샐러드",
+        "price": 11900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 9,
+        "menu_name": "7day 샐러드 믹스키트",
+        "price": 13200,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 10,
+        "menu_name": "B.E.L.T 샌드위치",
+        "price": 7300,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 11,
+        "menu_name": "바질 햄 치즈 베이글",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 12,
+        "menu_name": "아보카도 베지 샌드위치 하프",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 13,
+        "menu_name": "새우슬로 바게트",
+        "price": 11900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 14,
+        "menu_name": "새우슬로 바게트 하프",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 15,
+        "menu_name": "아메리칸 콥 샐러드",
+        "price": 7900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 16,
+        "menu_name": "리코타 넛츠 샐러드",
+        "price": 7900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 17,
+        "menu_name": "치킨 텐더 케이준 샐러드",
+        "price": 7900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 35,
+        "menu_id": 18,
+        "menu_name": "프리미엄 샐러드 믹스키트",
+        "price": 12000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 1,
+        "menu_name": "아메리카노",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 2,
+        "menu_name": "시나몬 카푸치노",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 3,
+        "menu_name": "카페라떼",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 4,
+        "menu_name": "오트라떼",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 5,
+        "menu_name": "바닐라라떼",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 6,
+        "menu_name": "아몬드라떼",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 7,
+        "menu_name": "버터크림라떼",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 8,
+        "menu_name": "말차라떼",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 9,
+        "menu_name": "호지차라떼",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 10,
+        "menu_name": "리얼초콜릿라떼",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 11,
+        "menu_name": "생자몽 착즙에이드",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 12,
+        "menu_name": "생레몬 착즙에이드",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 13,
+        "menu_name": "에디션 덴마크티",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 14,
+        "menu_name": "바나나푸딩",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 15,
+        "menu_name": "생크림스콘",
+        "price": 3900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 16,
+        "menu_name": "초코헤이즐넛 스콘",
+        "price": 4200,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 17,
+        "menu_name": "더치팬케익 (Single)",
+        "price": 16500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 18,
+        "menu_name": "모닝플레이트 (Single)",
+        "price": 12000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 19,
+        "menu_name": "아사이볼 (Single)",
+        "price": 10500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 20,
+        "menu_name": "아보토스트 (Single)",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 36,
+        "menu_id": 21,
+        "menu_name": "리코타 토마 토스트 (Single)",
+        "price": 9400,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 39,
+        "menu_id": 1,
+        "menu_name": "머쉬룸 스프",
+        "price": 6900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 39,
+        "menu_id": 2,
+        "menu_name": "크로와상 샌드위치",
+        "price": 5400,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 39,
+        "menu_id": 3,
+        "menu_name": "아보카도 샌드위치",
+        "price": 6900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 39,
+        "menu_id": 4,
+        "menu_name": "리코타치즈 샐러드",
+        "price": 13900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 39,
+        "menu_id": 5,
+        "menu_name": "샐러드 파스타",
+        "price": 14900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 39,
+        "menu_id": 6,
+        "menu_name": "시저 샐러드",
+        "price": 10900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 40,
+        "menu_id": 1,
+        "menu_name": "코스타리카 게이샤",
+        "price": 20000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 40,
+        "menu_id": 2,
+        "menu_name": "카페 베리",
+        "price": 15000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 40,
+        "menu_id": 3,
+        "menu_name": "케냐 피베리",
+        "price": 12000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 40,
+        "menu_id": 4,
+        "menu_name": "에티오피아 예가체프 G2 워시드",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 40,
+        "menu_id": 5,
+        "menu_name": "루이보스 슈가플럼",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 40,
+        "menu_id": 6,
+        "menu_name": "터키쉬 애플",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 40,
+        "menu_id": 7,
+        "menu_name": "NYC 브렉퍼스트",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 40,
+        "menu_id": 8,
+        "menu_name": "하동 볶은 녹차(쵸리차)",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 40,
+        "menu_id": 9,
+        "menu_name": "피치 우롱",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 40,
+        "menu_id": 10,
+        "menu_name": "아메리카노",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 40,
+        "menu_id": 11,
+        "menu_name": "카페라떼",
+        "price": 8500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 41,
+        "menu_id": 1,
+        "menu_name": "필터커피",
+        "price": 0,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 41,
+        "menu_id": 2,
+        "menu_name": "로얄밀크티",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 43,
+        "menu_id": 1,
+        "menu_name": "몽블랑",
+        "price": 8633,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 44,
+        "menu_id": 1,
+        "menu_name": "아메리카노",
+        "price": 4500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 44,
+        "menu_id": 2,
+        "menu_name": "카푸치노",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 44,
+        "menu_id": 3,
+        "menu_name": "카페라떼",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 44,
+        "menu_id": 4,
+        "menu_name": "바닐라라떼",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 44,
+        "menu_id": 5,
+        "menu_name": "카페모카",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 45,
+        "menu_id": 1,
+        "menu_name": "토브나인 치즈 포카치아",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 45,
+        "menu_id": 2,
+        "menu_name": "명란 알리오 올리오",
+        "price": 16900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 45,
+        "menu_id": 3,
+        "menu_name": "봉골레",
+        "price": 17900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 46,
+        "menu_id": 1,
+        "menu_name": "BUTTERMILK PANCAKE",
+        "price": 7400,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 46,
+        "menu_id": 2,
+        "menu_name": "BUTTERFINGERS ORIGINAL OMELETTES",
+        "price": 23400,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 46,
+        "menu_id": 3,
+        "menu_name": "SPLIT DECISION PLATE",
+        "price": 29200,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 47,
+        "menu_id": 1,
+        "menu_name": "무화과 콩포트 토스트",
+        "price": 25500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 47,
+        "menu_id": 2,
+        "menu_name": "리코타치즈샐러드",
+        "price": 21900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 47,
+        "menu_id": 3,
+        "menu_name": "루꼴라 플랫브레드",
+        "price": 25500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 47,
+        "menu_id": 4,
+        "menu_name": "크로플",
+        "price": 16900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 47,
+        "menu_id": 5,
+        "menu_name": "아란치니떡볶이",
+        "price": 19900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 47,
+        "menu_id": 6,
+        "menu_name": "드로잉 김치볶음밥",
+        "price": 19900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 47,
+        "menu_id": 7,
+        "menu_name": "드로잉 팬케이크",
+        "price": 21900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 47,
+        "menu_id": 8,
+        "menu_name": "오리지널 오믈렛",
+        "price": 25500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 47,
+        "menu_id": 9,
+        "menu_name": "바질 하바티 샌드위치",
+        "price": 16900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 48,
+        "menu_id": 1,
+        "menu_name": "HOUSE WAGYU STEAK & FRIES",
+        "price": 59800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 48,
+        "menu_id": 2,
+        "menu_name": "HOMEMADE CLAM CHOWDER",
+        "price": 16800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 48,
+        "menu_id": 3,
+        "menu_name": "LEE'S MEATBALL",
+        "price": 23900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 48,
+        "menu_id": 4,
+        "menu_name": "LEE'S CHOP SALAD",
+        "price": 21900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 48,
+        "menu_id": 5,
+        "menu_name": "CAFE LASAGNA",
+        "price": 25900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 48,
+        "menu_id": 6,
+        "menu_name": "SAN FRAN st GARLIC NOODLE",
+        "price": 24900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 48,
+        "menu_id": 7,
+        "menu_name": "SHRIMP VODKA MACARONI",
+        "price": 24900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 48,
+        "menu_id": 8,
+        "menu_name": "LEE'S FRENCH TOAST",
+        "price": 25300,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 48,
+        "menu_id": 9,
+        "menu_name": "MEXICAN SHRIMP TACO BOWL",
+        "price": 24800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 48,
+        "menu_id": 10,
+        "menu_name": "AMERICAN COBB SALAD",
+        "price": 22900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 49,
+        "menu_id": 1,
+        "menu_name": "브런치 SET",
+        "price": 39800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 49,
+        "menu_id": 2,
+        "menu_name": "피자 SET",
+        "price": 37800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 49,
+        "menu_id": 3,
+        "menu_name": "푸짐한 정통 미국식 브런치",
+        "price": 17900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 49,
+        "menu_id": 4,
+        "menu_name": "잠봉 에그베네딕트",
+        "price": 16900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 49,
+        "menu_id": 5,
+        "menu_name": "트러플 머쉬룸 더블 버거",
+        "price": 16900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 49,
+        "menu_id": 6,
+        "menu_name": "통새우 버거",
+        "price": 16900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 50,
+        "menu_id": 1,
+        "menu_name": "젠젠 올데이 브런치 팬케이크",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 50,
+        "menu_id": 2,
+        "menu_name": "계절과일 팬케이크",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 50,
+        "menu_id": 3,
+        "menu_name": "젠젠 팬케이크",
+        "price": 13000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 51,
+        "menu_id": 1,
+        "menu_name": "마이플래터",
+        "price": 13900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 51,
+        "menu_id": 2,
+        "menu_name": "쉬림프 알리오 올리오",
+        "price": 13900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 51,
+        "menu_id": 3,
+        "menu_name": "스파이시 쉬림프 파스타",
+        "price": 13900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 51,
+        "menu_id": 4,
+        "menu_name": "치즈프루티",
+        "price": 11900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 51,
+        "menu_id": 5,
+        "menu_name": "베리 프렌치 토스트",
+        "price": 10900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 52,
+        "menu_id": 1,
+        "menu_name": "오늘의 스프(단호박)",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 52,
+        "menu_id": 2,
+        "menu_name": "부라타 토마토 샐러드",
+        "price": 13000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 52,
+        "menu_id": 3,
+        "menu_name": "아보카도 크랩 샐러드",
+        "price": 13000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 52,
+        "menu_id": 4,
+        "menu_name": "미나리 오일 파스타",
+        "price": 17000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 52,
+        "menu_id": 5,
+        "menu_name": "치킨 크림 파스타",
+        "price": 17000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 52,
+        "menu_id": 6,
+        "menu_name": "트러플 크림 뇨끼",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 52,
+        "menu_id": 7,
+        "menu_name": "단호박 크림 뇨끼",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 52,
+        "menu_id": 8,
+        "menu_name": "로우테라스 라자냐",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 52,
+        "menu_id": 9,
+        "menu_name": "로우테라스 스테이크",
+        "price": 38000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 52,
+        "menu_id": 10,
+        "menu_name": "글라스 와인(레드/화이트)",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 52,
+        "menu_id": 11,
+        "menu_name": "호가든",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 52,
+        "menu_id": 12,
+        "menu_name": "호가든로제",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 52,
+        "menu_id": 13,
+        "menu_name": "오렌지주스",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 52,
+        "menu_id": 14,
+        "menu_name": "탄산소다",
+        "price": 3000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 53,
+        "menu_id": 1,
+        "menu_name": "몽블랑",
+        "price": 8633,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 1,
+        "menu_name": "시그니처 핑크 라떼",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 2,
+        "menu_name": "에스프레소",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 3,
+        "menu_name": "아메리카노",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 4,
+        "menu_name": "라떼",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 5,
+        "menu_name": "바닐라빈 라떼",
+        "price": 8500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 6,
+        "menu_name": "카푸치노",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 7,
+        "menu_name": "토피넛 밀크",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 8,
+        "menu_name": "콜드 브루",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 9,
+        "menu_name": "콜드 브루 라떼",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 10,
+        "menu_name": "콜드 브루 돌체 라떼",
+        "price": 9500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 11,
+        "menu_name": "딥초콜릿 라떼",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 12,
+        "menu_name": "초코 딸기 라떼",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 13,
+        "menu_name": "말차 크림 라떼",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 14,
+        "menu_name": "그린 루바브",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 15,
+        "menu_name": "얼그레이",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 16,
+        "menu_name": "캐모마일",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 17,
+        "menu_name": "블루베리 히비스커스",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 18,
+        "menu_name": "오렌지 주스",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 19,
+        "menu_name": "레몬에이드",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 20,
+        "menu_name": "자몽에이드",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 54,
+        "menu_id": 21,
+        "menu_name": "자몽소르베",
+        "price": 8500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 56,
+        "menu_id": 1,
+        "menu_name": "에스프레소",
+        "price": 3000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 56,
+        "menu_id": 2,
+        "menu_name": "아메리카노(hot)",
+        "price": 3500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 56,
+        "menu_id": 3,
+        "menu_name": "카페라떼(hot)",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 56,
+        "menu_id": 4,
+        "menu_name": "고구마라떼(hot)",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 56,
+        "menu_id": 5,
+        "menu_name": "딸기요거트스무디",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 57,
+        "menu_id": 1,
+        "menu_name": "치킨아보카도 샌드위치(런치)",
+        "price": 16000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 57,
+        "menu_id": 2,
+        "menu_name": "토마토 멜란자네 라자냐(한정수량)",
+        "price": 23000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 57,
+        "menu_id": 3,
+        "menu_name": "고르곤졸라 안심크림 펜네",
+        "price": 26000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 57,
+        "menu_id": 4,
+        "menu_name": "에그 베네딕트(런치)",
+        "price": 21000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 57,
+        "menu_id": 5,
+        "menu_name": "빅 브레키 플래터(런치)",
+        "price": 26000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 57,
+        "menu_id": 6,
+        "menu_name": "치즈플래터(디너)",
+        "price": 48000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 57,
+        "menu_id": 7,
+        "menu_name": "후무스와 올리브(디너)",
+        "price": 16000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 57,
+        "menu_id": 8,
+        "menu_name": "감바스 알 아히요(디너)",
+        "price": 29000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 57,
+        "menu_id": 9,
+        "menu_name": "볼로네제파스타",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 57,
+        "menu_id": 10,
+        "menu_name": "시즌스프",
+        "price": 10000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 57,
+        "menu_id": 11,
+        "menu_name": "머쉬룸치즈샌드위치(런치)",
+        "price": 17000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 57,
+        "menu_id": 12,
+        "menu_name": "안심스테이크",
+        "price": 59000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 57,
+        "menu_id": 13,
+        "menu_name": "채끝스테이크(350~400g)",
+        "price": 92000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 59,
+        "menu_id": 1,
+        "menu_name": "C 플레이트",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 59,
+        "menu_id": 2,
+        "menu_name": "구운 알배추 샐러드",
+        "price": 17000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 59,
+        "menu_id": 3,
+        "menu_name": "E 플레이트",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 59,
+        "menu_id": 4,
+        "menu_name": "M 플레이트",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 59,
+        "menu_id": 5,
+        "menu_name": "O 플레이트",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 59,
+        "menu_id": 6,
+        "menu_name": "홍가리비 오일 파스타",
+        "price": 17500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 59,
+        "menu_id": 7,
+        "menu_name": "허브 알리오 올리오",
+        "price": 17000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 59,
+        "menu_id": 8,
+        "menu_name": "갈치속젓 포크 파스타",
+        "price": 17500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 59,
+        "menu_id": 9,
+        "menu_name": "까르보나라",
+        "price": 17500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 59,
+        "menu_id": 10,
+        "menu_name": "리코타 플레이트",
+        "price": 17500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 60,
+        "menu_id": 1,
+        "menu_name": "장봉뵈르 샌드위치",
+        "price": 12500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 60,
+        "menu_id": 2,
+        "menu_name": "오늘의 샌드위치 세트",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 60,
+        "menu_id": 3,
+        "menu_name": "아메리카노(HOT)",
+        "price": 4300,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 60,
+        "menu_id": 4,
+        "menu_name": "아포가토",
+        "price": 8500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 60,
+        "menu_id": 5,
+        "menu_name": "오렌지에이드",
+        "price": 4000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 61,
+        "menu_id": 1,
+        "menu_name": "플랫 화이트",
+        "price": 4400,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 61,
+        "menu_id": 2,
+        "menu_name": "아사이 볼",
+        "price": 13900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 61,
+        "menu_id": 3,
+        "menu_name": "런치 스페셜",
+        "price": 9900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 61,
+        "menu_id": 4,
+        "menu_name": "아보 러버스",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 1,
+        "menu_name": "생과일주스",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 2,
+        "menu_name": "생과일에이드",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 3,
+        "menu_name": "페스토 잠봉뵈르",
+        "price": 16000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 4,
+        "menu_name": "필리치즈 샌드위치",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 5,
+        "menu_name": "수제 리코타 샐러드&빵",
+        "price": 17000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 6,
+        "menu_name": "오늘의수프",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 7,
+        "menu_name": "부카니에라",
+        "price": 23000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 8,
+        "menu_name": "보코치니 뽀모도로",
+        "price": 22000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 9,
+        "menu_name": "까르보나라",
+        "price": 21000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 10,
+        "menu_name": "빠네 그란치오",
+        "price": 24000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 11,
+        "menu_name": "봉골레",
+        "price": 22000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 12,
+        "menu_name": "네로 디 세피아리조또",
+        "price": 22000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 13,
+        "menu_name": "버섯크림피자",
+        "price": 24000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 14,
+        "menu_name": "고르곤졸라피자",
+        "price": 22000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 15,
+        "menu_name": "시저샐러드",
+        "price": 22000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 16,
+        "menu_name": "트러플화이트라구",
+        "price": 26000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 17,
+        "menu_name": "아몬드크림카페라떼",
+        "price": 8500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 18,
+        "menu_name": "아메리카노",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 19,
+        "menu_name": "카페라떼",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 20,
+        "menu_name": "카푸치노",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 62,
+        "menu_id": 21,
+        "menu_name": "에스프레소",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 63,
+        "menu_id": 1,
+        "menu_name": "클럽 샌드위치",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 63,
+        "menu_id": 2,
+        "menu_name": "묵직한 치즈 파니니",
+        "price": 10800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 63,
+        "menu_id": 3,
+        "menu_name": "프렌치 샌드위치",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 63,
+        "menu_id": 4,
+        "menu_name": "브리 가지 파니니",
+        "price": 9400,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 63,
+        "menu_id": 5,
+        "menu_name": "애플 브리 파니니",
+        "price": 12500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 63,
+        "menu_id": 6,
+        "menu_name": "치킨커리 샌드위치",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 63,
+        "menu_id": 7,
+        "menu_name": "트리플 치즈 치아바타",
+        "price": 11000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 64,
+        "menu_id": 1,
+        "menu_name": "아메리카노",
+        "price": 4500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 1,
+        "menu_name": "에스프레소",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 2,
+        "menu_name": "에스프레소콘빠냐",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 3,
+        "menu_name": "에스프레소마끼야또",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 4,
+        "menu_name": "아메리카노",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 5,
+        "menu_name": "카푸치노",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 6,
+        "menu_name": "카페모카",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 7,
+        "menu_name": "더치커피",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 8,
+        "menu_name": "아포카도",
+        "price": 8500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 9,
+        "menu_name": "카페라떼",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 10,
+        "menu_name": "바닐라라떼",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 11,
+        "menu_name": "달고나라떼",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 12,
+        "menu_name": "바다라떼",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 13,
+        "menu_name": "더치바닐라라떼",
+        "price": 8500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 14,
+        "menu_name": "고구마라떼",
+        "price": 8500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 15,
+        "menu_name": "딸기라떼",
+        "price": 8500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 16,
+        "menu_name": "에이드",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 17,
+        "menu_name": "스무디",
+        "price": 9500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 65,
+        "menu_id": 18,
+        "menu_name": "프라페",
+        "price": 9500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 66,
+        "menu_id": 1,
+        "menu_name": "커피,브루잉커피",
+        "price": 0,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 66,
+        "menu_id": 2,
+        "menu_name": "베이커리",
+        "price": 0,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 67,
+        "menu_id": 1,
+        "menu_name": "클럽샌드위치",
+        "price": 9900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 67,
+        "menu_id": 2,
+        "menu_name": "프렌치토스트 플레이트",
+        "price": 13900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 69,
+        "menu_id": 1,
+        "menu_name": "마들렌",
+        "price": 3000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 69,
+        "menu_id": 2,
+        "menu_name": "바스크치즈케이크",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 69,
+        "menu_id": 3,
+        "menu_name": "미니키슈",
+        "price": 4500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 69,
+        "menu_id": 4,
+        "menu_name": "아메리카노",
+        "price": 4500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 69,
+        "menu_id": 5,
+        "menu_name": "감자머스타드키슈",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 69,
+        "menu_id": 6,
+        "menu_name": "페페로니키슈",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 70,
+        "menu_id": 1,
+        "menu_name": "와인",
+        "price": 0,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 71,
+        "menu_id": 1,
+        "menu_name": "아메리카노",
+        "price": 3200,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 72,
+        "menu_id": 1,
+        "menu_name": "에스프레소",
+        "price": 4500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 72,
+        "menu_id": 2,
+        "menu_name": "아메리카노",
+        "price": 4500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 72,
+        "menu_id": 3,
+        "menu_name": "라떼",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 72,
+        "menu_id": 4,
+        "menu_name": "플랫화이트",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 72,
+        "menu_id": 5,
+        "menu_name": "바닐라라떼",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 72,
+        "menu_id": 6,
+        "menu_name": "카푸치노",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 72,
+        "menu_id": 7,
+        "menu_name": "핑크솔티드크림커피",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 72,
+        "menu_id": 8,
+        "menu_name": "아인슈페너",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 72,
+        "menu_id": 9,
+        "menu_name": "크림초코",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 72,
+        "menu_id": 10,
+        "menu_name": "크림딸기",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 72,
+        "menu_id": 11,
+        "menu_name": "수제얼그레이밀크티",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 72,
+        "menu_id": 12,
+        "menu_name": "바스크치즈케이크",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 72,
+        "menu_id": 13,
+        "menu_name": "플레인크로플",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 73,
+        "menu_id": 1,
+        "menu_name": "아메리카노",
+        "price": 3800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 74,
+        "menu_id": 1,
+        "menu_name": "밤호박스프",
+        "price": 13500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 76,
+        "menu_id": 1,
+        "menu_name": "시즌 과일 크림치즈 베이글",
+        "price": 8900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 76,
+        "menu_id": 2,
+        "menu_name": "프레쉬 이태리 샌드위치",
+        "price": 12900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 76,
+        "menu_id": 3,
+        "menu_name": "라구 파스타",
+        "price": 13900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 76,
+        "menu_id": 4,
+        "menu_name": "아메리카노",
+        "price": 4500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 76,
+        "menu_id": 5,
+        "menu_name": "라떼",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 77,
+        "menu_id": 1,
+        "menu_name": "에스프레소",
+        "price": 4000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 77,
+        "menu_id": 2,
+        "menu_name": "아메리카노",
+        "price": 4500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 77,
+        "menu_id": 3,
+        "menu_name": "라떼",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 77,
+        "menu_id": 4,
+        "menu_name": "플랫화이트",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 77,
+        "menu_id": 5,
+        "menu_name": "딥라뗴",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 77,
+        "menu_id": 6,
+        "menu_name": "카푸치노",
+        "price": 5000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 78,
+        "menu_id": 1,
+        "menu_name": "잠봉뵈르 (반개)",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 78,
+        "menu_id": 2,
+        "menu_name": "잠봉 크루아상 샌드위치",
+        "price": 12000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 78,
+        "menu_id": 3,
+        "menu_name": "파스트라미 샌드위치",
+        "price": 14000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 78,
+        "menu_id": 4,
+        "menu_name": "소금빵 샌드위치 (수제 할라피뇨)",
+        "price": 4800,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 78,
+        "menu_id": 5,
+        "menu_name": "파스트라미 샐러드",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 78,
+        "menu_id": 6,
+        "menu_name": "그린 샐러드",
+        "price": 15000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 79,
+        "menu_id": 1,
+        "menu_name": "티라미수라떼",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 79,
+        "menu_id": 2,
+        "menu_name": "유기농깜빠뉴브런치",
+        "price": 12000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 79,
+        "menu_id": 3,
+        "menu_name": "사케라토",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 79,
+        "menu_id": 4,
+        "menu_name": "유기농풋귤에이드",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 79,
+        "menu_id": 5,
+        "menu_name": "스페셜티브루잉커피",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 79,
+        "menu_id": 6,
+        "menu_name": "계절과일토스트",
+        "price": 9000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 81,
+        "menu_id": 1,
+        "menu_name": "Garden Steak(가든 스테이크)",
+        "price": 32000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 81,
+        "menu_id": 2,
+        "menu_name": "Truffle Cassarecha(트러플 까사레차)",
+        "price": 17000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 81,
+        "menu_id": 3,
+        "menu_name": "Cheese Cauliflower(치즈 컬리플라워)",
+        "price": 14000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 81,
+        "menu_id": 4,
+        "menu_name": "Italian Bruschetta(이탈리안 브루스게타)",
+        "price": 14000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 81,
+        "menu_id": 5,
+        "menu_name": "Today's Salad(오늘의 샐러드)",
+        "price": 14000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 81,
+        "menu_id": 6,
+        "menu_name": "아메리카노",
+        "price": 3500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 81,
+        "menu_id": 7,
+        "menu_name": "카페라떼",
+        "price": 4000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 81,
+        "menu_id": 8,
+        "menu_name": "오늘의 스무디",
+        "price": 4000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 81,
+        "menu_id": 9,
+        "menu_name": "에이드(레몬/한라봉/자몽)",
+        "price": 3500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 83,
+        "menu_id": 1,
+        "menu_name": "다미안 브런치세트",
+        "price": 22000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 83,
+        "menu_id": 2,
+        "menu_name": "다미안 한식브런치 (예약)",
+        "price": 24000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 83,
+        "menu_id": 3,
+        "menu_name": "다미안 샌드위치단품",
+        "price": 15000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 83,
+        "menu_id": 4,
+        "menu_name": "다미안 샌드위치세트",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 83,
+        "menu_id": 5,
+        "menu_name": "아메리카노",
+        "price": 6000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 83,
+        "menu_id": 6,
+        "menu_name": "카페라떼",
+        "price": 7000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 83,
+        "menu_id": 7,
+        "menu_name": "바닐라라떼",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 83,
+        "menu_id": 8,
+        "menu_name": "유자에이드",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 83,
+        "menu_id": 9,
+        "menu_name": "자몽에이드",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 84,
+        "menu_id": 1,
+        "menu_name": "소금빵",
+        "price": 1900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 84,
+        "menu_id": 2,
+        "menu_name": "사과빵",
+        "price": 3900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 84,
+        "menu_id": 3,
+        "menu_name": "아메리카노",
+        "price": 4500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 84,
+        "menu_id": 4,
+        "menu_name": "플레인 베이글",
+        "price": 1900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 3,
+        "restaurant_id": 84,
+        "menu_id": 5,
+        "menu_name": "무화과 프렌치토스트",
+        "price": 9900,
+        "is_deleted": false,
+        "is_active": true
+    }
+]

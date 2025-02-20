@@ -1,0 +1,1325 @@
+[
+    {
+        "category_id": 12,
+        "restaurant_id": 1,
+        "menu_id": 1,
+        "menu_name": "런치",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 1,
+        "menu_id": 2,
+        "menu_name": "디너",
+        "price": 29000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 2,
+        "menu_id": 1,
+        "menu_name": "런치오마카세",
+        "price": 25000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 2,
+        "menu_id": 2,
+        "menu_name": "디너오마카세",
+        "price": 38000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 3,
+        "menu_id": 1,
+        "menu_name": "스시코스 (Lunch)",
+        "price": 45000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 3,
+        "menu_id": 2,
+        "menu_name": "오마카세 (Lunch)",
+        "price": 60000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 3,
+        "menu_id": 3,
+        "menu_name": "오마카세 (Dinner)",
+        "price": 90000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 4,
+        "menu_id": 1,
+        "menu_name": "사시미",
+        "price": 28000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 4,
+        "menu_id": 2,
+        "menu_name": "특사시미",
+        "price": 40000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 4,
+        "menu_id": 3,
+        "menu_name": "광어 (1pcs)",
+        "price": 2500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 4,
+        "menu_id": 4,
+        "menu_name": "광어지느러미 (1pcs)",
+        "price": 3000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 4,
+        "menu_id": 5,
+        "menu_name": "농어 (1pcs)",
+        "price": 2500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 4,
+        "menu_id": 6,
+        "menu_name": "런치 오마카세",
+        "price": 40000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 4,
+        "menu_id": 7,
+        "menu_name": "런치 사시미정식",
+        "price": 28000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 4,
+        "menu_id": 8,
+        "menu_name": "런치 스시정식",
+        "price": 20000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 4,
+        "menu_id": 9,
+        "menu_name": "오마카세",
+        "price": 60000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 4,
+        "menu_id": 10,
+        "menu_name": "스시오마카세",
+        "price": 75000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 4,
+        "menu_id": 11,
+        "menu_name": "모리아와세",
+        "price": 85000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 5,
+        "menu_id": 1,
+        "menu_name": "점심정식",
+        "price": 40000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 7,
+        "menu_id": 1,
+        "menu_name": "런치오마카세",
+        "price": 60000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 7,
+        "menu_id": 2,
+        "menu_name": "디너오마카세",
+        "price": 100000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 8,
+        "menu_id": 1,
+        "menu_name": "오마카세",
+        "price": 0,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 9,
+        "menu_id": 1,
+        "menu_name": "런치 오마카세",
+        "price": 60000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 9,
+        "menu_id": 2,
+        "menu_name": "디너 오마카세",
+        "price": 120000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 10,
+        "menu_id": 1,
+        "menu_name": "런치 오마카세",
+        "price": 70000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 10,
+        "menu_id": 2,
+        "menu_name": "디너 오마카세",
+        "price": 150000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 1,
+        "menu_name": "시그니쳐 코스메뉴",
+        "price": 10000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 2,
+        "menu_name": "프리미엄 블렌드",
+        "price": 5500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 3,
+        "menu_name": "이디오피아 예가체프 G2",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 4,
+        "menu_name": "과테말라SHB 안티구아 파노라마",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 5,
+        "menu_name": "과테말라 CO2 디카페인",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 6,
+        "menu_name": "케냐 AA 라가티 탑",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 7,
+        "menu_name": "케냐 AA 키암부 카린가 탑",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 8,
+        "menu_name": "브라질 카라멜라도",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 9,
+        "menu_name": "브라질 피치피치 N",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 10,
+        "menu_name": "엘살바도로 피에몬테 밀레니엄",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 11,
+        "menu_name": "니카라과 라 에스파놀라",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 12,
+        "menu_name": "이디오피아 구지 모모라 N",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 13,
+        "menu_name": "이디오피아 반티넨카 N",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 14,
+        "menu_name": "과테말라 엘 소코로 파카마라",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 15,
+        "menu_name": "콜롬비아 포토시 트레스 드레곤즈 N",
+        "price": 7500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 16,
+        "menu_name": "커피 오마카세",
+        "price": 20000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 17,
+        "menu_name": "YMR 아이스",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 18,
+        "menu_name": "핫 라떼",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 19,
+        "menu_name": "아이스 라떼",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 20,
+        "menu_name": "스위트 라떼",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 11,
+        "menu_id": 21,
+        "menu_name": "카페 유자라떼",
+        "price": 6500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 12,
+        "menu_id": 1,
+        "menu_name": "스시 코스 (Dinner)",
+        "price": 80000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 12,
+        "menu_id": 2,
+        "menu_name": "사시미 코스 (Dinner)",
+        "price": 100000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 12,
+        "menu_id": 3,
+        "menu_name": "오마카세 코스 (Dinner)",
+        "price": 150000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 12,
+        "menu_id": 4,
+        "menu_name": "스시 코스 (Lunch)",
+        "price": 55000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 12,
+        "menu_id": 5,
+        "menu_name": "오마카세 코스 (Lunch)",
+        "price": 90000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 12,
+        "menu_id": 6,
+        "menu_name": "콜키지",
+        "price": 30000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 13,
+        "menu_id": 1,
+        "menu_name": "스시강초밥 (12p)",
+        "price": 17000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 13,
+        "menu_id": 2,
+        "menu_name": "참다랑어뱃살초밥 (1pcs)",
+        "price": 4000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 13,
+        "menu_id": 3,
+        "menu_name": "간장새우초밥 (1pcs)",
+        "price": 2000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 13,
+        "menu_id": 4,
+        "menu_name": "타코와사비초밥 (1pcs)",
+        "price": 2000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 13,
+        "menu_id": 5,
+        "menu_name": "계란초밥 (1pcs)",
+        "price": 1500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 14,
+        "menu_id": 1,
+        "menu_name": "시스오마카세",
+        "price": 45000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 14,
+        "menu_id": 2,
+        "menu_name": "사시미오마카세",
+        "price": 65000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 14,
+        "menu_id": 3,
+        "menu_name": "런치오마카세",
+        "price": 25000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 14,
+        "menu_id": 4,
+        "menu_name": "디너오마카세",
+        "price": 45000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 14,
+        "menu_id": 5,
+        "menu_name": "1인사시미",
+        "price": 20000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 15,
+        "menu_id": 1,
+        "menu_name": "오마카세 런치",
+        "price": 19000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 15,
+        "menu_id": 2,
+        "menu_name": "오마카세 디너",
+        "price": 29000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 16,
+        "menu_id": 1,
+        "menu_name": "오마카세 (런치)",
+        "price": 40000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 16,
+        "menu_id": 2,
+        "menu_name": "오마카세 (디너)",
+        "price": 80000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 17,
+        "menu_id": 1,
+        "menu_name": "런치오마카세",
+        "price": 50000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 17,
+        "menu_id": 2,
+        "menu_name": "디너오마카세",
+        "price": 80000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 1,
+        "menu_name": "카이센동",
+        "price": 24000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 2,
+        "menu_name": "후토마키 (5P)",
+        "price": 12000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 3,
+        "menu_name": "연어 후토마키 (5P)",
+        "price": 13000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 4,
+        "menu_name": "어린이 초밥 (8P)",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 5,
+        "menu_name": "광어 (10P)",
+        "price": 22000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 6,
+        "menu_name": "연어 (10P)",
+        "price": 20000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 7,
+        "menu_name": "아부리 연어 (10P)",
+        "price": 20000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 8,
+        "menu_name": "광어 (5P)+연어 (5P)",
+        "price": 21000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 9,
+        "menu_name": "초새우 초밥 (1P)",
+        "price": 1500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 10,
+        "menu_name": "계란 초밥 (1P)",
+        "price": 1500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 11,
+        "menu_name": "이까 초밥 (1P)",
+        "price": 2000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 12,
+        "menu_name": "연어 초밥 (1P)",
+        "price": 2000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 13,
+        "menu_name": "아부리연어 초밥 (1P)",
+        "price": 2000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 14,
+        "menu_name": "간장새우 초밥 (1P)",
+        "price": 2000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 15,
+        "menu_name": "광어 초밥 (1P)",
+        "price": 2200,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 16,
+        "menu_name": "광어 지느러미 초밥 (1P)",
+        "price": 2500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 17,
+        "menu_name": "연어 뱃살 초밥 (1P)",
+        "price": 2500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 18,
+        "menu_name": "삼치 초밥 (1P)",
+        "price": 2500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 19,
+        "menu_name": "안키모 초밥 (1P)",
+        "price": 2500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 20,
+        "menu_name": "청어 초밥 (1P)",
+        "price": 2500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 18,
+        "menu_id": 21,
+        "menu_name": "도미 초밥 (1P)",
+        "price": 2500,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 19,
+        "menu_id": 1,
+        "menu_name": "오마카세 코스(모둠숙성회 무한리필)",
+        "price": 39000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 19,
+        "menu_id": 2,
+        "menu_name": "유비끼 코스(모둠숙성회 무한리필)",
+        "price": 47000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 19,
+        "menu_id": 3,
+        "menu_name": "갓포 코스(모둠숙성회 무한리필)",
+        "price": 58000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 19,
+        "menu_id": 4,
+        "menu_name": "쉐프VIP 코스",
+        "price": 80000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 19,
+        "menu_id": 5,
+        "menu_name": "모둠회+해살물세트",
+        "price": 70000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 19,
+        "menu_id": 6,
+        "menu_name": "모둠회 (대)",
+        "price": 90000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 19,
+        "menu_id": 7,
+        "menu_name": "모둠회 (중)",
+        "price": 70000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 19,
+        "menu_id": 8,
+        "menu_name": "참돔",
+        "price": 80000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 19,
+        "menu_id": 9,
+        "menu_name": "광어회",
+        "price": 70000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 20,
+        "menu_id": 1,
+        "menu_name": "오마카세",
+        "price": 38000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 21,
+        "menu_id": 1,
+        "menu_name": "네코 스페셜",
+        "price": 0,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 21,
+        "menu_id": 2,
+        "menu_name": "어린이초밥",
+        "price": 0,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 21,
+        "menu_id": 3,
+        "menu_name": "오늘의 초밥",
+        "price": 0,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 21,
+        "menu_id": 4,
+        "menu_name": "만원의 행복",
+        "price": 0,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 21,
+        "menu_id": 5,
+        "menu_name": "하프롤",
+        "price": 0,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 21,
+        "menu_id": 6,
+        "menu_name": "대게딱지동",
+        "price": 0,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 22,
+        "menu_id": 1,
+        "menu_name": "생선초밥",
+        "price": 24000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 22,
+        "menu_id": 2,
+        "menu_name": "특초밥",
+        "price": 25000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 22,
+        "menu_id": 3,
+        "menu_name": "보통초밥",
+        "price": 21000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 22,
+        "menu_id": 4,
+        "menu_name": "런치초밥",
+        "price": 15000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 22,
+        "menu_id": 5,
+        "menu_name": "회덮밥",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 24,
+        "menu_id": 1,
+        "menu_name": "런치오마카세",
+        "price": 80000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 24,
+        "menu_id": 2,
+        "menu_name": "디너오마카세",
+        "price": 150000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 25,
+        "menu_id": 1,
+        "menu_name": "사시미 오마카세(룸)",
+        "price": 80000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 25,
+        "menu_id": 2,
+        "menu_name": "사시미 코스(룸)",
+        "price": 120000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 25,
+        "menu_id": 3,
+        "menu_name": "스시 오마카세(런치 룸/카운터)",
+        "price": 60000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 25,
+        "menu_id": 4,
+        "menu_name": "스시 오마카세(디너 룸/카운터)",
+        "price": 120000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 25,
+        "menu_id": 5,
+        "menu_name": "사시미 오마카세(룸)(디너)",
+        "price": 140000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 26,
+        "menu_id": 1,
+        "menu_name": "도미가마솥밥정식",
+        "price": 35000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 26,
+        "menu_id": 2,
+        "menu_name": "도미코스(평일 런치)",
+        "price": 60000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 26,
+        "menu_id": 3,
+        "menu_name": "런치오마카세",
+        "price": 100000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 26,
+        "menu_id": 4,
+        "menu_name": "도미코스",
+        "price": 65000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 26,
+        "menu_id": 5,
+        "menu_name": "도미특코스",
+        "price": 88000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 26,
+        "menu_id": 6,
+        "menu_name": "오마카세",
+        "price": 120000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 26,
+        "menu_id": 7,
+        "menu_name": "특오마카세",
+        "price": 180000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 29,
+        "menu_id": 1,
+        "menu_name": "광어 한접시 (20ps)",
+        "price": 38000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 29,
+        "menu_id": 2,
+        "menu_name": "연어 한접시 (18ps)",
+        "price": 25000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 29,
+        "menu_id": 3,
+        "menu_name": "대게",
+        "price": 35000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 29,
+        "menu_id": 4,
+        "menu_name": "낙지 한접시",
+        "price": 15000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 29,
+        "menu_id": 5,
+        "menu_name": "회정식",
+        "price": 25000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 30,
+        "menu_id": 1,
+        "menu_name": "돈코츠라멘 (M)",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 30,
+        "menu_id": 2,
+        "menu_name": "탄탄멘 (M)",
+        "price": 8000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 30,
+        "menu_id": 3,
+        "menu_name": "모듬초밥 (11p)",
+        "price": 7900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 30,
+        "menu_id": 4,
+        "menu_name": "연어초밥 (11p)",
+        "price": 8900,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 30,
+        "menu_id": 5,
+        "menu_name": "낙지볶음",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 31,
+        "menu_id": 1,
+        "menu_name": "초밥우동세트",
+        "price": 10000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 31,
+        "menu_id": 2,
+        "menu_name": "초밥냉모밀세트",
+        "price": 10000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 31,
+        "menu_id": 3,
+        "menu_name": "스시윤초밥",
+        "price": 20000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 31,
+        "menu_id": 4,
+        "menu_name": "연어초밥",
+        "price": 18000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 31,
+        "menu_id": 5,
+        "menu_name": "광어초밥",
+        "price": 20000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 31,
+        "menu_id": 6,
+        "menu_name": "오도로초밥",
+        "price": 30000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 31,
+        "menu_id": 7,
+        "menu_name": "회덮밥",
+        "price": 10000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 32,
+        "menu_id": 1,
+        "menu_name": "런치 장어 오마카세",
+        "price": 38000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 32,
+        "menu_id": 2,
+        "menu_name": "디너 장어 오마카세",
+        "price": 58000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 32,
+        "menu_id": 3,
+        "menu_name": "민물장어구이 500g",
+        "price": 43000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 33,
+        "menu_id": 1,
+        "menu_name": "런치",
+        "price": 40000,
+        "is_deleted": false,
+        "is_active": true
+    },
+    {
+        "category_id": 12,
+        "restaurant_id": 33,
+        "menu_id": 2,
+        "menu_name": "디너",
+        "price": 70000,
+        "is_deleted": false,
+        "is_active": true
+    }
+]
