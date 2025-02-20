@@ -1,0 +1,13 @@
+# 빌드에 필요없는 파일/디렉토리 제외
+__pycache__
+*.pyc
+venv
+.git
+.gitignore
+.env
+*.egg-info
+dist
+build
+.DS_Store
+Thumbs.db
+logs
