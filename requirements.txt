@@ -7,4 +7,7 @@ xgboost
 lightgbm
 python-decouple
 python-dotenv
+pillow
+jsonify
+flask_restx
 catboost==1.2.7

@@ -11,3 +11,6 @@ venv/
 # Ignore all __pycache__ directories
 __pycache__/
 **/__pycache__/
+
+# Ignore logs directory
+logs/
