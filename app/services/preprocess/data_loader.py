@@ -39,6 +39,7 @@ def load_and_merge_json_files(directory: str) -> pd.DataFrame:
     
     try:
         df = pd.DataFrame(merged_data)
+        logger.debug("json 데이터가 병합이 완료되었습니다.")
     except Exception as e:
         logger.error(f"Error converting merged data to DataFrame: {e}", exc_info=True)
         raise e  # 에러 발생 시 예외를 재발생시킵니다.

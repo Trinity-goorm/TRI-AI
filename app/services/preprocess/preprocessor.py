@@ -20,18 +20,21 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
     try:
         # 기본 컬럼 타입 변환
         df['review'] = pd.to_numeric(df['review'], errors='coerce')
+        logger.debug("review 데이터 변환이 완료되었습니다.")
     except Exception as e:
         logger.error(f"Error converting 'review' column: {e}", exc_info=True)
         raise e
 
     try:
         df['category_id'] = df['category_id'].apply(convert_category)
+        logger.debug("category_id 변환이 완료되었습니다.")
     except Exception as e:
         logger.error(f"Error converting 'category_id': {e}", exc_info=True)
         raise e
     
     try:
         df['phone_number'] = df['phone_number'].apply(format_phone)
+        logger.debug("phone_number 변환이 완료되었습니다.")
     except Exception as e:
         logger.error(f"Error formatting 'phone_number': {e}", exc_info=True)
     
@@ -45,6 +48,7 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
         conv_encoded_df = pd.DataFrame(conv_encoded,
                                     columns=[f"conv_{col}" for col in mlb_conv.classes_],
                                     index=df.index)
+        logger.debug("convenience_list 변환이 완료되었습니다.")
     except Exception as e:
         logger.error(f"Error processing convenience data: {e}", exc_info=True)
         raise e
@@ -60,6 +64,7 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
         caution_encoded_df = pd.DataFrame(
             caution_encoded, columns=[f"caution_{col}" for col in mlb_caution.classes_], index=df.index
         )
+        logger.debug("caution_list 변환이 완료되었습니다.")
     except Exception as e:
         logger.error(f"Error processing caution data: {e}", exc_info=True)
         caution_encoded_df = pd.DataFrame()
@@ -69,6 +74,7 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
         df['operating_days_count'] = df['expanded_days'].apply(
             lambda x: count_operating_days(x) if pd.notna(x) else None
         )
+        logger.debug("operating_days_count 계산이 완료되었습니다.")
     except Exception as e:
         logger.error(f"Error calculating operating_days_count: {e}", exc_info=True)
     
@@ -101,6 +107,7 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
         conv_cols = [col for col in df.columns if col.startswith("conv_") and col != "conv_편의시설 정보 없음"]
         caution_cols = [col for col in df.columns if col.startswith("caution_") and col != "caution_유의사항 정보 없음"]
         df_final = select_final_columns(df, conv_cols, caution_cols)
+        logger.debug("최종 출력할 컬럼 계산이 완료되었습니다.")
     except Exception as e:
         logger.error(f"Error selecting final columns: {e}", exc_info=True)
         df_final = df  # fallback

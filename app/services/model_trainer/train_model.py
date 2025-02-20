@@ -17,6 +17,7 @@ def train_model(df_final):
         # 1. 데이터 준비: 필수 컬럼 확인 및 결측치 제거
         required_cols = ['duration_hours', 'conv_WIFI', 'conv_주차', 'caution_예약가능', 'category_id', 'review', 'score']
         df_prepared = prepare_data(df_final, required_cols)
+        logger.debug("학습 데이터 준비가 완료되었습니다.")
     except Exception as e:
         logger.error(f"train_model - 데이터 준비 오류: {e}", exc_info=True)
         raise e
@@ -25,6 +26,7 @@ def train_model(df_final):
     try:
         impute_cols = ['score', 'review']
         df_prepared = impute_and_clip(df_prepared, impute_cols)
+        logger.debug("평점 미제공 식당에 대한 가상 평점 계산이 완료되었습니다.")
     except Exception as e:
         logger.error(f"train_model - imputation 오류: {e}", exc_info=True)
         raise e
@@ -33,6 +35,7 @@ def train_model(df_final):
         # 모델 학습에 필요한 새로운 피처 생성
         df_prepared['log_review'] = np.log(df_prepared['review'] + 1)
         df_prepared['review_duration'] = df_prepared['review'] * df_prepared['duration_hours']
+        logger.debug("Feature 계산이 완료되었습니다.")
     except Exception as e:
         logger.error(f"train_model - 피처 생성 오류: {e}", exc_info=True)
         raise e
@@ -44,14 +47,15 @@ def train_model(df_final):
         target = 'score'
         X = df_prepared[model_features]
         y = df_prepared[target]
+        logger.debug(f"Featuer 및 타깃 설정이 완료되었습니다: {model_features}")
     except Exception as e:
-        logger.error(f"train_model - 피처 및 타깃 설정 오류: {e}", exc_info=True)
+        logger.error(f"train_model - Featuer 및 타깃 설정 오류: {e}", exc_info=True)
         raise e
         
     # 4. 특성 스케일링 및 데이터 분할
     try:
         scaler, X_train, X_test, y_train, y_test = scale_and_split(X, y)
-        logger.info(f"Type of scaler in train_model: {type(scaler)}")  # 이 로그가 <class 'sklearn.preprocessing._data.StandardScaler'>로 나와야 함.
+        logger.debug(f"Type of scaler in train_model: {type(scaler)}")  # 이 로그가 <class 'sklearn.preprocessing._data.StandardScaler'>로 나와야 함.
     except Exception as e:
         logger.error(f"train_model - 스케일링/데이터 분할 오류: {e}", exc_info=True)
         raise e
@@ -64,6 +68,7 @@ def train_model(df_final):
         best_lgb = train_lgb(X_train, y_train)
         best_cat = train_cat(X_train, y_train)
         best_mlp = train_mlp(X_train, y_train)
+        logger.info("모델 학습을 시작합니다.")
     except Exception as e:
         logger.error(f"train_model - 개별 모델 학습 오류: {e}", exc_info=True)
         raise e
@@ -94,3 +99,5 @@ def train_model(df_final):
         "model_features": model_features,
         "df_model": df_prepared
     }
+
+

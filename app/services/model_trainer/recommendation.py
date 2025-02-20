@@ -32,7 +32,6 @@ def sigmoid_transform(x, a, b):
         raise
 
 def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_features: list, user_id: str, scaler) -> dict:
-    logger.info(f"Type of scaler: {type(scaler)}")  # 디버깅 로그 추가
     try:
         # 필요한 모든 피처가 있는지 확인하고 없으면 추가 (0으로 채움)
         for feature in model_features:
@@ -89,6 +88,7 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
 
         # 딕셔너리를 JSON 문자열로 변환 (들여쓰기 적용)
         result_json = json.dumps(result_dict, ensure_ascii=False, indent=4)
+        logger.info("추천 모델 결과가 산출 완료되었습니다. JSON으로 변환합니다.")
         return result_json
     
     except Exception as e:

@@ -25,7 +25,8 @@
         "class": "logging.FileHandler",
         "formatter": "default",
         "filename": "logs/error.log",
-        "encoding": "utf8"
+        "encoding": "utf8",
+        "level": "ERROR"
       },
       "access_file": {
         "class": "logging.FileHandler",
@@ -56,6 +57,11 @@
         "app.config": { 
             "level": "DEBUG",
             "propagate": true
+        },
+        "werkzeug": {
+        "handlers": ["access_file"],
+        "level": "INFO",
+        "propagate": false
         }
     },
     "root": {
