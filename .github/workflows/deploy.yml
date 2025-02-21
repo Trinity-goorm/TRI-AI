@@ -39,15 +39,16 @@ jobs:
           mkdir -p ~/.ssh
           # Bastion 호스트 설정
           echo "Host bastion
-    HostName 13.124.67.16
-    User ec2-user
-    IdentityFile ~/.ssh/toby-instance-key.pem" > ~/.ssh/config
-          # 프라이빗 인스턴스(ml) 설정, bastion을 통해 접속하도록 ProxyJump 설정
+            HostName 13.124.67.16
+            User ec2-user
+            IdentityFile ~/.ssh/toby-instance-key.pem" > ~/.ssh/config
+          
+          # 프라이빗 인스턴스(ml) 설정
           echo "Host ml
-    HostName 10.0.172.33
-    User ec2-user
-    ProxyJump bastion
-    IdentityFile ~/.ssh/toby-instance-key.pem" >> ~/.ssh/config
+            HostName 10.0.172.33
+            User ec2-user
+            ProxyJump bastion
+            IdentityFile ~/.ssh/toby-instance-key.pem" >> ~/.ssh/config
           chmod 600 ~/.ssh/config
 
       - name: Set SSH key
