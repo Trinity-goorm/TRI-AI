@@ -27,9 +27,48 @@ jobs:
       - name: Build, tag, and push Docker image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: trinity-repo  # ECR에서 생성한 리포지토리 이름으로 변경
-          IMAGE_TAG: ${{ github.sha }} # 커밋 해시를 태그로 사용
+          ECR_REPOSITORY: trinity-repo   # 생성한 ECR 리포지토리 이름
+          IMAGE_TAG: ${{ github.sha }}    # 커밋 해시를 태그로 사용
         run: |
           docker build -t $ECR_REPOSITORY:$IMAGE_TAG .
           docker tag $ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+
+      - name: Setup SSH config
+        run: |
+          mkdir -p ~/.ssh
+          # Bastion 호스트 설정
+          echo "Host bastion
+    HostName 13.124.67.16
+    User ec2-user
+    IdentityFile ~/.ssh/toby-instance-key.pem" > ~/.ssh/config
+          # 프라이빗 인스턴스(ml) 설정, bastion을 통해 접속하도록 ProxyJump 설정
+          echo "Host ml
+    HostName 10.0.172.33
+    User ec2-user
+    ProxyJump bastion
+    IdentityFile ~/.ssh/toby-instance-key.pem" >> ~/.ssh/config
+          chmod 600 ~/.ssh/config
+
+      - name: Set SSH key
+        run: |
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/toby-instance-key.pem
+          chmod 600 ~/.ssh/toby-instance-key.pem
+
+      - name: Deploy to EC2 via SSH
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          # 'ml'는 SSH 설정 파일에서 정의한 프라이빗 인스턴스 별칭입니다.
+          host: ml
+          username: ec2-user
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script: |
+            # EC2 인스턴스에서 ECR 로그인
+            aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ steps.login-ecr.outputs.registry }}
+            # 새 이미지 pull
+            docker pull ${{ steps.login-ecr.outputs.registry }}/trinity-repo:${{ github.sha }}
+            # 기존 컨테이너 중지 및 제거 (없으면 에러 무시)
+            docker stop trinity-container || true
+            docker rm trinity-container || true
+            # 새 컨테이너 실행 (필요 시 추가 옵션 조정)
+            docker run -d --name trinity-container -p 5000:5000 ${{ steps.login-ecr.outputs.registry }}/trinity-repo:${{ github.sha }}
