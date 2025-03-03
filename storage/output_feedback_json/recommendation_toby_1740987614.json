@@ -1,0 +1,110 @@
+{
+    "user": "toby",
+    "recommendations": [
+        {
+            "category_id": 4,
+            "restaurant_id": 194,
+            "score": 5.0,
+            "predicted_score": 3.736,
+            "composite_score": 4.92
+        },
+        {
+            "category_id": 4,
+            "restaurant_id": 102,
+            "score": 5.0,
+            "predicted_score": 4.162,
+            "composite_score": 4.92
+        },
+        {
+            "category_id": 4,
+            "restaurant_id": 82,
+            "score": 5.0,
+            "predicted_score": 4.172,
+            "composite_score": 4.918
+        },
+        {
+            "category_id": 4,
+            "restaurant_id": 172,
+            "score": 4.9,
+            "predicted_score": 4.02,
+            "composite_score": 4.916
+        },
+        {
+            "category_id": 4,
+            "restaurant_id": 21,
+            "score": 4.9,
+            "predicted_score": 4.345,
+            "composite_score": 4.914
+        },
+        {
+            "category_id": 6,
+            "restaurant_id": 49,
+            "score": 5.0,
+            "predicted_score": 4.139,
+            "composite_score": 4.9
+        },
+        {
+            "category_id": 4,
+            "restaurant_id": 132,
+            "score": 5.0,
+            "predicted_score": 4.109,
+            "composite_score": 4.898
+        },
+        {
+            "category_id": 4,
+            "restaurant_id": 27,
+            "score": 4.8,
+            "predicted_score": 3.789,
+            "composite_score": 4.889
+        },
+        {
+            "category_id": 4,
+            "restaurant_id": 111,
+            "score": 5.0,
+            "predicted_score": 3.382,
+            "composite_score": 4.889
+        },
+        {
+            "category_id": 12,
+            "restaurant_id": 21,
+            "score": 5.0,
+            "predicted_score": 4.133,
+            "composite_score": 4.88
+        },
+        {
+            "category_id": 4,
+            "restaurant_id": 108,
+            "score": 5.0,
+            "predicted_score": 3.858,
+            "composite_score": 4.871
+        },
+        {
+            "category_id": 4,
+            "restaurant_id": 96,
+            "score": 5.0,
+            "predicted_score": 3.885,
+            "composite_score": 4.868
+        },
+        {
+            "category_id": 6,
+            "restaurant_id": 32,
+            "score": 4.7,
+            "predicted_score": 4.156,
+            "composite_score": 4.867
+        },
+        {
+            "category_id": 4,
+            "restaurant_id": 17,
+            "score": 5.0,
+            "predicted_score": 3.964,
+            "composite_score": 4.864
+        },
+        {
+            "category_id": 6,
+            "restaurant_id": 63,
+            "score": 4.9,
+            "predicted_score": 4.078,
+            "composite_score": 4.863
+        }
+    ]
+}
