@@ -1,7 +1,7 @@
 # app/models/recommendation_schema.py
 
-from pydantic import BaseModel, conlist
-from typing import List
+from pydantic import BaseModel, Field
+from typing import List, Annotated
 
 class RecommendationItem(BaseModel):
     category_id: int
@@ -28,5 +28,5 @@ CATEGORY_MAPPING = {
 
 class UserData(BaseModel):
     user_id: str
-    # 선호 카테고리는 최소 1개, 최대 3개
-    preferred_categories: conlist(str, min_items=1, max_items=3)
+    # 선호 카테고리는 최소 1개, 최대 3개 (Pydantic v2 방식)
+    preferred_categories: Annotated[List[str], Field(min_length=1, max_length=3)]
