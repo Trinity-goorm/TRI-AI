@@ -89,3 +89,16 @@ jobs:
             Commit: ${{ github.event.head_commit.message }}
             배포가 성공적으로 완료되었습니다.
           color: 0x28A745 
+
+      - name: Send Discord Notification on Failure
+        if: failure()
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "❌ 배포 실패!"
+          description: |
+            Repository: ${{ github.repository }}
+            Branch: ${{ github.ref_name }}
+            Commit: ${{ github.event.head_commit.message }}
+            배포 중 오류가 발생했습니다.
+          color: 0xE01E5A
