@@ -76,6 +76,7 @@ jobs:
             # 새 컨테이너 실행 (필요 시 추가 옵션 조정)
             docker run -d --name trinity-container -p 5000:5000 ${{ steps.login-ecr.outputs.registry }}/trinity-repo:${{ github.sha }}
 
+      # Discord 알림 보내기
       - name: Send Discord Notification
         if: success()
         uses: sarisia/actions-status-discord@v1
