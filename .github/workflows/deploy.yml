@@ -75,3 +75,16 @@ jobs:
             docker rm trinity-container || true
             # 새 컨테이너 실행 (필요 시 추가 옵션 조정)
             docker run -d --name trinity-container -p 5000:5000 ${{ steps.login-ecr.outputs.registry }}/trinity-repo:${{ github.sha }}
+
+      - name: Send Discord Notification
+        if: success()
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "🚀 배포 완료!"
+          description: |
+            Repository: ${{ github.repository }}
+            Branch: ${{ github.ref_name }}
+            Commit: ${{ github.event.head_commit.message }}
+            배포가 성공적으로 완료되었습니다.
+          color: 0x28A745 
