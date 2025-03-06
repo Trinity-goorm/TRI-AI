@@ -5,6 +5,16 @@ from .model_training import train_ridge, train_rf, train_xgb, train_lgb, train_c
 from .model_evaluation import evaluate_model
 import numpy as np
 import logging
+import warnings
+import atexit
+import shutil
+import os
+import tempfile
+from joblib import parallel_backend
+
+# joblib 경고 필터링
+warnings.filterwarnings("ignore", message="resource_tracker")
+warnings.filterwarnings("ignore", message="There appear to be")
 
 logger = logging.getLogger(__name__)
 
