@@ -9,4 +9,5 @@ lightgbm
 python-decouple
 python-dotenv
 pillow
+pymysql
 catboost==1.2.7
