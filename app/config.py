@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from pathlib import Path
 import os
 import logging
-from flask import abort
+from fastapi import HTTPException  # flask abort 대신 fastapi HTTPException 사용
 
 # settings.py에서 하이퍼파라미터 값들을 가져옴
 from app.setting import A_VALUE, B_VALUE, REVIEW_WEIGHT, CAUTION_WEIGHT, CONVENIENCE_WEIGHT
@@ -31,7 +31,7 @@ except FileNotFoundError:
     logger.info("로컬 환경으로 간주합니다. BASE_DIR를 기본값으로 설정합니다.")
 except Exception as e:
     logger.error(f"환경 감지 중 오류 발생: {e}")
-    abort(500, description="환경 감지 중 오류 발생")
+    raise HTTPException(status_code=500, detail="환경 감지 중 오류 발생")  # abort 대신 HTTPException 사용
 
 # JSON 데이터를 받을 디렉토리 (업로드 디렉토리)
 UPLOAD_DIR = BASE_DIR / os.getenv("UPLOAD_DIR", "storage/input_json")
@@ -46,4 +46,4 @@ try:
         logger.info(f"디렉토리가 준비되었습니다: {directory}")
 except Exception as e:
     logger.error(f"디렉토리 생성 실패: {e}")
-    abort(500, description="디렉토리 생성 실패")
+    raise HTTPException(status_code=500, detail="디렉토리 생성 실패")  # abort 대신 HTTPException 사용
