@@ -1,7 +1,7 @@
 # app/services/preprocess/preprocessor.py
 
 import pandas as pd
-from app.services.preprocess.data_loader import load_and_merge_json_files
+from app.services.preprocess.data_loader import load_restaurant_json_files
 from app.services.preprocess.convert_category import convert_category
 from app.services.preprocess.phone_format import format_phone
 from app.services.preprocess.convenience import normalize_convenience

@@ -13,6 +13,7 @@ import os
 import uvicorn
 import logging
 import logging.config
+import asyncio
 
 # 로깅 설정
 # JSON 기반 로깅 설정 적용
@@ -95,7 +96,21 @@ async def startup_event():
     # FEEDBACK_DIR이 존재하는지 확인하고 없으면 생성
     os.makedirs(str(FEEDBACK_DIR), exist_ok=True)
     
-    # 초기화 완료 로그
+    # 시작 시 데이터 동기화 (설정에 따라)
+    sync_on_startup = os.environ.get('SYNC_ON_STARTUP', 'false').lower() == 'true'
+    if sync_on_startup:
+        logger.info("시작 시 데이터 동기화 활성화")
+        from app.services.data_sync import fetch_data_from_rds
+        from app.services.background_tasks import run_initial_sync
+        asyncio.create_task(run_initial_sync())
+    
+    # 주기적 데이터 동기화 작업 시작
+    sync_interval = float(os.environ.get('SYNC_INTERVAL_HOURS', '24'))
+    if sync_interval > 0:
+        from app.services.background_tasks import periodic_data_sync
+        asyncio.create_task(periodic_data_sync(sync_interval))
+        logger.info(f"주기적 데이터 동기화 태스크 시작 (간격: {sync_interval}시간)")
+    
     logger.info("애플리케이션 초기화 완료")
 
 # 서버 실행

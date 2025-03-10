@@ -4,7 +4,7 @@ import json
 import logging
 from fastapi import APIRouter, HTTPException, BackgroundTasks
 from app.config import UPLOAD_DIR, FEEDBACK_DIR
-from app.models.recommendation_schema import UserData, RecommendationItem, CATEGORY_MAPPING
+from app.schema.recommendation_schema import UserData, RecommendationItem, CATEGORY_MAPPING
 from app.services.preprocess.data_loader import load_restaurant_json_files, load_user_json_files
 from app.services.preprocess.preprocessor import preprocess_data
 from app.services.model_trainer import train_model
