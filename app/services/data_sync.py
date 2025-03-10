@@ -1,5 +1,3 @@
-# app/services/data_sync.py
-
 import pymysql
 import json
 import logging
@@ -7,11 +5,12 @@ import os
 from pathlib import Path
 from datetime import datetime
 from app.config import UPLOAD_DIR
+from app.config.queries import RESTAURANT_QUERY, USER_PREFERENCES_QUERY, USER_PREFERENCE_CATEGORIES_QUERY, LIKES_QUERY, RESERVATIONS_QUERY
 
 logger = logging.getLogger("data_sync")
 
 def fetch_data_from_rds():
-    """RDS에서 식당 데이터와 사용자 데이터를 가져와 JSON 파일로 저장"""
+    """RDS에서 식당 데이터와 사용자 관련 데이터를 가져와 JSON 파일로 저장"""
     try:
         logger.info("RDS에서 데이터 가져오기 시작")
         
@@ -20,52 +19,78 @@ def fetch_data_from_rds():
             host=os.environ.get('RDS_HOST', 'localhost'),
             user=os.environ.get('RDS_USER', 'username'),
             password=os.environ.get('RDS_PASSWORD', 'password'),
-            database=os.environ.get('RDS_DATABASE', 'database')
+            database=os.environ.get('RDS_DATABASE', 'database'),
+            charset='utf8mb4',
+            cursorclass=pymysql.cursors.DictCursor
         )
         
         try:
-            with connection.cursor(pymysql.cursors.DictCursor) as cursor:         
-                # 식당 데이터 쿼리 - 필요한 필드만 선택
-                cursor.execute("""
-                    SELECT 
-                        r.id as restaurant_id, 
-                        r.name, 
-                        r.address, 
-                        r.average_price, 
-                        r.caution, 
-                        r.convenience, 
-                        r.expanded_days, 
-                        r.is_deleted, 
-                        r.operating_hour, 
-                        r.phone_number, 
-                        r.rating, 
-                        r.review_count, 
-                        r.time_range,
-                        rc.category_id as db_category_id
-                    FROM restaurant r
-                    JOIN restaurant_category rc ON r.id = rc.Restaurant_id
-                """)
-                restaurant_data = cursor.fetchall()
-                            
-            # 타임스탬프 생성
+            # 데이터 디렉토리 확인 및 생성
+            upload_dir = Path(UPLOAD_DIR)
+            upload_dir.mkdir(parents=True, exist_ok=True)
+            
+            # 타임스탬프 생성 (모든 파일에 동일한 타임스탬프 사용)
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             
-            # 식당 데이터 저장
-            rest_filepath = Path(UPLOAD_DIR) / f"restaurant_data_{timestamp}.json"
-            with open(rest_filepath, 'w', encoding='utf-8') as f:
-                json.dump(restaurant_data, f, ensure_ascii=False, indent=2)
+            with connection.cursor() as cursor:
+                # 1. 식당 데이터 쿼리 및 저장
+                cursor.execute(RESTAURANT_QUERY)
+                restaurant_data = cursor.fetchall()
+                
+                rest_filepath = upload_dir / f"restaurant_data_{timestamp}.json"
+                with open(rest_filepath, 'w', encoding='utf-8') as f:
+                    json.dump(restaurant_data, f, ensure_ascii=False, indent=2)
+                
+                logger.info(f"식당 데이터 저장 완료: {len(restaurant_data)}개 항목")
+                
+                # 2. 사용자 가격 범위 선호도 데이터 쿼리 및 저장
+                cursor.execute(USER_PREFERENCES_QUERY)
+                user_preferences_data = cursor.fetchall()
+                
+                pref_filepath = upload_dir / f"user_preferences_{timestamp}.json"
+                with open(pref_filepath, 'w', encoding='utf-8') as f:
+                    json.dump(user_preferences_data, f, ensure_ascii=False, indent=2)
+                
+                logger.info(f"사용자 가격 범위 선호도 데이터 저장 완료: {len(user_preferences_data)}개 항목")
+                
+                # 3. 사용자 카테고리 선호도 데이터 쿼리 및 저장
+                cursor.execute(USER_PREFERENCE_CATEGORIES_QUERY)
+                user_preference_categories_data = cursor.fetchall()
+                
+                cat_pref_filepath = upload_dir / f"user_preference_categories_{timestamp}.json"
+                with open(cat_pref_filepath, 'w', encoding='utf-8') as f:
+                    json.dump(user_preference_categories_data, f, ensure_ascii=False, indent=2)
+                
+                logger.info(f"사용자 카테고리 선호도 데이터 저장 완료: {len(user_preference_categories_data)}개 항목")
+                
+                # 4. 찜 데이터 쿼리 및 저장
+                cursor.execute(LIKES_QUERY)
+                likes_data = cursor.fetchall()
+                
+                likes_filepath = upload_dir / f"likes_{timestamp}.json"
+                with open(likes_filepath, 'w', encoding='utf-8') as f:
+                    json.dump(likes_data, f, ensure_ascii=False, indent=2)
+                
+                logger.info(f"찜 데이터 저장 완료: {len(likes_data)}개 항목")
+                
+                # 5. 예약 데이터 쿼리 및 저장
+                cursor.execute(RESERVATIONS_QUERY)
+                reservations_data = cursor.fetchall()
+                
+                reservations_filepath = upload_dir / f"reservations_{timestamp}.json"
+                with open(reservations_filepath, 'w', encoding='utf-8') as f:
+                    json.dump(reservations_data, f, ensure_ascii=False, indent=2)
+                
+                logger.info(f"예약 데이터 저장 완료: {len(reservations_data)}개 항목")
             
-            # 사용자 데이터 저장
-            user_filepath = Path(UPLOAD_DIR) / f"user_data_{timestamp}.json"
-            with open(user_filepath, 'w', encoding='utf-8') as f:
-                json.dump(user_data, f, ensure_ascii=False, indent=2)
+            # 오래된 파일 정리 (각 유형별로 최신 3개만 유지)
+            cleanup_old_files(str(upload_dir), "restaurant_data_", 3)
+            cleanup_old_files(str(upload_dir), "user_preferences_", 3)
+            cleanup_old_files(str(upload_dir), "user_preference_categories_", 3)
+            cleanup_old_files(str(upload_dir), "likes_", 3)
+            cleanup_old_files(str(upload_dir), "reservations_", 3)
             
-            logger.info(f"데이터 저장 완료: 식당 {len(restaurant_data)}개, 사용자 관련 데이터 {len(user_data)}개")
-            
-            # 오래된 파일 정리 (최신 3개만 유지)
-            cleanup_old_files(UPLOAD_DIR, "restaurant_data_", 3)
-            cleanup_old_files(UPLOAD_DIR, "user_data_", 3)
-            
+            logger.info("데이터 동기화 완료")
             return True
             
         finally:
@@ -89,6 +114,6 @@ def cleanup_old_files(directory, prefix, keep_count):
             for old_file in files[keep_count:]:
                 old_file.unlink()
                 logger.info(f"오래된 파일 삭제: {old_file}")
-
+    
     except Exception as e:
         logger.error(f"파일 정리 중 오류: {str(e)}", exc_info=True)

@@ -2,10 +2,10 @@ import os
 import time
 import json
 import logging
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, BackgroundTasks
 from app.config import UPLOAD_DIR, FEEDBACK_DIR
-from app.schema.recommendation_schema import UserData, RecommendationItem, CATEGORY_MAPPING
-from app.services.preprocess.data_loader import load_and_merge_json_files
+from app.models.recommendation_schema import UserData, RecommendationItem, CATEGORY_MAPPING
+from app.services.preprocess.data_loader import load_restaurant_json_files, load_user_json_files
 from app.services.preprocess.preprocessor import preprocess_data
 from app.services.model_trainer import train_model
 from app.services.model_trainer.recommendation import generate_recommendations
@@ -22,11 +22,23 @@ globals_dict = {}
 def initialize_model():
     global globals_dict
     json_directory = str(UPLOAD_DIR)
-
+    
     try:
-        df_raw = load_and_merge_json_files(json_directory)
-        df_final = preprocess_data(df_raw)  # 병합된 DataFrame 전달
+        # 식당 데이터 로드
+        df_raw = load_restaurant_json_files(json_directory)
+        
+        # 사용자 데이터 로드 (향후 사용)
+        user_data_frames = load_user_json_files(json_directory)
+        
+        # 데이터 전처리
+        df_final = preprocess_data(df_raw)
+        
+        # 모델 학습
         globals_dict = train_model(df_final)
+        
+        # 사용자 데이터 저장 (향후 개인화 추천에 사용)
+        globals_dict["user_data_frames"] = user_data_frames
+        
         logger.info("모델 초기화 성공")
     except Exception as e:
         logger.error(f"Error during initialization: {e}", exc_info=True)
@@ -35,15 +47,14 @@ def initialize_model():
 # 서버 시작 시 모델 초기화
 initialize_model()
 
-@router.post("", 
+@router.post("",
              response_model=Dict[str, Any],  # 구체적인 응답 모델이 필요하다면 별도로 정의
              responses={
                  200: {"description": "Success"},
                  400: {"description": "Bad Request"},
                  500: {"description": "Internal Server Error"}
              })
-
-async def recommend(user_data: UserData):
+async def recommend(user_data: UserData, background_tasks: BackgroundTasks):
     """사용자 데이터를 받아 추천 결과를 생성하고, 결과를 파일로 저장합니다."""
     try:
         user_id = user_data.user_id
@@ -75,23 +86,27 @@ async def recommend(user_data: UserData):
             globals_dict["scaler"]
         )
 
-        # 추천 결과를 FEEDBACK_DIR에 파일로 저장
-        timestamp = int(time.time())
-        feedback_filename = f"recommendation_{user_id}_{timestamp}.json"
-        feedback_filepath = os.path.join(str(FEEDBACK_DIR), feedback_filename)
-        
-        try:
-            os.makedirs(str(FEEDBACK_DIR), exist_ok=True)
-            with open(feedback_filepath, "w", encoding="utf-8") as f:
-                f.write(result_json)
-            logger.info(f"추천 결과가 {feedback_filepath}에 저장되었습니다.")
-        except Exception as file_err:
-            logger.error(f"추천 결과 저장 실패: {file_err}", exc_info=True)
+        # 백그라운드 작업으로 추천 결과 저장
+        async def save_recommendation():
+            try:
+                timestamp = int(time.time())
+                feedback_filename = f"recommendation_{user_id}_{timestamp}.json"
+                feedback_filepath = os.path.join(str(FEEDBACK_DIR), feedback_filename)
+                
+                os.makedirs(str(FEEDBACK_DIR), exist_ok=True)
+                with open(feedback_filepath, "w", encoding="utf-8") as f:
+                    f.write(result_json)
+                logger.info(f"추천 결과가 {feedback_filepath}에 저장되었습니다.")
+            except Exception as file_err:
+                logger.error(f"추천 결과 저장 실패: {file_err}", exc_info=True)
+
+        # 백그라운드 작업으로 추가
+        background_tasks.add_task(save_recommendation)
 
         # JSON 문자열을 Python 객체로 변환하여 반환
         result_data = json.loads(result_json)
         return result_data
-
+    
     except HTTPException:
         # 이미 생성된 HTTPException은 그대로 다시 발생시킴
         raise

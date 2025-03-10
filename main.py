@@ -23,7 +23,12 @@ with open(logging_config_path, "r", encoding="utf-8") as f:
 logging.config.dictConfig(logging_config)
 logger = logging.getLogger("recommendation_api")
 
-app = FastAPI()
+app = FastAPI(
+    title="Restaurant Recommendation API",
+    description="식당 추천 API",
+    version="1.0",
+    docs_url="/docs"  # Swagger UI 경로
+)
 
 # 모든 출처를 허용하는 CORS 설정 (자격 증명 포함 불가)
 app.add_middleware(
@@ -47,7 +52,7 @@ if feedback_dir.exists():
 @app.get("/")
 def read_root():
     logger.info("Root endpoint accessed")
-    return {"message": "Hello, Toby!"}
+    return {"message": "Restaurant Recommendation API", "docs_url": "/docs"}
 
 # 요청 로깅 미들웨어
 @app.middleware("http")
@@ -76,17 +81,25 @@ async def recommendation_processing_exception_handler(request: Request, exc: Rec
 
 @app.exception_handler(Exception)
 async def general_exception_handler(request: Request, exc: Exception):
-    logging.error(f"Unhandled error: {exc}", exc_info=True)
+    logger.error(f"Unhandled error: {exc}", exc_info=True)
     return JSONResponse(
         status_code=500,
         content={"detail": "서버 내부 오류가 발생했습니다."},
     )
 
-# 서버 실행
-if __name__ == "__main__":
+# 서버 시작 이벤트
+@app.on_event("startup")
+async def startup_event():
+    logger.info("애플리케이션 시작")
+    
     # FEEDBACK_DIR이 존재하는지 확인하고 없으면 생성
     os.makedirs(str(FEEDBACK_DIR), exist_ok=True)
+    
+    # 초기화 완료 로그
+    logger.info("애플리케이션 초기화 완료")
 
+# 서버 실행
+if __name__ == "__main__":
     uvicorn.run(
         "main:app",
         host="0.0.0.0",
