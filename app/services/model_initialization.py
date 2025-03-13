@@ -4,7 +4,7 @@ from typing import Dict, Any
 import concurrent.futures
 from concurrent.futures import ThreadPoolExecutor
 
-from app.config import UPLOAD_DIR
+from app.config import RESTAURANTS_DIR, USER_DIR
 from app.services.preprocess.data_loader import load_restaurant_json_files, load_user_json_files
 from app.services.preprocess.preprocessor import preprocess_data
 from app.services.model_trainer import train_model
@@ -35,14 +35,11 @@ async def initialize_model(force_reload=False):
         
         # ThreadPoolExecutor를 사용하여 데이터 로딩을 비동기로 실행
         with ThreadPoolExecutor() as executor:
-            # 데이터 디렉토리
-            directory = str(UPLOAD_DIR)
+            # 1. 식당 데이터 로드 (restaurants 디렉토리에서)
+            future_restaurant = executor.submit(load_restaurant_json_files, str(RESTAURANTS_DIR))
             
-            # 1. 식당 데이터 로드
-            future_restaurant = executor.submit(load_restaurant_json_files, directory)
-            
-            # 2. 사용자 관련 데이터 로드
-            future_user_data = executor.submit(load_user_json_files, directory)
+            # 2. 사용자 관련 데이터 로드 (user 디렉토리에서)
+            future_user_data = executor.submit(load_user_json_files, str(USER_DIR))
             
             # 결과 대기
             df_restaurant = await asyncio.get_event_loop().run_in_executor(
@@ -83,7 +80,7 @@ async def initialize_model(force_reload=False):
             logger.info(f"모델 정보: {model_info}")
             
             last_initialization = asyncio.get_event_loop().time()
-            
+        
     except Exception as e:
         logger.error(f"모델 초기화 중 오류: {str(e)}", exc_info=True)
     finally:

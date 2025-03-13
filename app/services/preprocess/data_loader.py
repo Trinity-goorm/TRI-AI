@@ -50,7 +50,7 @@ def load_user_json_files(directory: str) -> Dict[str, pd.DataFrame]:
     사용자 관련 데이터 파일들을 로드하여 DataFrame 딕셔너리로 반환합니다.
     
     로드되는 데이터:
-    - user_preferences: 사용자 가격 범위 선호도 (min_price, max_price)
+    - user_preference: 사용자 가격 범위 선호도 (min_price, max_price)
     - user_preference_categories: 사용자 카테고리 선호도 (category_id)
     - likes: 사용자가 찜한 식당 정보 (restaurant_id)
     - reservations: 사용자 예약 정보 (restaurant_id, status)
@@ -60,12 +60,12 @@ def load_user_json_files(directory: str) -> Dict[str, pd.DataFrame]:
         user_data_frames = {}
         
         # 1. 사용자 가격 범위 선호도 데이터
-        pref_files = [f for f in dir_path.glob('user_preferences_*.json')]
+        pref_files = [f for f in dir_path.glob('user_preference_*.json')]
         if pref_files:
             latest_file = max(pref_files, key=lambda x: x.stat().st_mtime)
             with open(latest_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-            user_data_frames["user_preferences"] = pd.DataFrame(data)
+            user_data_frames["user_preference"] = pd.DataFrame(data)
             logger.info(f"사용자 가격 범위 선호도 데이터 로드 완료: {len(data)}개 항목")
         else:
             logger.warning("사용자 가격 범위 선호도 데이터 파일을 찾을 수 없습니다.")

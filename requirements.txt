@@ -12,3 +12,4 @@ pillow
 pymysql
 catboost==1.2.7
 asyncio
+sshtunnel

@@ -14,3 +14,13 @@ __pycache__/
 
 # Ignore logs directory
 logs/
+
+# 개인정보가 포함된 데이터 파일 무시
+/storage/input_json/restaurants/*.json
+/storage/input_json/user/*.json
+/storage/output_feedback_json/*.json
+
+# 디렉토리 자체는 무시하지 않음
+!/storage/input_json/restaurants/.gitkeep
+!/storage/input_json/user/.gitkeep
+!/storage/output_feedback_json/.gitkeep

@@ -3,7 +3,7 @@ import time
 import json
 import logging
 from fastapi import APIRouter, HTTPException, BackgroundTasks
-from app.config import UPLOAD_DIR, FEEDBACK_DIR
+from app.config import RESTAURANTS_DIR, USER_DIR, FEEDBACK_DIR
 from app.schema.recommendation_schema import UserData, RecommendationItem, CATEGORY_MAPPING
 from app.services.preprocess.data_loader import load_restaurant_json_files, load_user_json_files
 from app.services.preprocess.preprocessor import preprocess_data
@@ -21,14 +21,13 @@ globals_dict = {}
 # 초기 데이터 로딩 및 모델 학습
 def initialize_model():
     global globals_dict
-    json_directory = str(UPLOAD_DIR)
     
     try:
         # 식당 데이터 로드
-        df_raw = load_restaurant_json_files(json_directory)
+        df_raw = load_restaurant_json_files(str(RESTAURANTS_DIR))
         
         # 사용자 데이터 로드 (향후 사용)
-        user_data_frames = load_user_json_files(json_directory)
+        user_data_frames = load_user_json_files(str(USER_DIR))
         
         # 데이터 전처리
         df_final = preprocess_data(df_raw)
@@ -93,7 +92,7 @@ async def recommend(user_data: UserData, background_tasks: BackgroundTasks):
                 feedback_filename = f"recommendation_{user_id}_{timestamp}.json"
                 feedback_filepath = os.path.join(str(FEEDBACK_DIR), feedback_filename)
                 
-                os.makedirs(str(FEEDBACK_DIR), exist_ok=True)
+                # 디렉토리는 이미 config에서 생성됨
                 with open(feedback_filepath, "w", encoding="utf-8") as f:
                     f.write(result_json)
                 logger.info(f"추천 결과가 {feedback_filepath}에 저장되었습니다.")
