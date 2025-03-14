@@ -17,7 +17,7 @@ def train_ridge(X, y):
     try:
         param_grid = {'alpha': [0.0001, 0.001, 0.01, 0.1, 1, 10]}
         ridge = Ridge()
-        grid = GridSearchCV(ridge, param_grid, cv=3, scoring='r2')
+        grid = GridSearchCV(ridge, param_grid, cv=3, scoring='r2', n_jobs=1)
         grid.fit(X, y)
         return grid.best_estimator_
     except Exception as e:
@@ -95,7 +95,7 @@ def train_stacking(estimators, X, y):
         final_estimator = FinalRidge()
         stacking = StackingRegressor(estimators=estimators, final_estimator=final_estimator, cv=3, n_jobs=-1)
         stacking.fit(X, y)
-        cv_score = cross_val_score(stacking, X, y, cv=3, scoring='r2').mean()
+        cv_score = cross_val_score(stacking, X, y, cv=3, scoring='r2', n_jobs=1).mean()
         return stacking, cv_score
     except Exception as e:
         logger.error(f"train_stacking 오류: {e}", exc_info=True)
