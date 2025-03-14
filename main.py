@@ -95,5 +95,9 @@ if __name__ == "__main__":
         log_config=str(logging_config_path)  # 로깅 설정 파일 지정
     )
 
+    import multiprocessing
+    if hasattr(multiprocessing, 'freeze_support'):
+        multiprocessing.freeze_support()
+
 # 실행 명령어 (터미널에서 실행 시):
 # uvicorn main:app --host 0.0.0.0 --port 5000 --reload --log-config logging_config.json

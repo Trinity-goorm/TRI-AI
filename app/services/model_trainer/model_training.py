@@ -9,7 +9,19 @@ from catboost import CatBoostRegressor
 from sklearn.neural_network import MLPRegressor
 from sklearn.model_selection import GridSearchCV, cross_val_score
 from sklearn.linear_model import Ridge as FinalRidge
+
+import os
 import logging
+
+# 멀티프로세싱 설정
+import multiprocessing
+# 환경 변수로 멀티프로세싱 방식 설정
+os.environ['JOBLIB_START_METHOD'] = 'forkserver'
+
+# 앱 시작 시 freeze_support() 호출
+if hasattr(multiprocessing, 'freeze_support'):
+    multiprocessing.freeze_support()
+
 
 logger = logging.getLogger(__name__)
 
@@ -17,7 +29,7 @@ def train_ridge(X, y):
     try:
         param_grid = {'alpha': [0.0001, 0.001, 0.01, 0.1, 1, 10]}
         ridge = Ridge()
-        grid = GridSearchCV(ridge, param_grid, cv=3, scoring='r2')
+        grid = GridSearchCV(ridge, param_grid, cv=3, scoring='r2', n_jobs=1)
         grid.fit(X, y)
         return grid.best_estimator_
     except Exception as e:
@@ -31,7 +43,7 @@ def train_rf(X, y):
                     'max_depth': [None, 5, 10],
                     'min_samples_split': [2, 5]}
         rf = RandomForestRegressor(random_state=42)
-        grid = GridSearchCV(rf, param_grid, cv=3, scoring='r2')
+        grid = GridSearchCV(rf, param_grid, cv=3, scoring='r2', n_jobs=1)
         grid.fit(X, y)
         return grid.best_estimator_
     except Exception as e:
@@ -44,7 +56,7 @@ def train_xgb(X, y):
                     'max_depth': [3, 5],
                     'learning_rate': [0.01, 0.1]}
         xgb = XGBRegressor(objective='reg:squarederror', random_state=42)
-        grid = GridSearchCV(xgb, param_grid, cv=3, scoring='r2')
+        grid = GridSearchCV(xgb, param_grid, cv=3, scoring='r2', n_jobs=1)
         grid.fit(X, y)
         return grid.best_estimator_
     except Exception as e:
@@ -57,7 +69,7 @@ def train_lgb(X, y):
                     'max_depth': [3, 5, 7, -1],
                     'learning_rate': [0.01, 0.1]}
         lgb_model = lgb.LGBMRegressor(random_state=42, verbose=-1, min_split_gain=0)
-        grid = GridSearchCV(lgb_model, param_grid, cv=3, scoring='r2')
+        grid = GridSearchCV(lgb_model, param_grid, cv=3, scoring='r2', n_jobs=1)
         grid.fit(X, y)
         return grid.best_estimator_
     except Exception as e:
@@ -70,7 +82,7 @@ def train_cat(X, y):
                     'depth': [3, 5],
                     'learning_rate': [0.01, 0.1]}
         cat = CatBoostRegressor(random_state=42, verbose=0)
-        grid = GridSearchCV(cat, param_grid, cv=3, scoring='r2')
+        grid = GridSearchCV(cat, param_grid, cv=3, scoring='r2', n_jobs=1)
         grid.fit(X, y)
         return grid.best_estimator_
     except Exception as e:
@@ -83,7 +95,7 @@ def train_mlp(X, y):
         param_grid = {'hidden_layer_sizes': [(50,), (100,)],
                     'alpha': [0.0001, 0.001]}
         mlp = MLPRegressor(random_state=42, max_iter=1500, early_stopping=True, tol=1e-3)
-        grid = GridSearchCV(mlp, param_grid, cv=3, scoring='r2')
+        grid = GridSearchCV(mlp, param_grid, cv=3, scoring='r2', n_jobs=1)
         grid.fit(X, y)
         return grid.best_estimator_
     except Exception as e:
@@ -93,9 +105,9 @@ def train_mlp(X, y):
 def train_stacking(estimators, X, y):
     try:
         final_estimator = FinalRidge()
-        stacking = StackingRegressor(estimators=estimators, final_estimator=final_estimator, cv=3, n_jobs=-1)
+        stacking = StackingRegressor(estimators=estimators, final_estimator=final_estimator, cv=3, n_jobs=1)
         stacking.fit(X, y)
-        cv_score = cross_val_score(stacking, X, y, cv=3, scoring='r2').mean()
+        cv_score = cross_val_score(stacking, X, y, cv=3, scoring='r2', n_jobs=1).mean()
         return stacking, cv_score
     except Exception as e:
         logger.error(f"train_stacking 오류: {e}", exc_info=True)
