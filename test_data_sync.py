@@ -2,7 +2,7 @@
 import os
 import logging
 from dotenv import load_dotenv
-from app.services.data_sync import fetch_data_from_rds
+from app.services.mongo_data_sync import fetch_data_from_rds
 
 # .env 파일 로드
 load_dotenv()
