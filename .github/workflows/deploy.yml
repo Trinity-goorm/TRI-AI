@@ -68,13 +68,41 @@ jobs:
           script: |
             # EC2 인스턴스에서 ECR 로그인
             aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ steps.login-ecr.outputs.registry }}
+
+            # 작업 디렉토리로 이동
+            cd /home/ec2-user/TRI-AI
+            
+            # .env 파일 생성
+            cat > .env << INNEREOF
+
+            # MongoDB Setting
+            MONGO_HOST=${{ secrets.MONGO_HOST }}
+            MONGO_PORT=${{ secrets.MONGO_PORT }}
+            MONGO_USER=${{ secrets.MONGO_USER }}
+            MONGO_PASSWORD=${{ secrets.MONGO_PASSWORD }}
+            MONGO_DATABASE=${{ secrets.MONGO_DATABASE }}
+            MONGO_COLLECTION=${{ secrets.MONGO_COLLECTION }}
+            USE_SSH_TUNNEL=false
+            INNEREOF
+
             # 새 이미지 pull
             docker pull ${{ steps.login-ecr.outputs.registry }}/trinity-repo:${{ github.sha }}
+
             # 기존 컨테이너 중지 및 제거 (없으면 에러 무시)
             docker stop trinity-container || true
             docker rm trinity-container || true
-            # 새 컨테이너 실행 (필요 시 추가 옵션 조정)
-            docker run -d --name trinity-container -p 5000:5000 ${{ steps.login-ecr.outputs.registry }}/trinity-repo:${{ github.sha }}
+
+            # 새 컨테이너 실행 (환경 변수 직접 전달)
+            docker run -d --name trinity-container \
+              -p 5000:5000 \
+              -e MONGO_HOST=${{ secrets.MONGO_HOST }} \
+              -e MONGO_PORT=${{ secrets.MONGO_PORT }} \
+              -e MONGO_USER=${{ secrets.MONGO_USER }} \
+              -e MONGO_PASSWORD=${{ secrets.MONGO_PASSWORD }} \
+              -e MONGO_DATABASE=${{ secrets.MONGO_DATABASE }} \
+              -e MONGO_COLLECTION=${{ secrets.MONGO_COLLECTION }} \
+              -e USE_SSH_TUNNEL=false \
+              ${{ steps.login-ecr.outputs.registry }}/trinity-repo:${{ github.sha }}
 
       # Discord 알림 보내기
       - name: Send Discord Notification
