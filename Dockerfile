@@ -7,6 +7,17 @@ ENV PYTHONUNBUFFERED=1
 # 컨테이너 내 작업 디렉토리 설정
 WORKDIR /app
 
+# MongoDB 환경 변수 설정
+ENV MONGO_HOST=$MONGO_HOST
+ENV MONGO_PORT=$MONGO_PORT
+ENV MONGO_USER=$MONGO_USER
+ENV MONGO_PASSWORD=$MONGO_PASSWORD
+ENV MONGO_DATABASE=$MONGO_DATABASE
+ENV MONGO_COLLECTION=$MONGO_COLLECTION
+
+# 터널링 비활성화 (명시적으로 설정)
+ENV USE_SSH_TUNNEL=false
+
 # libgomp 설치: LightGBM 등에서 필요한 OpenMP 라이브러리 설치
 RUN apt-get update && apt-get install -y libgomp1 && rm -rf /var/lib/apt/lists/*
 

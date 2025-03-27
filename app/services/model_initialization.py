@@ -1,3 +1,5 @@
+# app/servies/model_initalization.py
+
 import logging
 import asyncio
 from typing import Dict, Any
@@ -8,6 +10,7 @@ from app.config import RESTAURANTS_DIR, USER_DIR
 from app.services.preprocess.data_loader import load_restaurant_json_files, load_user_json_files
 from app.services.preprocess.preprocessor import preprocess_data
 from app.services.model_trainer import train_model
+from app.services.direct_mongodb import get_restaurants_from_mongodb, get_user_data_from_mongodb
 
 logger = logging.getLogger(__name__)
 
@@ -16,8 +19,16 @@ globals_dict = {}
 is_initializing = False
 last_initialization = None
 
-async def initialize_model(force_reload=False):
-    """모델 초기화 및 로딩 함수 (비동기 지원)"""
+async def initialize_model(force_reload=False, use_direct_mongodb=False):
+    """모델 초기화 및 로딩 함수 (비동기 지원)
+    
+    Parameters:
+    -----------
+    force_reload : bool, optional
+        True인 경우 모델을 강제로 다시 로드합니다.
+    use_direct_mongodb : bool, optional
+        True인 경우 직접 MongoDB에서 데이터를 가져옵니다. False인 경우 JSON 파일에서 로드합니다.
+    """
     global globals_dict, is_initializing, last_initialization
     
     # 이미 초기화 중이면 대기
@@ -31,15 +42,22 @@ async def initialize_model(force_reload=False):
     is_initializing = True
     
     try:
-        logger.info("모델 초기화 시작")
+        logger.info(f"모델 초기화 시작 (직접 MongoDB 사용: {use_direct_mongodb})")
         
         # ThreadPoolExecutor를 사용하여 데이터 로딩을 비동기로 실행
         with ThreadPoolExecutor() as executor:
-            # 1. 식당 데이터 로드 (restaurants 디렉토리에서)
-            future_restaurant = executor.submit(load_restaurant_json_files, str(RESTAURANTS_DIR))
-            
-            # 2. 사용자 관련 데이터 로드 (user 디렉토리에서)
-            future_user_data = executor.submit(load_user_json_files, str(USER_DIR))
+            if use_direct_mongodb:
+                # 1. MongoDB에서 직접 식당 데이터 로드
+                future_restaurant = executor.submit(get_restaurants_from_mongodb)
+                
+                # 2. MongoDB에서 직접 사용자 관련 데이터 로드
+                future_user_data = executor.submit(get_user_data_from_mongodb)
+            else:
+                # 1. 식당 데이터 로드 (restaurants 디렉토리에서)
+                future_restaurant = executor.submit(load_restaurant_json_files, str(RESTAURANTS_DIR))
+                
+                # 2. 사용자 관련 데이터 로드 (user 디렉토리에서)
+                future_user_data = executor.submit(load_user_json_files, str(USER_DIR))
             
             # 결과 대기
             df_restaurant = await asyncio.get_event_loop().run_in_executor(
@@ -51,6 +69,12 @@ async def initialize_model(force_reload=False):
                 None, 
                 lambda: future_user_data.result()
             )
+            
+            # 식당 데이터가 비어 있는지 확인
+            if df_restaurant.empty:
+                logger.error("가져온 식당 데이터가 비어 있습니다.")
+                is_initializing = False
+                return globals_dict
             
             # 3. 식당 데이터 전처리
             df_processed = await asyncio.get_event_loop().run_in_executor(

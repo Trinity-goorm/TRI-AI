@@ -100,7 +100,7 @@ async def startup_event():
     sync_on_startup = os.environ.get('SYNC_ON_STARTUP', 'false').lower() == 'true'
     if sync_on_startup:
         logger.info("시작 시 데이터 동기화 활성화")
-        from app.services.data_sync import fetch_data_from_rds
+        # RDS 대신 MongoDB 사용
         from app.services.background_tasks import run_initial_sync
         asyncio.create_task(run_initial_sync())
     
@@ -112,6 +112,7 @@ async def startup_event():
         logger.info(f"주기적 데이터 동기화 태스크 시작 (간격: {sync_interval}시간)")
     
     logger.info("애플리케이션 초기화 완료")
+
 
 # 서버 실행
 if __name__ == "__main__":
