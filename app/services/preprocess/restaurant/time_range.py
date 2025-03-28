@@ -1,4 +1,4 @@
-# app/services/preprocess/time_range.py
+# app/services/preprocess/restaurant/time_range.py
 
 def extract_open_time(time_range):
     """시간 범위에서 open_time 추출"""

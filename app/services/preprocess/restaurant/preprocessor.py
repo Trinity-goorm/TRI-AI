@@ -1,16 +1,16 @@
-# app/services/preprocess/preprocessor.py
+# app/services/preprocess/restaurant/preprocessor.py
 
 import pandas as pd
-from app.services.preprocess.data_loader import load_restaurant_json_files
-from app.services.preprocess.convert_category import convert_category
-from app.services.preprocess.phone_format import format_phone
-from app.services.preprocess.convenience import normalize_convenience
-from app.services.preprocess.caution import normalize_caution
-from app.services.preprocess.operating_days import count_operating_days
-from app.services.preprocess.time_range import (
+from app.services.preprocess.restaurant.data_loader import load_restaurant_json_files
+from app.services.preprocess.restaurant.convert_category import convert_category
+from app.services.preprocess.restaurant.phone_format import format_phone
+from app.services.preprocess.restaurant.convenience import normalize_convenience
+from app.services.preprocess.restaurant.caution import normalize_caution
+from app.services.preprocess.restaurant.operating_days import count_operating_days
+from app.services.preprocess.restaurant.time_range import (
     extract_open_time, extract_close_time, convert_to_minutes, compute_duration
 )
-from app.services.preprocess.encoding import select_final_columns
+from app.services.preprocess.restaurant.encoding import select_final_columns
 from sklearn.preprocessing import MultiLabelBinarizer
 import logging
 

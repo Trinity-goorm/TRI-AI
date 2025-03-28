@@ -1,4 +1,4 @@
-# app/services/preprocess/encoding.py
+# app/services/preprocess/restaurant/encoding.py
 
 def select_final_columns(df, conv_cols, caution_cols):
     """최종 출력할 컬럼 목록을 구성하여 DataFrame에서 선택합니다."""

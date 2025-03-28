@@ -1,4 +1,4 @@
-# app/services/preprocess/caution.py
+# app/services/preprocess/restaurant/caution.py
 from collections import Counter
 
 def normalize_caution(val):
