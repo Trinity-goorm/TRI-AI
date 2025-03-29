@@ -7,8 +7,8 @@ import concurrent.futures
 from concurrent.futures import ThreadPoolExecutor
 
 from app.config import RESTAURANTS_DIR, USER_DIR
-from app.services.preprocess.data_loader import load_restaurant_json_files, load_user_json_files
-from app.services.preprocess.preprocessor import preprocess_data
+from app.services.preprocess.restaurant.data_loader import load_restaurant_json_files, load_user_json_files
+from app.services.preprocess.restaurant.preprocessor import preprocess_data
 from app.services.model_trainer import train_model
 from app.services.direct_mongodb import get_restaurants_from_mongodb, get_user_data_from_mongodb
 
