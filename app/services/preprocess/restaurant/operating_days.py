@@ -1,4 +1,4 @@
-# app/services/preprocess/operating_days.py
+# app/services/preprocess/restaurant/operating_days.py
 
 def count_operating_days(expanded_days):
     """expanded_days 문자열을 바탕으로 영업일 수를 계산합니다."""

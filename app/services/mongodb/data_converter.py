@@ -6,7 +6,7 @@ import numpy as np
 from datetime import datetime, date
 from pathlib import Path
 
-logger = logging.getLogger("mongodb.data_converter")
+logger = logging.getLogger(__name__)
 
 class DateTimeEncoder(json.JSONEncoder):
     """날짜/시간 객체를 JSON으로 직렬화하기 위한 커스텀 인코더"""

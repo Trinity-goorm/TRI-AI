@@ -42,7 +42,27 @@ def train_model(df_final):
         raise e
 
     try:
-        # 모델 학습에 필요한 새로운 피처 생성
+        # duration_hours가 문자열인 경우 숫자로 변환
+        if df_prepared['duration_hours'].dtype == 'object':
+            # "12:00 ~ 24:00" 형식에서 시간 차이 계산
+            def extract_hours_diff(time_str):
+                try:
+                    if isinstance(time_str, str) and '~' in time_str:
+                        start, end = time_str.split('~')
+                        start_hour = float(start.strip().split(':')[0])
+                        end_hour = float(end.strip().split(':')[0])
+                        if end_hour < start_hour:  # 예: 22:00 ~ 02:00
+                            return (24 - start_hour) + end_hour
+                        else:
+                            return end_hour - start_hour
+                    else:
+                        return 8.0  # 기본값
+                except:
+                    return 8.0  # 변환 실패 시 기본값
+            
+            df_prepared['duration_hours'] = df_prepared['duration_hours'].apply(extract_hours_diff)
+        
+        # 이제 숫자 연산 수행
         df_prepared['log_review'] = np.log(df_prepared['review'] + 1)
         df_prepared['review_duration'] = df_prepared['review'] * df_prepared['duration_hours']
         logger.debug("Feature 계산이 완료되었습니다.")
