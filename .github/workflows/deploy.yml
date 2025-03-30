@@ -59,17 +59,74 @@ jobs:
       - name: Deploy to EC2 via SSH
         uses: appleboy/ssh-action@v0.1.6
         with:
-          # 'ml'는 SSH 설정 파일에서 정의한 프라이빗 인스턴스 별칭입니다.
-          host: ml
+          host: '10.0.172.33'  # 프라이빗 인스턴스 IP
           username: ec2-user
           key: ${{ secrets.DEPLOY_SSH_KEY }}
+          proxy_host: '13.124.67.16'  # bastion 호스트 IP
+          proxy_username: ec2-user
+          proxy_key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
             # EC2 인스턴스에서 ECR 로그인
             aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ steps.login-ecr.outputs.registry }}
+
+            # 작업 디렉토리로 이동
+            cd /home/ec2-user/TRI-AI
+            
+            # .env 파일 생성
+            cat > .env << INNEREOF
+
+            # MongoDB Setting
+            MONGO_HOST=${{ secrets.MONGO_HOST }}
+            MONGO_PORT=${{ secrets.MONGO_PORT }}
+            MONGO_USER=${{ secrets.MONGO_USER }}
+            MONGO_PASSWORD=${{ secrets.MONGO_PASSWORD }}
+            MONGO_DATABASE=${{ secrets.MONGO_DATABASE }}
+            MONGO_COLLECTION=${{ secrets.MONGO_COLLECTION }}
+            USE_SSH_TUNNEL=false
+            INNEREOF
+
             # 새 이미지 pull
             docker pull ${{ steps.login-ecr.outputs.registry }}/trinity-repo:${{ github.sha }}
+
             # 기존 컨테이너 중지 및 제거 (없으면 에러 무시)
             docker stop trinity-container || true
             docker rm trinity-container || true
-            # 새 컨테이너 실행 (필요 시 추가 옵션 조정)
-            docker run -d --name trinity-container -p 5000:5000 ${{ steps.login-ecr.outputs.registry }}/trinity-repo:${{ github.sha }}
+
+            # 새 컨테이너 실행 (환경 변수 직접 전달)
+            docker run -d --name trinity-container \
+              -p 5000:5000 \
+              -e MONGO_HOST=${{ secrets.MONGO_HOST }} \
+              -e MONGO_PORT=${{ secrets.MONGO_PORT }} \
+              -e MONGO_USER=${{ secrets.MONGO_USER }} \
+              -e MONGO_PASSWORD=${{ secrets.MONGO_PASSWORD }} \
+              -e MONGO_DATABASE=${{ secrets.MONGO_DATABASE }} \
+              -e MONGO_COLLECTION=${{ secrets.MONGO_COLLECTION }} \
+              -e USE_SSH_TUNNEL=false \
+              ${{ steps.login-ecr.outputs.registry }}/trinity-repo:${{ github.sha }}
+
+      # Discord 알림 보내기
+      - name: Send Discord Notification
+        if: success()
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "🚀 배포 완료!"
+          description: |
+            Repository: ${{ github.repository }}
+            Branch: ${{ github.ref_name }}
+            Commit: ${{ github.event.head_commit.message }}
+            배포가 성공적으로 완료되었습니다.
+          color: 0x28A745 
+
+      - name: Send Discord Notification on Failure
+        if: failure()
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "❌ 배포 실패!"
+          description: |
+            Repository: ${{ github.repository }}
+            Branch: ${{ github.ref_name }}
+            Commit: ${{ github.event.head_commit.message }}
+            배포 중 오류가 발생했습니다.
+          color: 0xE01E5A

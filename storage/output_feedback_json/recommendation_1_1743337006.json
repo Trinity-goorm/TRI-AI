@@ -1,0 +1,110 @@
+{
+    "user": "1",
+    "recommendations": [
+        {
+            "category_id": 1,
+            "restaurant_id": 32,
+            "score": 5.0,
+            "predicted_score": 3.784,
+            "composite_score": 4.849
+        },
+        {
+            "category_id": 1,
+            "restaurant_id": 41,
+            "score": 5.0,
+            "predicted_score": 3.439,
+            "composite_score": 4.847
+        },
+        {
+            "category_id": 1,
+            "restaurant_id": 29,
+            "score": 4.7,
+            "predicted_score": 3.668,
+            "composite_score": 4.786
+        },
+        {
+            "category_id": 1,
+            "restaurant_id": 21,
+            "score": 4.4,
+            "predicted_score": 3.802,
+            "composite_score": 4.782
+        },
+        {
+            "category_id": 1,
+            "restaurant_id": 17,
+            "score": 4.2,
+            "predicted_score": 3.889,
+            "composite_score": 4.78
+        },
+        {
+            "category_id": 1,
+            "restaurant_id": 26,
+            "score": 4.7,
+            "predicted_score": 3.805,
+            "composite_score": 4.779
+        },
+        {
+            "category_id": 1,
+            "restaurant_id": 16,
+            "score": 4.2,
+            "predicted_score": 3.685,
+            "composite_score": 4.734
+        },
+        {
+            "category_id": 1,
+            "restaurant_id": 27,
+            "score": 4.5,
+            "predicted_score": 3.589,
+            "composite_score": 4.719
+        },
+        {
+            "category_id": 1,
+            "restaurant_id": 34,
+            "score": 4.4,
+            "predicted_score": 3.54,
+            "composite_score": 4.691
+        },
+        {
+            "category_id": 1,
+            "restaurant_id": 1,
+            "score": 4.0,
+            "predicted_score": 3.781,
+            "composite_score": 4.69
+        },
+        {
+            "category_id": 1,
+            "restaurant_id": 43,
+            "score": 4.4,
+            "predicted_score": 3.886,
+            "composite_score": 4.687
+        },
+        {
+            "category_id": 1,
+            "restaurant_id": 35,
+            "score": 4.3,
+            "predicted_score": 3.597,
+            "composite_score": 4.638
+        },
+        {
+            "category_id": 1,
+            "restaurant_id": 36,
+            "score": 4.3,
+            "predicted_score": 3.368,
+            "composite_score": 4.634
+        },
+        {
+            "category_id": 1,
+            "restaurant_id": 19,
+            "score": 4.2,
+            "predicted_score": 3.46,
+            "composite_score": 4.615
+        },
+        {
+            "category_id": 1,
+            "restaurant_id": 9,
+            "score": 3.7,
+            "predicted_score": 3.723,
+            "composite_score": 4.609
+        }
+    ]
+}

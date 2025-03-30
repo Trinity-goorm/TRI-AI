@@ -1,0 +1,10022 @@
+[
+  {
+    "user_id": 1,
+    "min_price": 183646,
+    "max_price": 286141,
+    "preferred_categories": [
+      2,
+      3,
+      11
+    ]
+  },
+  {
+    "user_id": 2,
+    "min_price": 170838,
+    "max_price": 444065,
+    "preferred_categories": [
+      6,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 3,
+    "min_price": 79971,
+    "max_price": 395779,
+    "preferred_categories": [
+      3,
+      4,
+      7
+    ]
+  },
+  {
+    "user_id": 4,
+    "min_price": 82759,
+    "max_price": 200419,
+    "preferred_categories": [
+      1,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 5,
+    "min_price": 147700,
+    "max_price": 341399,
+    "preferred_categories": [
+      3,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 6,
+    "min_price": 159625,
+    "max_price": 304138,
+    "preferred_categories": [
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "user_id": 7,
+    "min_price": 151460,
+    "max_price": 338378,
+    "preferred_categories": [
+      1,
+      6,
+      12
+    ]
+  },
+  {
+    "user_id": 8,
+    "min_price": 66889,
+    "max_price": 376584,
+    "preferred_categories": [
+      7,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 9,
+    "min_price": 91158,
+    "max_price": 393014,
+    "preferred_categories": [
+      4,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 10,
+    "min_price": 170163,
+    "max_price": 267487,
+    "preferred_categories": [
+      3,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 11,
+    "min_price": 29163,
+    "max_price": 470524,
+    "preferred_categories": [
+      1,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 12,
+    "min_price": 142652,
+    "max_price": 446869,
+    "preferred_categories": [
+      2,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 13,
+    "min_price": 185816,
+    "max_price": 351840,
+    "preferred_categories": [
+      2,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 14,
+    "min_price": 38329,
+    "max_price": 332509,
+    "preferred_categories": [
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 15,
+    "min_price": 59156,
+    "max_price": 266941,
+    "preferred_categories": [
+      2,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 16,
+    "min_price": 194701,
+    "max_price": 337197,
+    "preferred_categories": [
+      1,
+      2,
+      9
+    ]
+  },
+  {
+    "user_id": 17,
+    "min_price": 85248,
+    "max_price": 481858,
+    "preferred_categories": [
+      3,
+      4,
+      10
+    ]
+  },
+  {
+    "user_id": 18,
+    "min_price": 36257,
+    "max_price": 282926,
+    "preferred_categories": [
+      1,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 19,
+    "min_price": 197901,
+    "max_price": 327603,
+    "preferred_categories": [
+      1,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 20,
+    "min_price": 166283,
+    "max_price": 292092,
+    "preferred_categories": [
+      2,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 21,
+    "min_price": 28934,
+    "max_price": 353557,
+    "preferred_categories": [
+      3,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 22,
+    "min_price": 167451,
+    "max_price": 319083,
+    "preferred_categories": [
+      2,
+      3,
+      10
+    ]
+  },
+  {
+    "user_id": 23,
+    "min_price": 72379,
+    "max_price": 295629,
+    "preferred_categories": [
+      3,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 24,
+    "min_price": 95305,
+    "max_price": 279131,
+    "preferred_categories": [
+      4,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 25,
+    "min_price": 106565,
+    "max_price": 233947,
+    "preferred_categories": [
+      3,
+      6,
+      12
+    ]
+  },
+  {
+    "user_id": 26,
+    "min_price": 180902,
+    "max_price": 288981,
+    "preferred_categories": [
+      1,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 27,
+    "min_price": 187129,
+    "max_price": 254815,
+    "preferred_categories": [
+      1,
+      2,
+      9
+    ]
+  },
+  {
+    "user_id": 28,
+    "min_price": 169312,
+    "max_price": 403490,
+    "preferred_categories": [
+      4,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 29,
+    "min_price": 151914,
+    "max_price": 403053,
+    "preferred_categories": [
+      7,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 30,
+    "min_price": 133174,
+    "max_price": 227881,
+    "preferred_categories": [
+      4,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 31,
+    "min_price": 88090,
+    "max_price": 207906,
+    "preferred_categories": [
+      3,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 32,
+    "min_price": 97183,
+    "max_price": 270292,
+    "preferred_categories": [
+      2,
+      3,
+      10
+    ]
+  },
+  {
+    "user_id": 33,
+    "min_price": 89280,
+    "max_price": 403876,
+    "preferred_categories": [
+      8,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 34,
+    "min_price": 61746,
+    "max_price": 312422,
+    "preferred_categories": [
+      3,
+      4,
+      10
+    ]
+  },
+  {
+    "user_id": 35,
+    "min_price": 109942,
+    "max_price": 369064,
+    "preferred_categories": [
+      6,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 36,
+    "min_price": 110323,
+    "max_price": 493736,
+    "preferred_categories": [
+      2,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 37,
+    "min_price": 35055,
+    "max_price": 469280,
+    "preferred_categories": [
+      1,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 38,
+    "min_price": 61187,
+    "max_price": 484502,
+    "preferred_categories": [
+      1,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 39,
+    "min_price": 164628,
+    "max_price": 311737,
+    "preferred_categories": [
+      4,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 40,
+    "min_price": 199747,
+    "max_price": 238578,
+    "preferred_categories": [
+      4,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 41,
+    "min_price": 124228,
+    "max_price": 492507,
+    "preferred_categories": [
+      4,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 42,
+    "min_price": 87199,
+    "max_price": 274639,
+    "preferred_categories": [
+      2,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 43,
+    "min_price": 35046,
+    "max_price": 380147,
+    "preferred_categories": [
+      4,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 44,
+    "min_price": 141179,
+    "max_price": 422839,
+    "preferred_categories": [
+      8,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 45,
+    "min_price": 131248,
+    "max_price": 473654,
+    "preferred_categories": [
+      4,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 46,
+    "min_price": 54614,
+    "max_price": 410500,
+    "preferred_categories": [
+      4,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 47,
+    "min_price": 96377,
+    "max_price": 406337,
+    "preferred_categories": [
+      3,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 48,
+    "min_price": 173326,
+    "max_price": 489105,
+    "preferred_categories": [
+      3,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 49,
+    "min_price": 48247,
+    "max_price": 459629,
+    "preferred_categories": [
+      3,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 50,
+    "min_price": 174482,
+    "max_price": 364108,
+    "preferred_categories": [
+      3,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 51,
+    "min_price": 89491,
+    "max_price": 259108,
+    "preferred_categories": [
+      2,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 52,
+    "min_price": 105429,
+    "max_price": 200179,
+    "preferred_categories": [
+      2,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 53,
+    "min_price": 108492,
+    "max_price": 236409,
+    "preferred_categories": [
+      3,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 54,
+    "min_price": 81914,
+    "max_price": 422377,
+    "preferred_categories": [
+      1,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 55,
+    "min_price": 16187,
+    "max_price": 388247,
+    "preferred_categories": [
+      3,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 56,
+    "min_price": 67266,
+    "max_price": 309257,
+    "preferred_categories": [
+      3,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 57,
+    "min_price": 55275,
+    "max_price": 203384,
+    "preferred_categories": [
+      1,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 58,
+    "min_price": 83254,
+    "max_price": 329780,
+    "preferred_categories": [
+      3,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 59,
+    "min_price": 129489,
+    "max_price": 401574,
+    "preferred_categories": [
+      3,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 60,
+    "min_price": 43058,
+    "max_price": 271891,
+    "preferred_categories": [
+      6,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 61,
+    "min_price": 187570,
+    "max_price": 256791,
+    "preferred_categories": [
+      1,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 62,
+    "min_price": 21516,
+    "max_price": 419351,
+    "preferred_categories": [
+      9,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 63,
+    "min_price": 92464,
+    "max_price": 235396,
+    "preferred_categories": [
+      3,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 64,
+    "min_price": 150863,
+    "max_price": 246214,
+    "preferred_categories": [
+      4,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 65,
+    "min_price": 155450,
+    "max_price": 485892,
+    "preferred_categories": [
+      4,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 66,
+    "min_price": 79818,
+    "max_price": 234185,
+    "preferred_categories": [
+      4,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 67,
+    "min_price": 181198,
+    "max_price": 472937,
+    "preferred_categories": [
+      7,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 68,
+    "min_price": 121572,
+    "max_price": 401695,
+    "preferred_categories": [
+      2,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 69,
+    "min_price": 53616,
+    "max_price": 492640,
+    "preferred_categories": [
+      2,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 70,
+    "min_price": 119576,
+    "max_price": 375454,
+    "preferred_categories": [
+      3,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 71,
+    "min_price": 13768,
+    "max_price": 354216,
+    "preferred_categories": [
+      2,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 72,
+    "min_price": 97033,
+    "max_price": 424256,
+    "preferred_categories": [
+      2,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 73,
+    "min_price": 58444,
+    "max_price": 345640,
+    "preferred_categories": [
+      3,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 74,
+    "min_price": 120737,
+    "max_price": 248236,
+    "preferred_categories": [
+      1,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 75,
+    "min_price": 123521,
+    "max_price": 267707,
+    "preferred_categories": [
+      2,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 76,
+    "min_price": 172019,
+    "max_price": 470071,
+    "preferred_categories": [
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 77,
+    "min_price": 90198,
+    "max_price": 399068,
+    "preferred_categories": [
+      6,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 78,
+    "min_price": 65073,
+    "max_price": 308313,
+    "preferred_categories": [
+      3,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 79,
+    "min_price": 149171,
+    "max_price": 234246,
+    "preferred_categories": [
+      5,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 80,
+    "min_price": 79665,
+    "max_price": 267787,
+    "preferred_categories": [
+      1,
+      2,
+      7
+    ]
+  },
+  {
+    "user_id": 81,
+    "min_price": 22004,
+    "max_price": 393826,
+    "preferred_categories": [
+      3,
+      4,
+      10
+    ]
+  },
+  {
+    "user_id": 82,
+    "min_price": 94945,
+    "max_price": 229961,
+    "preferred_categories": [
+      8,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 83,
+    "min_price": 167915,
+    "max_price": 444105,
+    "preferred_categories": [
+      2,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 84,
+    "min_price": 132551,
+    "max_price": 382730,
+    "preferred_categories": [
+      4,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 85,
+    "min_price": 46979,
+    "max_price": 205497,
+    "preferred_categories": [
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "user_id": 86,
+    "min_price": 185050,
+    "max_price": 398628,
+    "preferred_categories": [
+      2,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 87,
+    "min_price": 135979,
+    "max_price": 378633,
+    "preferred_categories": [
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "user_id": 88,
+    "min_price": 148192,
+    "max_price": 470318,
+    "preferred_categories": [
+      4,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 89,
+    "min_price": 185320,
+    "max_price": 238334,
+    "preferred_categories": [
+      8,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 90,
+    "min_price": 26856,
+    "max_price": 421438,
+    "preferred_categories": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "user_id": 91,
+    "min_price": 50526,
+    "max_price": 486531,
+    "preferred_categories": [
+      3,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 92,
+    "min_price": 82141,
+    "max_price": 364554,
+    "preferred_categories": [
+      6,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 93,
+    "min_price": 66823,
+    "max_price": 345162,
+    "preferred_categories": [
+      5,
+      6,
+      12
+    ]
+  },
+  {
+    "user_id": 94,
+    "min_price": 85499,
+    "max_price": 401582,
+    "preferred_categories": [
+      1,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 95,
+    "min_price": 96497,
+    "max_price": 231653,
+    "preferred_categories": [
+      4,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 96,
+    "min_price": 29299,
+    "max_price": 452322,
+    "preferred_categories": [
+      1,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 97,
+    "min_price": 27202,
+    "max_price": 246133,
+    "preferred_categories": [
+      1,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 98,
+    "min_price": 129763,
+    "max_price": 330349,
+    "preferred_categories": [
+      3,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 99,
+    "min_price": 93365,
+    "max_price": 303372,
+    "preferred_categories": [
+      5,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 100,
+    "min_price": 79353,
+    "max_price": 437106,
+    "preferred_categories": [
+      1,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 101,
+    "min_price": 140727,
+    "max_price": 223500,
+    "preferred_categories": [
+      7,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 102,
+    "min_price": 126610,
+    "max_price": 354243,
+    "preferred_categories": [
+      9,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 103,
+    "min_price": 12059,
+    "max_price": 426530,
+    "preferred_categories": [
+      3,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 104,
+    "min_price": 132141,
+    "max_price": 332202,
+    "preferred_categories": [
+      4,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 105,
+    "min_price": 37922,
+    "max_price": 499973,
+    "preferred_categories": [
+      3,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 106,
+    "min_price": 64249,
+    "max_price": 230682,
+    "preferred_categories": [
+      5,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 107,
+    "min_price": 65313,
+    "max_price": 467101,
+    "preferred_categories": [
+      5,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 108,
+    "min_price": 169377,
+    "max_price": 244275,
+    "preferred_categories": [
+      3,
+      4,
+      11
+    ]
+  },
+  {
+    "user_id": 109,
+    "min_price": 15342,
+    "max_price": 258548,
+    "preferred_categories": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 110,
+    "min_price": 97494,
+    "max_price": 355408,
+    "preferred_categories": [
+      5,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 111,
+    "min_price": 36258,
+    "max_price": 490070,
+    "preferred_categories": [
+      3,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 112,
+    "min_price": 115332,
+    "max_price": 263578,
+    "preferred_categories": [
+      2,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 113,
+    "min_price": 127054,
+    "max_price": 312245,
+    "preferred_categories": [
+      4,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 114,
+    "min_price": 166239,
+    "max_price": 327001,
+    "preferred_categories": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "user_id": 115,
+    "min_price": 113164,
+    "max_price": 285426,
+    "preferred_categories": [
+      7,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 116,
+    "min_price": 127969,
+    "max_price": 294168,
+    "preferred_categories": [
+      2,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 117,
+    "min_price": 176237,
+    "max_price": 391158,
+    "preferred_categories": [
+      1,
+      4,
+      9
+    ]
+  },
+  {
+    "user_id": 118,
+    "min_price": 71949,
+    "max_price": 407527,
+    "preferred_categories": [
+      6,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 119,
+    "min_price": 67831,
+    "max_price": 357736,
+    "preferred_categories": [
+      5,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 120,
+    "min_price": 144428,
+    "max_price": 404101,
+    "preferred_categories": [
+      1,
+      4,
+      6
+    ]
+  },
+  {
+    "user_id": 121,
+    "min_price": 41318,
+    "max_price": 219612,
+    "preferred_categories": [
+      4,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 122,
+    "min_price": 30258,
+    "max_price": 318302,
+    "preferred_categories": [
+      3,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 123,
+    "min_price": 44469,
+    "max_price": 288533,
+    "preferred_categories": [
+      4,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 124,
+    "min_price": 75965,
+    "max_price": 207023,
+    "preferred_categories": [
+      1,
+      4,
+      6
+    ]
+  },
+  {
+    "user_id": 125,
+    "min_price": 87887,
+    "max_price": 429278,
+    "preferred_categories": [
+      1,
+      2,
+      10
+    ]
+  },
+  {
+    "user_id": 126,
+    "min_price": 121431,
+    "max_price": 409992,
+    "preferred_categories": [
+      1,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 127,
+    "min_price": 137504,
+    "max_price": 451142,
+    "preferred_categories": [
+      4,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 128,
+    "min_price": 105166,
+    "max_price": 375827,
+    "preferred_categories": [
+      2,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 129,
+    "min_price": 120288,
+    "max_price": 495343,
+    "preferred_categories": [
+      2,
+      3,
+      6
+    ]
+  },
+  {
+    "user_id": 130,
+    "min_price": 20029,
+    "max_price": 328338,
+    "preferred_categories": [
+      5,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 131,
+    "min_price": 168222,
+    "max_price": 299643,
+    "preferred_categories": [
+      7,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 132,
+    "min_price": 27774,
+    "max_price": 366391,
+    "preferred_categories": [
+      3,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 133,
+    "min_price": 53942,
+    "max_price": 433053,
+    "preferred_categories": [
+      3,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 134,
+    "min_price": 94983,
+    "max_price": 275331,
+    "preferred_categories": [
+      7,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 135,
+    "min_price": 11980,
+    "max_price": 379968,
+    "preferred_categories": [
+      5,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 136,
+    "min_price": 160707,
+    "max_price": 349473,
+    "preferred_categories": [
+      5,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 137,
+    "min_price": 84683,
+    "max_price": 464334,
+    "preferred_categories": [
+      7,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 138,
+    "min_price": 18420,
+    "max_price": 359174,
+    "preferred_categories": [
+      5,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 139,
+    "min_price": 50259,
+    "max_price": 479372,
+    "preferred_categories": [
+      3,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 140,
+    "min_price": 164299,
+    "max_price": 276422,
+    "preferred_categories": [
+      5,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 141,
+    "min_price": 176375,
+    "max_price": 268704,
+    "preferred_categories": [
+      1,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 142,
+    "min_price": 196059,
+    "max_price": 321766,
+    "preferred_categories": [
+      1,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 143,
+    "min_price": 182013,
+    "max_price": 244480,
+    "preferred_categories": [
+      3,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 144,
+    "min_price": 45546,
+    "max_price": 491347,
+    "preferred_categories": [
+      3,
+      4,
+      10
+    ]
+  },
+  {
+    "user_id": 145,
+    "min_price": 31723,
+    "max_price": 479164,
+    "preferred_categories": [
+      3,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 146,
+    "min_price": 180807,
+    "max_price": 450496,
+    "preferred_categories": [
+      6,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 147,
+    "min_price": 178811,
+    "max_price": 473203,
+    "preferred_categories": [
+      5,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 148,
+    "min_price": 139834,
+    "max_price": 379234,
+    "preferred_categories": [
+      2,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 149,
+    "min_price": 100745,
+    "max_price": 463183,
+    "preferred_categories": [
+      1,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 150,
+    "min_price": 39040,
+    "max_price": 268605,
+    "preferred_categories": [
+      2,
+      5,
+      12
+    ]
+  },
+  {
+    "user_id": 151,
+    "min_price": 29406,
+    "max_price": 201272,
+    "preferred_categories": [
+      2,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 152,
+    "min_price": 123073,
+    "max_price": 260646,
+    "preferred_categories": [
+      4,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 153,
+    "min_price": 168024,
+    "max_price": 432589,
+    "preferred_categories": [
+      4,
+      5,
+      12
+    ]
+  },
+  {
+    "user_id": 154,
+    "min_price": 167510,
+    "max_price": 441903,
+    "preferred_categories": [
+      1,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 155,
+    "min_price": 40023,
+    "max_price": 407162,
+    "preferred_categories": [
+      1,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 156,
+    "min_price": 159091,
+    "max_price": 277219,
+    "preferred_categories": [
+      3,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 157,
+    "min_price": 48399,
+    "max_price": 434645,
+    "preferred_categories": [
+      8,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 158,
+    "min_price": 144690,
+    "max_price": 330608,
+    "preferred_categories": [
+      3,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 159,
+    "min_price": 90552,
+    "max_price": 301470,
+    "preferred_categories": [
+      8,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 160,
+    "min_price": 32498,
+    "max_price": 231090,
+    "preferred_categories": [
+      2,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 161,
+    "min_price": 159215,
+    "max_price": 230042,
+    "preferred_categories": [
+      3,
+      4,
+      6
+    ]
+  },
+  {
+    "user_id": 162,
+    "min_price": 149189,
+    "max_price": 335301,
+    "preferred_categories": [
+      4,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 163,
+    "min_price": 85454,
+    "max_price": 268901,
+    "preferred_categories": [
+      1,
+      3,
+      10
+    ]
+  },
+  {
+    "user_id": 164,
+    "min_price": 31263,
+    "max_price": 431844,
+    "preferred_categories": [
+      3,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 165,
+    "min_price": 66125,
+    "max_price": 305315,
+    "preferred_categories": [
+      5,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 166,
+    "min_price": 158451,
+    "max_price": 461726,
+    "preferred_categories": [
+      1,
+      3,
+      6
+    ]
+  },
+  {
+    "user_id": 167,
+    "min_price": 19032,
+    "max_price": 291481,
+    "preferred_categories": [
+      1,
+      3,
+      10
+    ]
+  },
+  {
+    "user_id": 168,
+    "min_price": 78571,
+    "max_price": 345816,
+    "preferred_categories": [
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "user_id": 169,
+    "min_price": 198909,
+    "max_price": 309393,
+    "preferred_categories": [
+      1,
+      4,
+      9
+    ]
+  },
+  {
+    "user_id": 170,
+    "min_price": 94505,
+    "max_price": 260505,
+    "preferred_categories": [
+      2,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 171,
+    "min_price": 74242,
+    "max_price": 278640,
+    "preferred_categories": [
+      1,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 172,
+    "min_price": 59574,
+    "max_price": 448128,
+    "preferred_categories": [
+      1,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 173,
+    "min_price": 146506,
+    "max_price": 431000,
+    "preferred_categories": [
+      4,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 174,
+    "min_price": 61310,
+    "max_price": 364180,
+    "preferred_categories": [
+      1,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 175,
+    "min_price": 41448,
+    "max_price": 356124,
+    "preferred_categories": [
+      3,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 176,
+    "min_price": 162622,
+    "max_price": 468564,
+    "preferred_categories": [
+      4,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 177,
+    "min_price": 107493,
+    "max_price": 220994,
+    "preferred_categories": [
+      1,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 178,
+    "min_price": 196399,
+    "max_price": 290759,
+    "preferred_categories": [
+      2,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 179,
+    "min_price": 193715,
+    "max_price": 400526,
+    "preferred_categories": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "user_id": 180,
+    "min_price": 79311,
+    "max_price": 413880,
+    "preferred_categories": [
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "user_id": 181,
+    "min_price": 11008,
+    "max_price": 321989,
+    "preferred_categories": [
+      1,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 182,
+    "min_price": 170913,
+    "max_price": 345544,
+    "preferred_categories": [
+      4,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 183,
+    "min_price": 183937,
+    "max_price": 221962,
+    "preferred_categories": [
+      1,
+      2,
+      9
+    ]
+  },
+  {
+    "user_id": 184,
+    "min_price": 161327,
+    "max_price": 311028,
+    "preferred_categories": [
+      1,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 185,
+    "min_price": 183519,
+    "max_price": 248252,
+    "preferred_categories": [
+      1,
+      3,
+      11
+    ]
+  },
+  {
+    "user_id": 186,
+    "min_price": 122923,
+    "max_price": 451106,
+    "preferred_categories": [
+      7,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 187,
+    "min_price": 147113,
+    "max_price": 405380,
+    "preferred_categories": [
+      1,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 188,
+    "min_price": 28523,
+    "max_price": 203839,
+    "preferred_categories": [
+      2,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 189,
+    "min_price": 76186,
+    "max_price": 333806,
+    "preferred_categories": [
+      3,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 190,
+    "min_price": 92873,
+    "max_price": 432627,
+    "preferred_categories": [
+      5,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 191,
+    "min_price": 95798,
+    "max_price": 215347,
+    "preferred_categories": [
+      1,
+      4,
+      11
+    ]
+  },
+  {
+    "user_id": 192,
+    "min_price": 118625,
+    "max_price": 404671,
+    "preferred_categories": [
+      4,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 193,
+    "min_price": 82141,
+    "max_price": 363349,
+    "preferred_categories": [
+      1,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 194,
+    "min_price": 176609,
+    "max_price": 278162,
+    "preferred_categories": [
+      2,
+      3,
+      6
+    ]
+  },
+  {
+    "user_id": 195,
+    "min_price": 89445,
+    "max_price": 384349,
+    "preferred_categories": [
+      3,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 196,
+    "min_price": 69355,
+    "max_price": 422863,
+    "preferred_categories": [
+      7,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 197,
+    "min_price": 149506,
+    "max_price": 203902,
+    "preferred_categories": [
+      1,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 198,
+    "min_price": 51413,
+    "max_price": 474910,
+    "preferred_categories": [
+      3,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 199,
+    "min_price": 79957,
+    "max_price": 476345,
+    "preferred_categories": [
+      1,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 200,
+    "min_price": 15234,
+    "max_price": 220967,
+    "preferred_categories": [
+      5,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 201,
+    "min_price": 72795,
+    "max_price": 355305,
+    "preferred_categories": [
+      2,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 202,
+    "min_price": 44532,
+    "max_price": 374021,
+    "preferred_categories": [
+      2,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 203,
+    "min_price": 51617,
+    "max_price": 279504,
+    "preferred_categories": [
+      4,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 204,
+    "min_price": 160288,
+    "max_price": 443296,
+    "preferred_categories": [
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "user_id": 205,
+    "min_price": 180085,
+    "max_price": 375556,
+    "preferred_categories": [
+      2,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 206,
+    "min_price": 176851,
+    "max_price": 251345,
+    "preferred_categories": [
+      4,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 207,
+    "min_price": 172931,
+    "max_price": 494189,
+    "preferred_categories": [
+      2,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 208,
+    "min_price": 94459,
+    "max_price": 380802,
+    "preferred_categories": [
+      4,
+      5,
+      12
+    ]
+  },
+  {
+    "user_id": 209,
+    "min_price": 15499,
+    "max_price": 237485,
+    "preferred_categories": [
+      1,
+      2,
+      11
+    ]
+  },
+  {
+    "user_id": 210,
+    "min_price": 74857,
+    "max_price": 389579,
+    "preferred_categories": [
+      4,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 211,
+    "min_price": 92737,
+    "max_price": 360769,
+    "preferred_categories": [
+      4,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 212,
+    "min_price": 66872,
+    "max_price": 433681,
+    "preferred_categories": [
+      2,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 213,
+    "min_price": 153773,
+    "max_price": 244503,
+    "preferred_categories": [
+      3,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 214,
+    "min_price": 138552,
+    "max_price": 282906,
+    "preferred_categories": [
+      2,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 215,
+    "min_price": 27015,
+    "max_price": 309651,
+    "preferred_categories": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "user_id": 216,
+    "min_price": 35438,
+    "max_price": 235826,
+    "preferred_categories": [
+      6,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 217,
+    "min_price": 50165,
+    "max_price": 348160,
+    "preferred_categories": [
+      2,
+      4,
+      11
+    ]
+  },
+  {
+    "user_id": 218,
+    "min_price": 37506,
+    "max_price": 252461,
+    "preferred_categories": [
+      1,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 219,
+    "min_price": 120768,
+    "max_price": 425014,
+    "preferred_categories": [
+      2,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 220,
+    "min_price": 54360,
+    "max_price": 484657,
+    "preferred_categories": [
+      5,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 221,
+    "min_price": 115437,
+    "max_price": 357157,
+    "preferred_categories": [
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 222,
+    "min_price": 88353,
+    "max_price": 409313,
+    "preferred_categories": [
+      2,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 223,
+    "min_price": 179055,
+    "max_price": 295721,
+    "preferred_categories": [
+      1,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 224,
+    "min_price": 26505,
+    "max_price": 211633,
+    "preferred_categories": [
+      1,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 225,
+    "min_price": 99891,
+    "max_price": 301350,
+    "preferred_categories": [
+      5,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 226,
+    "min_price": 70481,
+    "max_price": 262495,
+    "preferred_categories": [
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 227,
+    "min_price": 35595,
+    "max_price": 210992,
+    "preferred_categories": [
+      6,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 228,
+    "min_price": 79859,
+    "max_price": 266644,
+    "preferred_categories": [
+      2,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 229,
+    "min_price": 93433,
+    "max_price": 279378,
+    "preferred_categories": [
+      1,
+      3,
+      6
+    ]
+  },
+  {
+    "user_id": 230,
+    "min_price": 49661,
+    "max_price": 358083,
+    "preferred_categories": [
+      1,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 231,
+    "min_price": 196091,
+    "max_price": 417867,
+    "preferred_categories": [
+      2,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 232,
+    "min_price": 54841,
+    "max_price": 307433,
+    "preferred_categories": [
+      1,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 233,
+    "min_price": 171934,
+    "max_price": 266947,
+    "preferred_categories": [
+      5,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 234,
+    "min_price": 121560,
+    "max_price": 444798,
+    "preferred_categories": [
+      2,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 235,
+    "min_price": 22034,
+    "max_price": 457960,
+    "preferred_categories": [
+      4,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 236,
+    "min_price": 185489,
+    "max_price": 213562,
+    "preferred_categories": [
+      2,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 237,
+    "min_price": 188625,
+    "max_price": 292293,
+    "preferred_categories": [
+      1,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 238,
+    "min_price": 63185,
+    "max_price": 425475,
+    "preferred_categories": [
+      1,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 239,
+    "min_price": 160250,
+    "max_price": 299594,
+    "preferred_categories": [
+      7,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 240,
+    "min_price": 97669,
+    "max_price": 499985,
+    "preferred_categories": [
+      2,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 241,
+    "min_price": 71172,
+    "max_price": 467802,
+    "preferred_categories": [
+      5,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 242,
+    "min_price": 122809,
+    "max_price": 294060,
+    "preferred_categories": [
+      1,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 243,
+    "min_price": 97857,
+    "max_price": 295196,
+    "preferred_categories": [
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 244,
+    "min_price": 162736,
+    "max_price": 341689,
+    "preferred_categories": [
+      4,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 245,
+    "min_price": 42277,
+    "max_price": 446327,
+    "preferred_categories": [
+      4,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 246,
+    "min_price": 85719,
+    "max_price": 362016,
+    "preferred_categories": [
+      4,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 247,
+    "min_price": 17470,
+    "max_price": 292418,
+    "preferred_categories": [
+      2,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 248,
+    "min_price": 28515,
+    "max_price": 402010,
+    "preferred_categories": [
+      2,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 249,
+    "min_price": 147497,
+    "max_price": 297665,
+    "preferred_categories": [
+      2,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 250,
+    "min_price": 169672,
+    "max_price": 344575,
+    "preferred_categories": [
+      2,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 251,
+    "min_price": 34199,
+    "max_price": 494766,
+    "preferred_categories": [
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 252,
+    "min_price": 99429,
+    "max_price": 455465,
+    "preferred_categories": [
+      4,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 253,
+    "min_price": 19544,
+    "max_price": 468129,
+    "preferred_categories": [
+      7,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 254,
+    "min_price": 168275,
+    "max_price": 285542,
+    "preferred_categories": [
+      3,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 255,
+    "min_price": 92771,
+    "max_price": 401087,
+    "preferred_categories": [
+      7,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 256,
+    "min_price": 182506,
+    "max_price": 300457,
+    "preferred_categories": [
+      4,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 257,
+    "min_price": 127431,
+    "max_price": 225116,
+    "preferred_categories": [
+      1,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 258,
+    "min_price": 89645,
+    "max_price": 341865,
+    "preferred_categories": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "user_id": 259,
+    "min_price": 138901,
+    "max_price": 329782,
+    "preferred_categories": [
+      9,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 260,
+    "min_price": 199473,
+    "max_price": 260576,
+    "preferred_categories": [
+      6,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 261,
+    "min_price": 17795,
+    "max_price": 455435,
+    "preferred_categories": [
+      1,
+      4,
+      10
+    ]
+  },
+  {
+    "user_id": 262,
+    "min_price": 107041,
+    "max_price": 332828,
+    "preferred_categories": [
+      1,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 263,
+    "min_price": 35945,
+    "max_price": 312057,
+    "preferred_categories": [
+      6,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 264,
+    "min_price": 92096,
+    "max_price": 470692,
+    "preferred_categories": [
+      1,
+      2,
+      8
+    ]
+  },
+  {
+    "user_id": 265,
+    "min_price": 80257,
+    "max_price": 230964,
+    "preferred_categories": [
+      2,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 266,
+    "min_price": 78904,
+    "max_price": 423501,
+    "preferred_categories": [
+      4,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 267,
+    "min_price": 33338,
+    "max_price": 373241,
+    "preferred_categories": [
+      3,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 268,
+    "min_price": 101934,
+    "max_price": 476092,
+    "preferred_categories": [
+      1,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 269,
+    "min_price": 186835,
+    "max_price": 494248,
+    "preferred_categories": [
+      3,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 270,
+    "min_price": 194172,
+    "max_price": 426884,
+    "preferred_categories": [
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 271,
+    "min_price": 87671,
+    "max_price": 202738,
+    "preferred_categories": [
+      7,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 272,
+    "min_price": 36585,
+    "max_price": 393215,
+    "preferred_categories": [
+      1,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 273,
+    "min_price": 64387,
+    "max_price": 227536,
+    "preferred_categories": [
+      2,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 274,
+    "min_price": 106251,
+    "max_price": 408448,
+    "preferred_categories": [
+      1,
+      4,
+      9
+    ]
+  },
+  {
+    "user_id": 275,
+    "min_price": 56350,
+    "max_price": 397164,
+    "preferred_categories": [
+      4,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 276,
+    "min_price": 190889,
+    "max_price": 401375,
+    "preferred_categories": [
+      2,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 277,
+    "min_price": 52240,
+    "max_price": 243472,
+    "preferred_categories": [
+      7,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 278,
+    "min_price": 94391,
+    "max_price": 390850,
+    "preferred_categories": [
+      6,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 279,
+    "min_price": 63673,
+    "max_price": 486146,
+    "preferred_categories": [
+      4,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 280,
+    "min_price": 137715,
+    "max_price": 316122,
+    "preferred_categories": [
+      3,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 281,
+    "min_price": 81087,
+    "max_price": 417758,
+    "preferred_categories": [
+      1,
+      2,
+      5
+    ]
+  },
+  {
+    "user_id": 282,
+    "min_price": 52917,
+    "max_price": 200066,
+    "preferred_categories": [
+      8,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 283,
+    "min_price": 77291,
+    "max_price": 466157,
+    "preferred_categories": [
+      3,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 284,
+    "min_price": 117818,
+    "max_price": 311745,
+    "preferred_categories": [
+      6,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 285,
+    "min_price": 106468,
+    "max_price": 388810,
+    "preferred_categories": [
+      2,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 286,
+    "min_price": 96831,
+    "max_price": 295784,
+    "preferred_categories": [
+      2,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 287,
+    "min_price": 80359,
+    "max_price": 239957,
+    "preferred_categories": [
+      4,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 288,
+    "min_price": 96779,
+    "max_price": 259571,
+    "preferred_categories": [
+      4,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 289,
+    "min_price": 57685,
+    "max_price": 470592,
+    "preferred_categories": [
+      1,
+      2,
+      8
+    ]
+  },
+  {
+    "user_id": 290,
+    "min_price": 92218,
+    "max_price": 360940,
+    "preferred_categories": [
+      2,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 291,
+    "min_price": 78436,
+    "max_price": 459336,
+    "preferred_categories": [
+      1,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 292,
+    "min_price": 82822,
+    "max_price": 296446,
+    "preferred_categories": [
+      1,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 293,
+    "min_price": 67263,
+    "max_price": 285626,
+    "preferred_categories": [
+      2,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 294,
+    "min_price": 170208,
+    "max_price": 464099,
+    "preferred_categories": [
+      4,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 295,
+    "min_price": 164140,
+    "max_price": 263105,
+    "preferred_categories": [
+      1,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 296,
+    "min_price": 167473,
+    "max_price": 302474,
+    "preferred_categories": [
+      2,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 297,
+    "min_price": 174677,
+    "max_price": 372056,
+    "preferred_categories": [
+      2,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 298,
+    "min_price": 52010,
+    "max_price": 352449,
+    "preferred_categories": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 299,
+    "min_price": 171727,
+    "max_price": 419186,
+    "preferred_categories": [
+      5,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 300,
+    "min_price": 82806,
+    "max_price": 336617,
+    "preferred_categories": [
+      1,
+      2,
+      9
+    ]
+  },
+  {
+    "user_id": 301,
+    "min_price": 153139,
+    "max_price": 400878,
+    "preferred_categories": [
+      3,
+      5,
+      12
+    ]
+  },
+  {
+    "user_id": 302,
+    "min_price": 58763,
+    "max_price": 376532,
+    "preferred_categories": [
+      4,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 303,
+    "min_price": 114816,
+    "max_price": 215966,
+    "preferred_categories": [
+      1,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 304,
+    "min_price": 78236,
+    "max_price": 298739,
+    "preferred_categories": [
+      6,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 305,
+    "min_price": 168504,
+    "max_price": 324152,
+    "preferred_categories": [
+      2,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 306,
+    "min_price": 114959,
+    "max_price": 225832,
+    "preferred_categories": [
+      5,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 307,
+    "min_price": 97153,
+    "max_price": 218247,
+    "preferred_categories": [
+      3,
+      4,
+      11
+    ]
+  },
+  {
+    "user_id": 308,
+    "min_price": 186433,
+    "max_price": 442559,
+    "preferred_categories": [
+      3,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 309,
+    "min_price": 29388,
+    "max_price": 400541,
+    "preferred_categories": [
+      5,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 310,
+    "min_price": 114911,
+    "max_price": 322029,
+    "preferred_categories": [
+      1,
+      2,
+      12
+    ]
+  },
+  {
+    "user_id": 311,
+    "min_price": 162186,
+    "max_price": 233292,
+    "preferred_categories": [
+      2,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 312,
+    "min_price": 35635,
+    "max_price": 313899,
+    "preferred_categories": [
+      2,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 313,
+    "min_price": 11492,
+    "max_price": 403970,
+    "preferred_categories": [
+      1,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 314,
+    "min_price": 147251,
+    "max_price": 292531,
+    "preferred_categories": [
+      2,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 315,
+    "min_price": 65865,
+    "max_price": 499030,
+    "preferred_categories": [
+      2,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 316,
+    "min_price": 25792,
+    "max_price": 345372,
+    "preferred_categories": [
+      5,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 317,
+    "min_price": 121179,
+    "max_price": 279212,
+    "preferred_categories": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "user_id": 318,
+    "min_price": 169288,
+    "max_price": 434460,
+    "preferred_categories": [
+      9,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 319,
+    "min_price": 108275,
+    "max_price": 461196,
+    "preferred_categories": [
+      1,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 320,
+    "min_price": 163733,
+    "max_price": 214434,
+    "preferred_categories": [
+      1,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 321,
+    "min_price": 119490,
+    "max_price": 380690,
+    "preferred_categories": [
+      4,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 322,
+    "min_price": 146046,
+    "max_price": 207430,
+    "preferred_categories": [
+      1,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 323,
+    "min_price": 197852,
+    "max_price": 291430,
+    "preferred_categories": [
+      2,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 324,
+    "min_price": 145993,
+    "max_price": 281509,
+    "preferred_categories": [
+      7,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 325,
+    "min_price": 105489,
+    "max_price": 450296,
+    "preferred_categories": [
+      4,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 326,
+    "min_price": 130659,
+    "max_price": 304679,
+    "preferred_categories": [
+      1,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 327,
+    "min_price": 138762,
+    "max_price": 383569,
+    "preferred_categories": [
+      2,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 328,
+    "min_price": 60651,
+    "max_price": 353518,
+    "preferred_categories": [
+      3,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 329,
+    "min_price": 155240,
+    "max_price": 274717,
+    "preferred_categories": [
+      4,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 330,
+    "min_price": 155236,
+    "max_price": 384499,
+    "preferred_categories": [
+      8,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 331,
+    "min_price": 153987,
+    "max_price": 465116,
+    "preferred_categories": [
+      9,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 332,
+    "min_price": 142253,
+    "max_price": 422611,
+    "preferred_categories": [
+      4,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 333,
+    "min_price": 46673,
+    "max_price": 273142,
+    "preferred_categories": [
+      1,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 334,
+    "min_price": 53260,
+    "max_price": 276436,
+    "preferred_categories": [
+      2,
+      4,
+      10
+    ]
+  },
+  {
+    "user_id": 335,
+    "min_price": 38139,
+    "max_price": 202608,
+    "preferred_categories": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "user_id": 336,
+    "min_price": 179707,
+    "max_price": 243929,
+    "preferred_categories": [
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 337,
+    "min_price": 141289,
+    "max_price": 258763,
+    "preferred_categories": [
+      1,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 338,
+    "min_price": 58273,
+    "max_price": 322834,
+    "preferred_categories": [
+      2,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 339,
+    "min_price": 151350,
+    "max_price": 211616,
+    "preferred_categories": [
+      2,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 340,
+    "min_price": 43433,
+    "max_price": 417342,
+    "preferred_categories": [
+      3,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 341,
+    "min_price": 53017,
+    "max_price": 333428,
+    "preferred_categories": [
+      6,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 342,
+    "min_price": 112882,
+    "max_price": 453483,
+    "preferred_categories": [
+      4,
+      5,
+      12
+    ]
+  },
+  {
+    "user_id": 343,
+    "min_price": 108033,
+    "max_price": 266412,
+    "preferred_categories": [
+      1,
+      2,
+      8
+    ]
+  },
+  {
+    "user_id": 344,
+    "min_price": 140955,
+    "max_price": 408051,
+    "preferred_categories": [
+      5,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 345,
+    "min_price": 94717,
+    "max_price": 456345,
+    "preferred_categories": [
+      7,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 346,
+    "min_price": 28648,
+    "max_price": 457822,
+    "preferred_categories": [
+      1,
+      3,
+      6
+    ]
+  },
+  {
+    "user_id": 347,
+    "min_price": 92725,
+    "max_price": 255709,
+    "preferred_categories": [
+      7,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 348,
+    "min_price": 192438,
+    "max_price": 451104,
+    "preferred_categories": [
+      1,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 349,
+    "min_price": 79899,
+    "max_price": 420645,
+    "preferred_categories": [
+      1,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 350,
+    "min_price": 125863,
+    "max_price": 392445,
+    "preferred_categories": [
+      2,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 351,
+    "min_price": 78961,
+    "max_price": 207515,
+    "preferred_categories": [
+      2,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 352,
+    "min_price": 53884,
+    "max_price": 317523,
+    "preferred_categories": [
+      2,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 353,
+    "min_price": 197545,
+    "max_price": 444435,
+    "preferred_categories": [
+      4,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 354,
+    "min_price": 42407,
+    "max_price": 316633,
+    "preferred_categories": [
+      7,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 355,
+    "min_price": 173204,
+    "max_price": 258931,
+    "preferred_categories": [
+      5,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 356,
+    "min_price": 190010,
+    "max_price": 372692,
+    "preferred_categories": [
+      2,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 357,
+    "min_price": 37837,
+    "max_price": 343398,
+    "preferred_categories": [
+      3,
+      4,
+      11
+    ]
+  },
+  {
+    "user_id": 358,
+    "min_price": 59623,
+    "max_price": 281317,
+    "preferred_categories": [
+      1,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 359,
+    "min_price": 26790,
+    "max_price": 332501,
+    "preferred_categories": [
+      4,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 360,
+    "min_price": 158042,
+    "max_price": 384262,
+    "preferred_categories": [
+      1,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 361,
+    "min_price": 93593,
+    "max_price": 428215,
+    "preferred_categories": [
+      1,
+      3,
+      9
+    ]
+  },
+  {
+    "user_id": 362,
+    "min_price": 163969,
+    "max_price": 249481,
+    "preferred_categories": [
+      1,
+      4,
+      5
+    ]
+  },
+  {
+    "user_id": 363,
+    "min_price": 50161,
+    "max_price": 414483,
+    "preferred_categories": [
+      2,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 364,
+    "min_price": 118855,
+    "max_price": 464670,
+    "preferred_categories": [
+      1,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 365,
+    "min_price": 172110,
+    "max_price": 474311,
+    "preferred_categories": [
+      1,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 366,
+    "min_price": 114042,
+    "max_price": 348959,
+    "preferred_categories": [
+      9,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 367,
+    "min_price": 101587,
+    "max_price": 234548,
+    "preferred_categories": [
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 368,
+    "min_price": 174151,
+    "max_price": 219163,
+    "preferred_categories": [
+      1,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 369,
+    "min_price": 65234,
+    "max_price": 302195,
+    "preferred_categories": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "user_id": 370,
+    "min_price": 147660,
+    "max_price": 422472,
+    "preferred_categories": [
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 371,
+    "min_price": 146399,
+    "max_price": 227784,
+    "preferred_categories": [
+      5,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 372,
+    "min_price": 171040,
+    "max_price": 498482,
+    "preferred_categories": [
+      4,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 373,
+    "min_price": 25938,
+    "max_price": 373709,
+    "preferred_categories": [
+      4,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 374,
+    "min_price": 35826,
+    "max_price": 470459,
+    "preferred_categories": [
+      1,
+      3,
+      6
+    ]
+  },
+  {
+    "user_id": 375,
+    "min_price": 120657,
+    "max_price": 354110,
+    "preferred_categories": [
+      7,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 376,
+    "min_price": 117159,
+    "max_price": 206024,
+    "preferred_categories": [
+      4,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 377,
+    "min_price": 83301,
+    "max_price": 358946,
+    "preferred_categories": [
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 378,
+    "min_price": 59281,
+    "max_price": 308803,
+    "preferred_categories": [
+      1,
+      2,
+      9
+    ]
+  },
+  {
+    "user_id": 379,
+    "min_price": 31884,
+    "max_price": 474517,
+    "preferred_categories": [
+      7,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 380,
+    "min_price": 142871,
+    "max_price": 242390,
+    "preferred_categories": [
+      4,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 381,
+    "min_price": 187457,
+    "max_price": 340548,
+    "preferred_categories": [
+      4,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 382,
+    "min_price": 177984,
+    "max_price": 299177,
+    "preferred_categories": [
+      2,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 383,
+    "min_price": 82671,
+    "max_price": 270532,
+    "preferred_categories": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "user_id": 384,
+    "min_price": 88647,
+    "max_price": 268992,
+    "preferred_categories": [
+      8,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 385,
+    "min_price": 71976,
+    "max_price": 259627,
+    "preferred_categories": [
+      2,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 386,
+    "min_price": 39850,
+    "max_price": 266860,
+    "preferred_categories": [
+      1,
+      2,
+      7
+    ]
+  },
+  {
+    "user_id": 387,
+    "min_price": 112778,
+    "max_price": 202576,
+    "preferred_categories": [
+      2,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 388,
+    "min_price": 148181,
+    "max_price": 289778,
+    "preferred_categories": [
+      4,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 389,
+    "min_price": 98397,
+    "max_price": 318503,
+    "preferred_categories": [
+      1,
+      2,
+      10
+    ]
+  },
+  {
+    "user_id": 390,
+    "min_price": 126264,
+    "max_price": 307917,
+    "preferred_categories": [
+      10,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 391,
+    "min_price": 93056,
+    "max_price": 369358,
+    "preferred_categories": [
+      5,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 392,
+    "min_price": 59530,
+    "max_price": 373343,
+    "preferred_categories": [
+      6,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 393,
+    "min_price": 191858,
+    "max_price": 278415,
+    "preferred_categories": [
+      7,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 394,
+    "min_price": 78233,
+    "max_price": 254809,
+    "preferred_categories": [
+      2,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 395,
+    "min_price": 41600,
+    "max_price": 358742,
+    "preferred_categories": [
+      4,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 396,
+    "min_price": 136937,
+    "max_price": 435593,
+    "preferred_categories": [
+      2,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 397,
+    "min_price": 79308,
+    "max_price": 444664,
+    "preferred_categories": [
+      2,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 398,
+    "min_price": 189799,
+    "max_price": 257040,
+    "preferred_categories": [
+      5,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 399,
+    "min_price": 107481,
+    "max_price": 471971,
+    "preferred_categories": [
+      2,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 400,
+    "min_price": 69440,
+    "max_price": 285534,
+    "preferred_categories": [
+      2,
+      4,
+      7
+    ]
+  },
+  {
+    "user_id": 401,
+    "min_price": 28851,
+    "max_price": 399355,
+    "preferred_categories": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "user_id": 402,
+    "min_price": 130354,
+    "max_price": 267282,
+    "preferred_categories": [
+      9,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 403,
+    "min_price": 90246,
+    "max_price": 376411,
+    "preferred_categories": [
+      1,
+      2,
+      6
+    ]
+  },
+  {
+    "user_id": 404,
+    "min_price": 68397,
+    "max_price": 417066,
+    "preferred_categories": [
+      3,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 405,
+    "min_price": 50643,
+    "max_price": 312499,
+    "preferred_categories": [
+      1,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 406,
+    "min_price": 70706,
+    "max_price": 329969,
+    "preferred_categories": [
+      2,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 407,
+    "min_price": 70210,
+    "max_price": 468220,
+    "preferred_categories": [
+      3,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 408,
+    "min_price": 162311,
+    "max_price": 414297,
+    "preferred_categories": [
+      1,
+      2,
+      5
+    ]
+  },
+  {
+    "user_id": 409,
+    "min_price": 187847,
+    "max_price": 219953,
+    "preferred_categories": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "user_id": 410,
+    "min_price": 192908,
+    "max_price": 413257,
+    "preferred_categories": [
+      2,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 411,
+    "min_price": 192762,
+    "max_price": 334666,
+    "preferred_categories": [
+      3,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 412,
+    "min_price": 50456,
+    "max_price": 222514,
+    "preferred_categories": [
+      8,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 413,
+    "min_price": 123579,
+    "max_price": 259408,
+    "preferred_categories": [
+      1,
+      3,
+      9
+    ]
+  },
+  {
+    "user_id": 414,
+    "min_price": 16753,
+    "max_price": 319363,
+    "preferred_categories": [
+      2,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 415,
+    "min_price": 95097,
+    "max_price": 398450,
+    "preferred_categories": [
+      3,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 416,
+    "min_price": 107138,
+    "max_price": 388838,
+    "preferred_categories": [
+      3,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 417,
+    "min_price": 19251,
+    "max_price": 256776,
+    "preferred_categories": [
+      2,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 418,
+    "min_price": 82298,
+    "max_price": 383184,
+    "preferred_categories": [
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 419,
+    "min_price": 77538,
+    "max_price": 262198,
+    "preferred_categories": [
+      2,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 420,
+    "min_price": 139996,
+    "max_price": 276703,
+    "preferred_categories": [
+      1,
+      2,
+      5
+    ]
+  },
+  {
+    "user_id": 421,
+    "min_price": 38350,
+    "max_price": 276962,
+    "preferred_categories": [
+      1,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 422,
+    "min_price": 140548,
+    "max_price": 461187,
+    "preferred_categories": [
+      4,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 423,
+    "min_price": 45818,
+    "max_price": 480325,
+    "preferred_categories": [
+      2,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 424,
+    "min_price": 83641,
+    "max_price": 394427,
+    "preferred_categories": [
+      3,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 425,
+    "min_price": 99934,
+    "max_price": 435603,
+    "preferred_categories": [
+      3,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 426,
+    "min_price": 67709,
+    "max_price": 279346,
+    "preferred_categories": [
+      4,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 427,
+    "min_price": 93222,
+    "max_price": 306633,
+    "preferred_categories": [
+      3,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 428,
+    "min_price": 14466,
+    "max_price": 483980,
+    "preferred_categories": [
+      1,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 429,
+    "min_price": 173055,
+    "max_price": 214878,
+    "preferred_categories": [
+      1,
+      3,
+      9
+    ]
+  },
+  {
+    "user_id": 430,
+    "min_price": 160431,
+    "max_price": 263423,
+    "preferred_categories": [
+      4,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 431,
+    "min_price": 194270,
+    "max_price": 396807,
+    "preferred_categories": [
+      5,
+      6,
+      12
+    ]
+  },
+  {
+    "user_id": 432,
+    "min_price": 139244,
+    "max_price": 468006,
+    "preferred_categories": [
+      5,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 433,
+    "min_price": 54184,
+    "max_price": 386017,
+    "preferred_categories": [
+      4,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 434,
+    "min_price": 115716,
+    "max_price": 237391,
+    "preferred_categories": [
+      3,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 435,
+    "min_price": 29926,
+    "max_price": 415828,
+    "preferred_categories": [
+      8,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 436,
+    "min_price": 56098,
+    "max_price": 208006,
+    "preferred_categories": [
+      4,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 437,
+    "min_price": 92380,
+    "max_price": 282798,
+    "preferred_categories": [
+      7,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 438,
+    "min_price": 139215,
+    "max_price": 322382,
+    "preferred_categories": [
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 439,
+    "min_price": 24595,
+    "max_price": 495656,
+    "preferred_categories": [
+      5,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 440,
+    "min_price": 156629,
+    "max_price": 487736,
+    "preferred_categories": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 441,
+    "min_price": 162775,
+    "max_price": 348167,
+    "preferred_categories": [
+      2,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 442,
+    "min_price": 160420,
+    "max_price": 413534,
+    "preferred_categories": [
+      2,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 443,
+    "min_price": 155651,
+    "max_price": 292531,
+    "preferred_categories": [
+      1,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 444,
+    "min_price": 64763,
+    "max_price": 405225,
+    "preferred_categories": [
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 445,
+    "min_price": 172721,
+    "max_price": 388734,
+    "preferred_categories": [
+      1,
+      3,
+      9
+    ]
+  },
+  {
+    "user_id": 446,
+    "min_price": 69617,
+    "max_price": 200028,
+    "preferred_categories": [
+      4,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 447,
+    "min_price": 150465,
+    "max_price": 368086,
+    "preferred_categories": [
+      3,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 448,
+    "min_price": 88914,
+    "max_price": 453598,
+    "preferred_categories": [
+      5,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 449,
+    "min_price": 13516,
+    "max_price": 490092,
+    "preferred_categories": [
+      3,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 450,
+    "min_price": 195083,
+    "max_price": 260490,
+    "preferred_categories": [
+      4,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 451,
+    "min_price": 27274,
+    "max_price": 455598,
+    "preferred_categories": [
+      1,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 452,
+    "min_price": 161982,
+    "max_price": 494976,
+    "preferred_categories": [
+      4,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 453,
+    "min_price": 28764,
+    "max_price": 396066,
+    "preferred_categories": [
+      2,
+      3,
+      11
+    ]
+  },
+  {
+    "user_id": 454,
+    "min_price": 88243,
+    "max_price": 455579,
+    "preferred_categories": [
+      2,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 455,
+    "min_price": 70502,
+    "max_price": 409085,
+    "preferred_categories": [
+      5,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 456,
+    "min_price": 72053,
+    "max_price": 371029,
+    "preferred_categories": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 457,
+    "min_price": 196249,
+    "max_price": 295670,
+    "preferred_categories": [
+      1,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 458,
+    "min_price": 150430,
+    "max_price": 361928,
+    "preferred_categories": [
+      1,
+      5,
+      12
+    ]
+  },
+  {
+    "user_id": 459,
+    "min_price": 173729,
+    "max_price": 451024,
+    "preferred_categories": [
+      1,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 460,
+    "min_price": 98179,
+    "max_price": 490748,
+    "preferred_categories": [
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 461,
+    "min_price": 30336,
+    "max_price": 491945,
+    "preferred_categories": [
+      6,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 462,
+    "min_price": 70420,
+    "max_price": 241640,
+    "preferred_categories": [
+      2,
+      5,
+      12
+    ]
+  },
+  {
+    "user_id": 463,
+    "min_price": 35627,
+    "max_price": 223055,
+    "preferred_categories": [
+      3,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 464,
+    "min_price": 172942,
+    "max_price": 467233,
+    "preferred_categories": [
+      6,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 465,
+    "min_price": 90757,
+    "max_price": 209404,
+    "preferred_categories": [
+      6,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 466,
+    "min_price": 63309,
+    "max_price": 235052,
+    "preferred_categories": [
+      4,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 467,
+    "min_price": 122542,
+    "max_price": 352043,
+    "preferred_categories": [
+      6,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 468,
+    "min_price": 71188,
+    "max_price": 464655,
+    "preferred_categories": [
+      3,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 469,
+    "min_price": 99119,
+    "max_price": 452949,
+    "preferred_categories": [
+      4,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 470,
+    "min_price": 83280,
+    "max_price": 426276,
+    "preferred_categories": [
+      2,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 471,
+    "min_price": 72177,
+    "max_price": 216417,
+    "preferred_categories": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "user_id": 472,
+    "min_price": 71538,
+    "max_price": 475969,
+    "preferred_categories": [
+      2,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 473,
+    "min_price": 16907,
+    "max_price": 470315,
+    "preferred_categories": [
+      2,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 474,
+    "min_price": 110948,
+    "max_price": 278020,
+    "preferred_categories": [
+      4,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 475,
+    "min_price": 30121,
+    "max_price": 440036,
+    "preferred_categories": [
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 476,
+    "min_price": 30943,
+    "max_price": 314142,
+    "preferred_categories": [
+      2,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 477,
+    "min_price": 20699,
+    "max_price": 386746,
+    "preferred_categories": [
+      5,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 478,
+    "min_price": 14474,
+    "max_price": 261137,
+    "preferred_categories": [
+      1,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 479,
+    "min_price": 39433,
+    "max_price": 331372,
+    "preferred_categories": [
+      2,
+      4,
+      7
+    ]
+  },
+  {
+    "user_id": 480,
+    "min_price": 32680,
+    "max_price": 405773,
+    "preferred_categories": [
+      8,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 481,
+    "min_price": 132313,
+    "max_price": 429580,
+    "preferred_categories": [
+      2,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 482,
+    "min_price": 157741,
+    "max_price": 356059,
+    "preferred_categories": [
+      5,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 483,
+    "min_price": 55449,
+    "max_price": 271684,
+    "preferred_categories": [
+      5,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 484,
+    "min_price": 95631,
+    "max_price": 347716,
+    "preferred_categories": [
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 485,
+    "min_price": 62933,
+    "max_price": 411171,
+    "preferred_categories": [
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 486,
+    "min_price": 75683,
+    "max_price": 428977,
+    "preferred_categories": [
+      5,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 487,
+    "min_price": 187686,
+    "max_price": 466398,
+    "preferred_categories": [
+      3,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 488,
+    "min_price": 33315,
+    "max_price": 270081,
+    "preferred_categories": [
+      9,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 489,
+    "min_price": 51880,
+    "max_price": 485029,
+    "preferred_categories": [
+      1,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 490,
+    "min_price": 108198,
+    "max_price": 261276,
+    "preferred_categories": [
+      1,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 491,
+    "min_price": 92566,
+    "max_price": 407979,
+    "preferred_categories": [
+      1,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 492,
+    "min_price": 173882,
+    "max_price": 243348,
+    "preferred_categories": [
+      4,
+      6,
+      12
+    ]
+  },
+  {
+    "user_id": 493,
+    "min_price": 174035,
+    "max_price": 411586,
+    "preferred_categories": [
+      5,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 494,
+    "min_price": 144010,
+    "max_price": 297625,
+    "preferred_categories": [
+      1,
+      4,
+      7
+    ]
+  },
+  {
+    "user_id": 495,
+    "min_price": 92174,
+    "max_price": 402601,
+    "preferred_categories": [
+      7,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 496,
+    "min_price": 69504,
+    "max_price": 266498,
+    "preferred_categories": [
+      4,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 497,
+    "min_price": 41341,
+    "max_price": 303917,
+    "preferred_categories": [
+      5,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 498,
+    "min_price": 26146,
+    "max_price": 205307,
+    "preferred_categories": [
+      1,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 499,
+    "min_price": 124691,
+    "max_price": 471466,
+    "preferred_categories": [
+      1,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 500,
+    "min_price": 196676,
+    "max_price": 363805,
+    "preferred_categories": [
+      2,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 501,
+    "min_price": 62536,
+    "max_price": 328308,
+    "preferred_categories": [
+      3,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 502,
+    "min_price": 85770,
+    "max_price": 267523,
+    "preferred_categories": [
+      3,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 503,
+    "min_price": 84112,
+    "max_price": 332979,
+    "preferred_categories": [
+      1,
+      3,
+      11
+    ]
+  },
+  {
+    "user_id": 504,
+    "min_price": 180538,
+    "max_price": 309464,
+    "preferred_categories": [
+      5,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 505,
+    "min_price": 185347,
+    "max_price": 488292,
+    "preferred_categories": [
+      1,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 506,
+    "min_price": 165007,
+    "max_price": 361471,
+    "preferred_categories": [
+      7,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 507,
+    "min_price": 105248,
+    "max_price": 208687,
+    "preferred_categories": [
+      3,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 508,
+    "min_price": 161404,
+    "max_price": 232684,
+    "preferred_categories": [
+      2,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 509,
+    "min_price": 16172,
+    "max_price": 442554,
+    "preferred_categories": [
+      5,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 510,
+    "min_price": 170199,
+    "max_price": 204657,
+    "preferred_categories": [
+      3,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 511,
+    "min_price": 70377,
+    "max_price": 239389,
+    "preferred_categories": [
+      3,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 512,
+    "min_price": 101701,
+    "max_price": 218008,
+    "preferred_categories": [
+      1,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 513,
+    "min_price": 194651,
+    "max_price": 383759,
+    "preferred_categories": [
+      3,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 514,
+    "min_price": 61447,
+    "max_price": 306213,
+    "preferred_categories": [
+      4,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 515,
+    "min_price": 48279,
+    "max_price": 312123,
+    "preferred_categories": [
+      3,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 516,
+    "min_price": 116248,
+    "max_price": 361275,
+    "preferred_categories": [
+      4,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 517,
+    "min_price": 90908,
+    "max_price": 388396,
+    "preferred_categories": [
+      2,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 518,
+    "min_price": 133729,
+    "max_price": 288128,
+    "preferred_categories": [
+      5,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 519,
+    "min_price": 76334,
+    "max_price": 425896,
+    "preferred_categories": [
+      4,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 520,
+    "min_price": 49234,
+    "max_price": 227571,
+    "preferred_categories": [
+      3,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 521,
+    "min_price": 137397,
+    "max_price": 479020,
+    "preferred_categories": [
+      5,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 522,
+    "min_price": 43095,
+    "max_price": 204399,
+    "preferred_categories": [
+      3,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 523,
+    "min_price": 154358,
+    "max_price": 338325,
+    "preferred_categories": [
+      4,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 524,
+    "min_price": 132921,
+    "max_price": 336982,
+    "preferred_categories": [
+      3,
+      4,
+      9
+    ]
+  },
+  {
+    "user_id": 525,
+    "min_price": 91124,
+    "max_price": 341459,
+    "preferred_categories": [
+      3,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 526,
+    "min_price": 63478,
+    "max_price": 406510,
+    "preferred_categories": [
+      4,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 527,
+    "min_price": 64958,
+    "max_price": 332700,
+    "preferred_categories": [
+      2,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 528,
+    "min_price": 86953,
+    "max_price": 254230,
+    "preferred_categories": [
+      3,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 529,
+    "min_price": 171859,
+    "max_price": 216574,
+    "preferred_categories": [
+      4,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 530,
+    "min_price": 41795,
+    "max_price": 482990,
+    "preferred_categories": [
+      4,
+      6,
+      12
+    ]
+  },
+  {
+    "user_id": 531,
+    "min_price": 123832,
+    "max_price": 330133,
+    "preferred_categories": [
+      5,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 532,
+    "min_price": 53435,
+    "max_price": 395228,
+    "preferred_categories": [
+      1,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 533,
+    "min_price": 83245,
+    "max_price": 219301,
+    "preferred_categories": [
+      1,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 534,
+    "min_price": 116263,
+    "max_price": 241393,
+    "preferred_categories": [
+      2,
+      4,
+      10
+    ]
+  },
+  {
+    "user_id": 535,
+    "min_price": 50931,
+    "max_price": 209948,
+    "preferred_categories": [
+      4,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 536,
+    "min_price": 63782,
+    "max_price": 434471,
+    "preferred_categories": [
+      1,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 537,
+    "min_price": 161904,
+    "max_price": 402834,
+    "preferred_categories": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 538,
+    "min_price": 132616,
+    "max_price": 441114,
+    "preferred_categories": [
+      1,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 539,
+    "min_price": 31356,
+    "max_price": 467585,
+    "preferred_categories": [
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "user_id": 540,
+    "min_price": 95495,
+    "max_price": 348008,
+    "preferred_categories": [
+      1,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 541,
+    "min_price": 136281,
+    "max_price": 445390,
+    "preferred_categories": [
+      3,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 542,
+    "min_price": 25432,
+    "max_price": 323829,
+    "preferred_categories": [
+      3,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 543,
+    "min_price": 12607,
+    "max_price": 205185,
+    "preferred_categories": [
+      7,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 544,
+    "min_price": 26420,
+    "max_price": 490248,
+    "preferred_categories": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 545,
+    "min_price": 161027,
+    "max_price": 463292,
+    "preferred_categories": [
+      5,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 546,
+    "min_price": 157829,
+    "max_price": 480943,
+    "preferred_categories": [
+      2,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 547,
+    "min_price": 29055,
+    "max_price": 347856,
+    "preferred_categories": [
+      1,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 548,
+    "min_price": 96294,
+    "max_price": 239565,
+    "preferred_categories": [
+      2,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 549,
+    "min_price": 62437,
+    "max_price": 255734,
+    "preferred_categories": [
+      1,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 550,
+    "min_price": 183474,
+    "max_price": 242008,
+    "preferred_categories": [
+      2,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 551,
+    "min_price": 28705,
+    "max_price": 278966,
+    "preferred_categories": [
+      2,
+      4,
+      9
+    ]
+  },
+  {
+    "user_id": 552,
+    "min_price": 17762,
+    "max_price": 266072,
+    "preferred_categories": [
+      3,
+      4,
+      10
+    ]
+  },
+  {
+    "user_id": 553,
+    "min_price": 37376,
+    "max_price": 380708,
+    "preferred_categories": [
+      4,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 554,
+    "min_price": 109083,
+    "max_price": 207097,
+    "preferred_categories": [
+      2,
+      4,
+      9
+    ]
+  },
+  {
+    "user_id": 555,
+    "min_price": 167100,
+    "max_price": 220167,
+    "preferred_categories": [
+      2,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 556,
+    "min_price": 185659,
+    "max_price": 328447,
+    "preferred_categories": [
+      7,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 557,
+    "min_price": 158856,
+    "max_price": 263123,
+    "preferred_categories": [
+      2,
+      4,
+      10
+    ]
+  },
+  {
+    "user_id": 558,
+    "min_price": 101011,
+    "max_price": 244123,
+    "preferred_categories": [
+      4,
+      5,
+      12
+    ]
+  },
+  {
+    "user_id": 559,
+    "min_price": 197338,
+    "max_price": 212049,
+    "preferred_categories": [
+      1,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 560,
+    "min_price": 29596,
+    "max_price": 244946,
+    "preferred_categories": [
+      1,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 561,
+    "min_price": 45793,
+    "max_price": 358017,
+    "preferred_categories": [
+      6,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 562,
+    "min_price": 132333,
+    "max_price": 344701,
+    "preferred_categories": [
+      1,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 563,
+    "min_price": 180763,
+    "max_price": 411913,
+    "preferred_categories": [
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 564,
+    "min_price": 131493,
+    "max_price": 449587,
+    "preferred_categories": [
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "user_id": 565,
+    "min_price": 50115,
+    "max_price": 486488,
+    "preferred_categories": [
+      4,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 566,
+    "min_price": 138975,
+    "max_price": 362731,
+    "preferred_categories": [
+      1,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 567,
+    "min_price": 190331,
+    "max_price": 496717,
+    "preferred_categories": [
+      2,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 568,
+    "min_price": 157754,
+    "max_price": 306057,
+    "preferred_categories": [
+      3,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 569,
+    "min_price": 85126,
+    "max_price": 338709,
+    "preferred_categories": [
+      3,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 570,
+    "min_price": 143481,
+    "max_price": 200001,
+    "preferred_categories": [
+      4,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 571,
+    "min_price": 100696,
+    "max_price": 223457,
+    "preferred_categories": [
+      4,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 572,
+    "min_price": 25685,
+    "max_price": 441179,
+    "preferred_categories": [
+      3,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 573,
+    "min_price": 110800,
+    "max_price": 353594,
+    "preferred_categories": [
+      1,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 574,
+    "min_price": 13674,
+    "max_price": 393614,
+    "preferred_categories": [
+      3,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 575,
+    "min_price": 20528,
+    "max_price": 430394,
+    "preferred_categories": [
+      3,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 576,
+    "min_price": 152774,
+    "max_price": 331831,
+    "preferred_categories": [
+      1,
+      4,
+      9
+    ]
+  },
+  {
+    "user_id": 577,
+    "min_price": 120484,
+    "max_price": 398194,
+    "preferred_categories": [
+      6,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 578,
+    "min_price": 176286,
+    "max_price": 276427,
+    "preferred_categories": [
+      1,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 579,
+    "min_price": 117675,
+    "max_price": 499987,
+    "preferred_categories": [
+      6,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 580,
+    "min_price": 113585,
+    "max_price": 290614,
+    "preferred_categories": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "user_id": 581,
+    "min_price": 195676,
+    "max_price": 478243,
+    "preferred_categories": [
+      3,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 582,
+    "min_price": 128166,
+    "max_price": 402493,
+    "preferred_categories": [
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 583,
+    "min_price": 143737,
+    "max_price": 393992,
+    "preferred_categories": [
+      4,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 584,
+    "min_price": 88091,
+    "max_price": 327428,
+    "preferred_categories": [
+      2,
+      3,
+      6
+    ]
+  },
+  {
+    "user_id": 585,
+    "min_price": 164467,
+    "max_price": 462940,
+    "preferred_categories": [
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 586,
+    "min_price": 97582,
+    "max_price": 265145,
+    "preferred_categories": [
+      6,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 587,
+    "min_price": 125764,
+    "max_price": 451884,
+    "preferred_categories": [
+      1,
+      4,
+      10
+    ]
+  },
+  {
+    "user_id": 588,
+    "min_price": 123085,
+    "max_price": 470082,
+    "preferred_categories": [
+      4,
+      5,
+      12
+    ]
+  },
+  {
+    "user_id": 589,
+    "min_price": 55829,
+    "max_price": 302570,
+    "preferred_categories": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "user_id": 590,
+    "min_price": 163049,
+    "max_price": 271350,
+    "preferred_categories": [
+      6,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 591,
+    "min_price": 190070,
+    "max_price": 463176,
+    "preferred_categories": [
+      3,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 592,
+    "min_price": 115358,
+    "max_price": 239269,
+    "preferred_categories": [
+      7,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 593,
+    "min_price": 80321,
+    "max_price": 492234,
+    "preferred_categories": [
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 594,
+    "min_price": 150300,
+    "max_price": 447098,
+    "preferred_categories": [
+      3,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 595,
+    "min_price": 191239,
+    "max_price": 289440,
+    "preferred_categories": [
+      2,
+      4,
+      7
+    ]
+  },
+  {
+    "user_id": 596,
+    "min_price": 181703,
+    "max_price": 395653,
+    "preferred_categories": [
+      6,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 597,
+    "min_price": 39791,
+    "max_price": 413273,
+    "preferred_categories": [
+      4,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 598,
+    "min_price": 56526,
+    "max_price": 225693,
+    "preferred_categories": [
+      2,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 599,
+    "min_price": 135393,
+    "max_price": 457079,
+    "preferred_categories": [
+      3,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 600,
+    "min_price": 92399,
+    "max_price": 406200,
+    "preferred_categories": [
+      3,
+      6,
+      12
+    ]
+  },
+  {
+    "user_id": 601,
+    "min_price": 55926,
+    "max_price": 391476,
+    "preferred_categories": [
+      4,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 602,
+    "min_price": 98860,
+    "max_price": 425438,
+    "preferred_categories": [
+      6,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 603,
+    "min_price": 120570,
+    "max_price": 334418,
+    "preferred_categories": [
+      1,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 604,
+    "min_price": 28194,
+    "max_price": 348429,
+    "preferred_categories": [
+      1,
+      2,
+      8
+    ]
+  },
+  {
+    "user_id": 605,
+    "min_price": 37541,
+    "max_price": 400528,
+    "preferred_categories": [
+      4,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 606,
+    "min_price": 42896,
+    "max_price": 319216,
+    "preferred_categories": [
+      6,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 607,
+    "min_price": 46973,
+    "max_price": 480884,
+    "preferred_categories": [
+      5,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 608,
+    "min_price": 197788,
+    "max_price": 319510,
+    "preferred_categories": [
+      1,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 609,
+    "min_price": 74309,
+    "max_price": 311293,
+    "preferred_categories": [
+      3,
+      4,
+      10
+    ]
+  },
+  {
+    "user_id": 610,
+    "min_price": 181443,
+    "max_price": 393323,
+    "preferred_categories": [
+      3,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 611,
+    "min_price": 145582,
+    "max_price": 311966,
+    "preferred_categories": [
+      1,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 612,
+    "min_price": 90709,
+    "max_price": 406543,
+    "preferred_categories": [
+      5,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 613,
+    "min_price": 155861,
+    "max_price": 302751,
+    "preferred_categories": [
+      2,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 614,
+    "min_price": 47241,
+    "max_price": 207585,
+    "preferred_categories": [
+      6,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 615,
+    "min_price": 21504,
+    "max_price": 275659,
+    "preferred_categories": [
+      4,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 616,
+    "min_price": 28337,
+    "max_price": 406861,
+    "preferred_categories": [
+      5,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 617,
+    "min_price": 158731,
+    "max_price": 362463,
+    "preferred_categories": [
+      5,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 618,
+    "min_price": 30753,
+    "max_price": 411510,
+    "preferred_categories": [
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 619,
+    "min_price": 143009,
+    "max_price": 485980,
+    "preferred_categories": [
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 620,
+    "min_price": 110716,
+    "max_price": 220964,
+    "preferred_categories": [
+      2,
+      4,
+      7
+    ]
+  },
+  {
+    "user_id": 621,
+    "min_price": 151131,
+    "max_price": 315555,
+    "preferred_categories": [
+      5,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 622,
+    "min_price": 68516,
+    "max_price": 471157,
+    "preferred_categories": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "user_id": 623,
+    "min_price": 61140,
+    "max_price": 406859,
+    "preferred_categories": [
+      2,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 624,
+    "min_price": 152582,
+    "max_price": 464367,
+    "preferred_categories": [
+      5,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 625,
+    "min_price": 71607,
+    "max_price": 384728,
+    "preferred_categories": [
+      2,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 626,
+    "min_price": 43642,
+    "max_price": 442739,
+    "preferred_categories": [
+      2,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 627,
+    "min_price": 39891,
+    "max_price": 345081,
+    "preferred_categories": [
+      8,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 628,
+    "min_price": 151586,
+    "max_price": 356882,
+    "preferred_categories": [
+      9,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 629,
+    "min_price": 51296,
+    "max_price": 467710,
+    "preferred_categories": [
+      5,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 630,
+    "min_price": 133375,
+    "max_price": 320831,
+    "preferred_categories": [
+      7,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 631,
+    "min_price": 98064,
+    "max_price": 277376,
+    "preferred_categories": [
+      8,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 632,
+    "min_price": 92259,
+    "max_price": 336337,
+    "preferred_categories": [
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 633,
+    "min_price": 12925,
+    "max_price": 205914,
+    "preferred_categories": [
+      2,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 634,
+    "min_price": 180467,
+    "max_price": 334891,
+    "preferred_categories": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "user_id": 635,
+    "min_price": 93423,
+    "max_price": 293350,
+    "preferred_categories": [
+      1,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 636,
+    "min_price": 102234,
+    "max_price": 248133,
+    "preferred_categories": [
+      4,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 637,
+    "min_price": 66610,
+    "max_price": 463279,
+    "preferred_categories": [
+      6,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 638,
+    "min_price": 144563,
+    "max_price": 233225,
+    "preferred_categories": [
+      5,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 639,
+    "min_price": 24214,
+    "max_price": 480066,
+    "preferred_categories": [
+      1,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 640,
+    "min_price": 68870,
+    "max_price": 298201,
+    "preferred_categories": [
+      2,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 641,
+    "min_price": 22103,
+    "max_price": 316673,
+    "preferred_categories": [
+      6,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 642,
+    "min_price": 113156,
+    "max_price": 435702,
+    "preferred_categories": [
+      1,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 643,
+    "min_price": 131574,
+    "max_price": 382302,
+    "preferred_categories": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 644,
+    "min_price": 103934,
+    "max_price": 308676,
+    "preferred_categories": [
+      1,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 645,
+    "min_price": 88807,
+    "max_price": 424223,
+    "preferred_categories": [
+      2,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 646,
+    "min_price": 44269,
+    "max_price": 447228,
+    "preferred_categories": [
+      2,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 647,
+    "min_price": 55032,
+    "max_price": 277880,
+    "preferred_categories": [
+      1,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 648,
+    "min_price": 158303,
+    "max_price": 222776,
+    "preferred_categories": [
+      6,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 649,
+    "min_price": 61872,
+    "max_price": 472568,
+    "preferred_categories": [
+      1,
+      6,
+      12
+    ]
+  },
+  {
+    "user_id": 650,
+    "min_price": 106534,
+    "max_price": 326433,
+    "preferred_categories": [
+      1,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 651,
+    "min_price": 90419,
+    "max_price": 339979,
+    "preferred_categories": [
+      2,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 652,
+    "min_price": 137728,
+    "max_price": 444103,
+    "preferred_categories": [
+      3,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 653,
+    "min_price": 109824,
+    "max_price": 453724,
+    "preferred_categories": [
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 654,
+    "min_price": 127989,
+    "max_price": 487460,
+    "preferred_categories": [
+      1,
+      2,
+      8
+    ]
+  },
+  {
+    "user_id": 655,
+    "min_price": 182886,
+    "max_price": 483102,
+    "preferred_categories": [
+      2,
+      4,
+      11
+    ]
+  },
+  {
+    "user_id": 656,
+    "min_price": 127895,
+    "max_price": 249702,
+    "preferred_categories": [
+      7,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 657,
+    "min_price": 61869,
+    "max_price": 474378,
+    "preferred_categories": [
+      6,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 658,
+    "min_price": 145831,
+    "max_price": 362653,
+    "preferred_categories": [
+      8,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 659,
+    "min_price": 71649,
+    "max_price": 370714,
+    "preferred_categories": [
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 660,
+    "min_price": 28713,
+    "max_price": 258959,
+    "preferred_categories": [
+      2,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 661,
+    "min_price": 24301,
+    "max_price": 405274,
+    "preferred_categories": [
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 662,
+    "min_price": 99513,
+    "max_price": 220897,
+    "preferred_categories": [
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "user_id": 663,
+    "min_price": 156314,
+    "max_price": 454203,
+    "preferred_categories": [
+      9,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 664,
+    "min_price": 164531,
+    "max_price": 462761,
+    "preferred_categories": [
+      4,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 665,
+    "min_price": 59883,
+    "max_price": 325579,
+    "preferred_categories": [
+      6,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 666,
+    "min_price": 154694,
+    "max_price": 473233,
+    "preferred_categories": [
+      3,
+      4,
+      9
+    ]
+  },
+  {
+    "user_id": 667,
+    "min_price": 199716,
+    "max_price": 420925,
+    "preferred_categories": [
+      1,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 668,
+    "min_price": 106467,
+    "max_price": 200999,
+    "preferred_categories": [
+      2,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 669,
+    "min_price": 124949,
+    "max_price": 251803,
+    "preferred_categories": [
+      1,
+      2,
+      6
+    ]
+  },
+  {
+    "user_id": 670,
+    "min_price": 29863,
+    "max_price": 498285,
+    "preferred_categories": [
+      2,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 671,
+    "min_price": 122418,
+    "max_price": 262904,
+    "preferred_categories": [
+      2,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 672,
+    "min_price": 59595,
+    "max_price": 422921,
+    "preferred_categories": [
+      6,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 673,
+    "min_price": 177529,
+    "max_price": 420628,
+    "preferred_categories": [
+      1,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 674,
+    "min_price": 104702,
+    "max_price": 324917,
+    "preferred_categories": [
+      4,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 675,
+    "min_price": 75453,
+    "max_price": 430855,
+    "preferred_categories": [
+      5,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 676,
+    "min_price": 74778,
+    "max_price": 285582,
+    "preferred_categories": [
+      1,
+      2,
+      7
+    ]
+  },
+  {
+    "user_id": 677,
+    "min_price": 49463,
+    "max_price": 496860,
+    "preferred_categories": [
+      2,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 678,
+    "min_price": 187806,
+    "max_price": 423904,
+    "preferred_categories": [
+      2,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 679,
+    "min_price": 36785,
+    "max_price": 204938,
+    "preferred_categories": [
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "user_id": 680,
+    "min_price": 196746,
+    "max_price": 375284,
+    "preferred_categories": [
+      5,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 681,
+    "min_price": 29179,
+    "max_price": 244556,
+    "preferred_categories": [
+      5,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 682,
+    "min_price": 127759,
+    "max_price": 229152,
+    "preferred_categories": [
+      7,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 683,
+    "min_price": 64970,
+    "max_price": 361553,
+    "preferred_categories": [
+      3,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 684,
+    "min_price": 113220,
+    "max_price": 271352,
+    "preferred_categories": [
+      3,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 685,
+    "min_price": 74282,
+    "max_price": 295760,
+    "preferred_categories": [
+      1,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 686,
+    "min_price": 33441,
+    "max_price": 318293,
+    "preferred_categories": [
+      7,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 687,
+    "min_price": 40056,
+    "max_price": 383619,
+    "preferred_categories": [
+      3,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 688,
+    "min_price": 136938,
+    "max_price": 314795,
+    "preferred_categories": [
+      5,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 689,
+    "min_price": 189564,
+    "max_price": 478514,
+    "preferred_categories": [
+      4,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 690,
+    "min_price": 188127,
+    "max_price": 404950,
+    "preferred_categories": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 691,
+    "min_price": 106081,
+    "max_price": 445341,
+    "preferred_categories": [
+      1,
+      4,
+      5
+    ]
+  },
+  {
+    "user_id": 692,
+    "min_price": 77666,
+    "max_price": 449316,
+    "preferred_categories": [
+      1,
+      3,
+      6
+    ]
+  },
+  {
+    "user_id": 693,
+    "min_price": 138096,
+    "max_price": 302075,
+    "preferred_categories": [
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 694,
+    "min_price": 36009,
+    "max_price": 456352,
+    "preferred_categories": [
+      4,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 695,
+    "min_price": 92546,
+    "max_price": 490129,
+    "preferred_categories": [
+      2,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 696,
+    "min_price": 55286,
+    "max_price": 433637,
+    "preferred_categories": [
+      2,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 697,
+    "min_price": 31212,
+    "max_price": 210566,
+    "preferred_categories": [
+      7,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 698,
+    "min_price": 122169,
+    "max_price": 402223,
+    "preferred_categories": [
+      2,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 699,
+    "min_price": 198667,
+    "max_price": 244785,
+    "preferred_categories": [
+      1,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 700,
+    "min_price": 166371,
+    "max_price": 402291,
+    "preferred_categories": [
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 701,
+    "min_price": 78519,
+    "max_price": 313478,
+    "preferred_categories": [
+      2,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 702,
+    "min_price": 134520,
+    "max_price": 438841,
+    "preferred_categories": [
+      1,
+      3,
+      9
+    ]
+  },
+  {
+    "user_id": 703,
+    "min_price": 70655,
+    "max_price": 213094,
+    "preferred_categories": [
+      5,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 704,
+    "min_price": 43948,
+    "max_price": 350978,
+    "preferred_categories": [
+      3,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 705,
+    "min_price": 172807,
+    "max_price": 254726,
+    "preferred_categories": [
+      7,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 706,
+    "min_price": 189536,
+    "max_price": 434372,
+    "preferred_categories": [
+      4,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 707,
+    "min_price": 80288,
+    "max_price": 345034,
+    "preferred_categories": [
+      2,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 708,
+    "min_price": 187285,
+    "max_price": 232062,
+    "preferred_categories": [
+      2,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 709,
+    "min_price": 19443,
+    "max_price": 411841,
+    "preferred_categories": [
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 710,
+    "min_price": 18206,
+    "max_price": 453578,
+    "preferred_categories": [
+      2,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 711,
+    "min_price": 176591,
+    "max_price": 241167,
+    "preferred_categories": [
+      6,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 712,
+    "min_price": 166797,
+    "max_price": 371904,
+    "preferred_categories": [
+      9,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 713,
+    "min_price": 73973,
+    "max_price": 496726,
+    "preferred_categories": [
+      1,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 714,
+    "min_price": 39451,
+    "max_price": 285423,
+    "preferred_categories": [
+      1,
+      2,
+      9
+    ]
+  },
+  {
+    "user_id": 715,
+    "min_price": 76552,
+    "max_price": 235681,
+    "preferred_categories": [
+      2,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 716,
+    "min_price": 172449,
+    "max_price": 204840,
+    "preferred_categories": [
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 717,
+    "min_price": 175646,
+    "max_price": 405744,
+    "preferred_categories": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "user_id": 718,
+    "min_price": 116395,
+    "max_price": 247418,
+    "preferred_categories": [
+      1,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 719,
+    "min_price": 54245,
+    "max_price": 268489,
+    "preferred_categories": [
+      5,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 720,
+    "min_price": 165590,
+    "max_price": 328945,
+    "preferred_categories": [
+      3,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 721,
+    "min_price": 141893,
+    "max_price": 410193,
+    "preferred_categories": [
+      6,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 722,
+    "min_price": 40830,
+    "max_price": 345034,
+    "preferred_categories": [
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "user_id": 723,
+    "min_price": 64143,
+    "max_price": 364372,
+    "preferred_categories": [
+      4,
+      5,
+      12
+    ]
+  },
+  {
+    "user_id": 724,
+    "min_price": 129138,
+    "max_price": 290738,
+    "preferred_categories": [
+      2,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 725,
+    "min_price": 85609,
+    "max_price": 338965,
+    "preferred_categories": [
+      2,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 726,
+    "min_price": 143254,
+    "max_price": 467121,
+    "preferred_categories": [
+      5,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 727,
+    "min_price": 27107,
+    "max_price": 389983,
+    "preferred_categories": [
+      2,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 728,
+    "min_price": 56319,
+    "max_price": 483851,
+    "preferred_categories": [
+      4,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 729,
+    "min_price": 165939,
+    "max_price": 424730,
+    "preferred_categories": [
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "user_id": 730,
+    "min_price": 48359,
+    "max_price": 249321,
+    "preferred_categories": [
+      2,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 731,
+    "min_price": 81205,
+    "max_price": 307430,
+    "preferred_categories": [
+      1,
+      2,
+      11
+    ]
+  },
+  {
+    "user_id": 732,
+    "min_price": 37884,
+    "max_price": 347301,
+    "preferred_categories": [
+      1,
+      3,
+      9
+    ]
+  },
+  {
+    "user_id": 733,
+    "min_price": 110893,
+    "max_price": 203743,
+    "preferred_categories": [
+      5,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 734,
+    "min_price": 183232,
+    "max_price": 292487,
+    "preferred_categories": [
+      1,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 735,
+    "min_price": 39677,
+    "max_price": 322767,
+    "preferred_categories": [
+      1,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 736,
+    "min_price": 80208,
+    "max_price": 358514,
+    "preferred_categories": [
+      4,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 737,
+    "min_price": 139153,
+    "max_price": 427105,
+    "preferred_categories": [
+      2,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 738,
+    "min_price": 63987,
+    "max_price": 357046,
+    "preferred_categories": [
+      4,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 739,
+    "min_price": 26776,
+    "max_price": 307964,
+    "preferred_categories": [
+      1,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 740,
+    "min_price": 39023,
+    "max_price": 316623,
+    "preferred_categories": [
+      2,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 741,
+    "min_price": 62415,
+    "max_price": 228760,
+    "preferred_categories": [
+      1,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 742,
+    "min_price": 150402,
+    "max_price": 338286,
+    "preferred_categories": [
+      1,
+      2,
+      7
+    ]
+  },
+  {
+    "user_id": 743,
+    "min_price": 154962,
+    "max_price": 438728,
+    "preferred_categories": [
+      1,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 744,
+    "min_price": 192372,
+    "max_price": 404981,
+    "preferred_categories": [
+      5,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 745,
+    "min_price": 25575,
+    "max_price": 359528,
+    "preferred_categories": [
+      2,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 746,
+    "min_price": 163587,
+    "max_price": 349781,
+    "preferred_categories": [
+      1,
+      3,
+      9
+    ]
+  },
+  {
+    "user_id": 747,
+    "min_price": 59843,
+    "max_price": 385237,
+    "preferred_categories": [
+      8,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 748,
+    "min_price": 183937,
+    "max_price": 384632,
+    "preferred_categories": [
+      5,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 749,
+    "min_price": 148491,
+    "max_price": 306961,
+    "preferred_categories": [
+      5,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 750,
+    "min_price": 30844,
+    "max_price": 396479,
+    "preferred_categories": [
+      5,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 751,
+    "min_price": 189743,
+    "max_price": 353952,
+    "preferred_categories": [
+      6,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 752,
+    "min_price": 72535,
+    "max_price": 458229,
+    "preferred_categories": [
+      2,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 753,
+    "min_price": 162472,
+    "max_price": 423828,
+    "preferred_categories": [
+      3,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 754,
+    "min_price": 195449,
+    "max_price": 369405,
+    "preferred_categories": [
+      6,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 755,
+    "min_price": 59505,
+    "max_price": 394880,
+    "preferred_categories": [
+      1,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 756,
+    "min_price": 75680,
+    "max_price": 216125,
+    "preferred_categories": [
+      3,
+      4,
+      6
+    ]
+  },
+  {
+    "user_id": 757,
+    "min_price": 185734,
+    "max_price": 269805,
+    "preferred_categories": [
+      2,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 758,
+    "min_price": 157617,
+    "max_price": 413799,
+    "preferred_categories": [
+      6,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 759,
+    "min_price": 181745,
+    "max_price": 302053,
+    "preferred_categories": [
+      6,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 760,
+    "min_price": 167980,
+    "max_price": 473261,
+    "preferred_categories": [
+      3,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 761,
+    "min_price": 106289,
+    "max_price": 445051,
+    "preferred_categories": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "user_id": 762,
+    "min_price": 132984,
+    "max_price": 212245,
+    "preferred_categories": [
+      2,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 763,
+    "min_price": 113380,
+    "max_price": 480413,
+    "preferred_categories": [
+      3,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 764,
+    "min_price": 53256,
+    "max_price": 352346,
+    "preferred_categories": [
+      5,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 765,
+    "min_price": 26399,
+    "max_price": 449161,
+    "preferred_categories": [
+      2,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 766,
+    "min_price": 66688,
+    "max_price": 400195,
+    "preferred_categories": [
+      1,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 767,
+    "min_price": 41649,
+    "max_price": 360809,
+    "preferred_categories": [
+      2,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 768,
+    "min_price": 143779,
+    "max_price": 487223,
+    "preferred_categories": [
+      3,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 769,
+    "min_price": 163079,
+    "max_price": 364632,
+    "preferred_categories": [
+      4,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 770,
+    "min_price": 116680,
+    "max_price": 332071,
+    "preferred_categories": [
+      1,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 771,
+    "min_price": 89174,
+    "max_price": 396359,
+    "preferred_categories": [
+      1,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 772,
+    "min_price": 92456,
+    "max_price": 320385,
+    "preferred_categories": [
+      3,
+      4,
+      6
+    ]
+  },
+  {
+    "user_id": 773,
+    "min_price": 93796,
+    "max_price": 380098,
+    "preferred_categories": [
+      2,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 774,
+    "min_price": 102819,
+    "max_price": 385140,
+    "preferred_categories": [
+      1,
+      2,
+      11
+    ]
+  },
+  {
+    "user_id": 775,
+    "min_price": 163744,
+    "max_price": 473604,
+    "preferred_categories": [
+      6,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 776,
+    "min_price": 178265,
+    "max_price": 296380,
+    "preferred_categories": [
+      7,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 777,
+    "min_price": 187165,
+    "max_price": 217741,
+    "preferred_categories": [
+      2,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 778,
+    "min_price": 141762,
+    "max_price": 468179,
+    "preferred_categories": [
+      3,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 779,
+    "min_price": 157564,
+    "max_price": 265103,
+    "preferred_categories": [
+      1,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 780,
+    "min_price": 57513,
+    "max_price": 318917,
+    "preferred_categories": [
+      5,
+      6,
+      12
+    ]
+  },
+  {
+    "user_id": 781,
+    "min_price": 73388,
+    "max_price": 335389,
+    "preferred_categories": [
+      3,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 782,
+    "min_price": 41122,
+    "max_price": 344494,
+    "preferred_categories": [
+      2,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 783,
+    "min_price": 43930,
+    "max_price": 468987,
+    "preferred_categories": [
+      1,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 784,
+    "min_price": 64279,
+    "max_price": 480547,
+    "preferred_categories": [
+      2,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 785,
+    "min_price": 122880,
+    "max_price": 375866,
+    "preferred_categories": [
+      8,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 786,
+    "min_price": 138257,
+    "max_price": 438184,
+    "preferred_categories": [
+      2,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 787,
+    "min_price": 42324,
+    "max_price": 221519,
+    "preferred_categories": [
+      1,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 788,
+    "min_price": 114298,
+    "max_price": 207393,
+    "preferred_categories": [
+      1,
+      2,
+      9
+    ]
+  },
+  {
+    "user_id": 789,
+    "min_price": 168810,
+    "max_price": 356242,
+    "preferred_categories": [
+      9,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 790,
+    "min_price": 87084,
+    "max_price": 394532,
+    "preferred_categories": [
+      2,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 791,
+    "min_price": 160752,
+    "max_price": 322534,
+    "preferred_categories": [
+      5,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 792,
+    "min_price": 177535,
+    "max_price": 296770,
+    "preferred_categories": [
+      2,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 793,
+    "min_price": 181579,
+    "max_price": 359411,
+    "preferred_categories": [
+      7,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 794,
+    "min_price": 147171,
+    "max_price": 215607,
+    "preferred_categories": [
+      5,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 795,
+    "min_price": 29720,
+    "max_price": 252366,
+    "preferred_categories": [
+      3,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 796,
+    "min_price": 62941,
+    "max_price": 481102,
+    "preferred_categories": [
+      1,
+      3,
+      6
+    ]
+  },
+  {
+    "user_id": 797,
+    "min_price": 165244,
+    "max_price": 264008,
+    "preferred_categories": [
+      6,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 798,
+    "min_price": 198569,
+    "max_price": 344748,
+    "preferred_categories": [
+      1,
+      3,
+      6
+    ]
+  },
+  {
+    "user_id": 799,
+    "min_price": 95359,
+    "max_price": 491171,
+    "preferred_categories": [
+      1,
+      4,
+      6
+    ]
+  },
+  {
+    "user_id": 800,
+    "min_price": 95032,
+    "max_price": 213500,
+    "preferred_categories": [
+      8,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 801,
+    "min_price": 132018,
+    "max_price": 450193,
+    "preferred_categories": [
+      1,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 802,
+    "min_price": 154584,
+    "max_price": 341561,
+    "preferred_categories": [
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 803,
+    "min_price": 180115,
+    "max_price": 491900,
+    "preferred_categories": [
+      4,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 804,
+    "min_price": 151088,
+    "max_price": 206970,
+    "preferred_categories": [
+      2,
+      4,
+      9
+    ]
+  },
+  {
+    "user_id": 805,
+    "min_price": 25455,
+    "max_price": 316695,
+    "preferred_categories": [
+      5,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 806,
+    "min_price": 34601,
+    "max_price": 382649,
+    "preferred_categories": [
+      1,
+      2,
+      10
+    ]
+  },
+  {
+    "user_id": 807,
+    "min_price": 194583,
+    "max_price": 256997,
+    "preferred_categories": [
+      2,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 808,
+    "min_price": 184349,
+    "max_price": 365277,
+    "preferred_categories": [
+      2,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 809,
+    "min_price": 152806,
+    "max_price": 485349,
+    "preferred_categories": [
+      2,
+      4,
+      11
+    ]
+  },
+  {
+    "user_id": 810,
+    "min_price": 53863,
+    "max_price": 480262,
+    "preferred_categories": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "user_id": 811,
+    "min_price": 95202,
+    "max_price": 486303,
+    "preferred_categories": [
+      2,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 812,
+    "min_price": 55993,
+    "max_price": 258131,
+    "preferred_categories": [
+      8,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 813,
+    "min_price": 126936,
+    "max_price": 463050,
+    "preferred_categories": [
+      2,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 814,
+    "min_price": 29333,
+    "max_price": 270756,
+    "preferred_categories": [
+      3,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 815,
+    "min_price": 109027,
+    "max_price": 231164,
+    "preferred_categories": [
+      1,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 816,
+    "min_price": 33207,
+    "max_price": 463899,
+    "preferred_categories": [
+      2,
+      3,
+      11
+    ]
+  },
+  {
+    "user_id": 817,
+    "min_price": 123759,
+    "max_price": 399007,
+    "preferred_categories": [
+      2,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 818,
+    "min_price": 61278,
+    "max_price": 417191,
+    "preferred_categories": [
+      2,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 819,
+    "min_price": 130956,
+    "max_price": 343102,
+    "preferred_categories": [
+      2,
+      4,
+      11
+    ]
+  },
+  {
+    "user_id": 820,
+    "min_price": 117529,
+    "max_price": 444359,
+    "preferred_categories": [
+      2,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 821,
+    "min_price": 148816,
+    "max_price": 456975,
+    "preferred_categories": [
+      1,
+      6,
+      12
+    ]
+  },
+  {
+    "user_id": 822,
+    "min_price": 127452,
+    "max_price": 281006,
+    "preferred_categories": [
+      4,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 823,
+    "min_price": 100855,
+    "max_price": 397983,
+    "preferred_categories": [
+      2,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 824,
+    "min_price": 76855,
+    "max_price": 355294,
+    "preferred_categories": [
+      2,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 825,
+    "min_price": 194612,
+    "max_price": 422055,
+    "preferred_categories": [
+      1,
+      4,
+      9
+    ]
+  },
+  {
+    "user_id": 826,
+    "min_price": 97653,
+    "max_price": 214989,
+    "preferred_categories": [
+      6,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 827,
+    "min_price": 157064,
+    "max_price": 269975,
+    "preferred_categories": [
+      1,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 828,
+    "min_price": 152366,
+    "max_price": 494117,
+    "preferred_categories": [
+      1,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 829,
+    "min_price": 65141,
+    "max_price": 231915,
+    "preferred_categories": [
+      3,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 830,
+    "min_price": 198250,
+    "max_price": 458923,
+    "preferred_categories": [
+      1,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 831,
+    "min_price": 141296,
+    "max_price": 389130,
+    "preferred_categories": [
+      2,
+      3,
+      6
+    ]
+  },
+  {
+    "user_id": 832,
+    "min_price": 42046,
+    "max_price": 470729,
+    "preferred_categories": [
+      3,
+      5,
+      12
+    ]
+  },
+  {
+    "user_id": 833,
+    "min_price": 30181,
+    "max_price": 474279,
+    "preferred_categories": [
+      1,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 834,
+    "min_price": 98575,
+    "max_price": 406649,
+    "preferred_categories": [
+      4,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 835,
+    "min_price": 184081,
+    "max_price": 267055,
+    "preferred_categories": [
+      1,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 836,
+    "min_price": 156447,
+    "max_price": 276545,
+    "preferred_categories": [
+      4,
+      5,
+      12
+    ]
+  },
+  {
+    "user_id": 837,
+    "min_price": 36190,
+    "max_price": 482190,
+    "preferred_categories": [
+      4,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 838,
+    "min_price": 199736,
+    "max_price": 370077,
+    "preferred_categories": [
+      2,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 839,
+    "min_price": 154005,
+    "max_price": 231280,
+    "preferred_categories": [
+      2,
+      4,
+      9
+    ]
+  },
+  {
+    "user_id": 840,
+    "min_price": 71108,
+    "max_price": 495127,
+    "preferred_categories": [
+      2,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 841,
+    "min_price": 151388,
+    "max_price": 379036,
+    "preferred_categories": [
+      2,
+      3,
+      6
+    ]
+  },
+  {
+    "user_id": 842,
+    "min_price": 166094,
+    "max_price": 275802,
+    "preferred_categories": [
+      1,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 843,
+    "min_price": 65851,
+    "max_price": 382652,
+    "preferred_categories": [
+      2,
+      3,
+      8
+    ]
+  },
+  {
+    "user_id": 844,
+    "min_price": 19464,
+    "max_price": 442575,
+    "preferred_categories": [
+      3,
+      4,
+      10
+    ]
+  },
+  {
+    "user_id": 845,
+    "min_price": 124543,
+    "max_price": 250858,
+    "preferred_categories": [
+      1,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 846,
+    "min_price": 103129,
+    "max_price": 337823,
+    "preferred_categories": [
+      5,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 847,
+    "min_price": 144115,
+    "max_price": 245935,
+    "preferred_categories": [
+      8,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 848,
+    "min_price": 14192,
+    "max_price": 370596,
+    "preferred_categories": [
+      5,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 849,
+    "min_price": 20895,
+    "max_price": 399212,
+    "preferred_categories": [
+      2,
+      3,
+      6
+    ]
+  },
+  {
+    "user_id": 850,
+    "min_price": 166707,
+    "max_price": 476076,
+    "preferred_categories": [
+      4,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 851,
+    "min_price": 130374,
+    "max_price": 467415,
+    "preferred_categories": [
+      4,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 852,
+    "min_price": 159580,
+    "max_price": 367151,
+    "preferred_categories": [
+      1,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 853,
+    "min_price": 97724,
+    "max_price": 320912,
+    "preferred_categories": [
+      4,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 854,
+    "min_price": 36661,
+    "max_price": 227404,
+    "preferred_categories": [
+      2,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 855,
+    "min_price": 178926,
+    "max_price": 216256,
+    "preferred_categories": [
+      5,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 856,
+    "min_price": 80569,
+    "max_price": 387475,
+    "preferred_categories": [
+      7,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 857,
+    "min_price": 26385,
+    "max_price": 249253,
+    "preferred_categories": [
+      3,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 858,
+    "min_price": 176910,
+    "max_price": 375847,
+    "preferred_categories": [
+      6,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 859,
+    "min_price": 82035,
+    "max_price": 251309,
+    "preferred_categories": [
+      8,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 860,
+    "min_price": 50345,
+    "max_price": 384041,
+    "preferred_categories": [
+      6,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 861,
+    "min_price": 106483,
+    "max_price": 477161,
+    "preferred_categories": [
+      5,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 862,
+    "min_price": 27343,
+    "max_price": 218587,
+    "preferred_categories": [
+      1,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 863,
+    "min_price": 71235,
+    "max_price": 284722,
+    "preferred_categories": [
+      3,
+      4,
+      11
+    ]
+  },
+  {
+    "user_id": 864,
+    "min_price": 138762,
+    "max_price": 223603,
+    "preferred_categories": [
+      1,
+      3,
+      7
+    ]
+  },
+  {
+    "user_id": 865,
+    "min_price": 13085,
+    "max_price": 399762,
+    "preferred_categories": [
+      5,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 866,
+    "min_price": 114094,
+    "max_price": 299484,
+    "preferred_categories": [
+      1,
+      2,
+      12
+    ]
+  },
+  {
+    "user_id": 867,
+    "min_price": 70302,
+    "max_price": 407379,
+    "preferred_categories": [
+      2,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 868,
+    "min_price": 137758,
+    "max_price": 292348,
+    "preferred_categories": [
+      4,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 869,
+    "min_price": 138395,
+    "max_price": 287417,
+    "preferred_categories": [
+      4,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 870,
+    "min_price": 66947,
+    "max_price": 200590,
+    "preferred_categories": [
+      3,
+      5,
+      12
+    ]
+  },
+  {
+    "user_id": 871,
+    "min_price": 85320,
+    "max_price": 440673,
+    "preferred_categories": [
+      2,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 872,
+    "min_price": 116973,
+    "max_price": 356709,
+    "preferred_categories": [
+      2,
+      4,
+      7
+    ]
+  },
+  {
+    "user_id": 873,
+    "min_price": 186602,
+    "max_price": 386039,
+    "preferred_categories": [
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "user_id": 874,
+    "min_price": 75658,
+    "max_price": 270051,
+    "preferred_categories": [
+      5,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 875,
+    "min_price": 164864,
+    "max_price": 436580,
+    "preferred_categories": [
+      5,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 876,
+    "min_price": 113863,
+    "max_price": 202918,
+    "preferred_categories": [
+      1,
+      2,
+      8
+    ]
+  },
+  {
+    "user_id": 877,
+    "min_price": 149400,
+    "max_price": 318488,
+    "preferred_categories": [
+      1,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 878,
+    "min_price": 140817,
+    "max_price": 315256,
+    "preferred_categories": [
+      4,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 879,
+    "min_price": 18867,
+    "max_price": 489213,
+    "preferred_categories": [
+      2,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 880,
+    "min_price": 70527,
+    "max_price": 446056,
+    "preferred_categories": [
+      1,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 881,
+    "min_price": 106178,
+    "max_price": 409633,
+    "preferred_categories": [
+      8,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 882,
+    "min_price": 49239,
+    "max_price": 451351,
+    "preferred_categories": [
+      9,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 883,
+    "min_price": 15383,
+    "max_price": 215427,
+    "preferred_categories": [
+      4,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 884,
+    "min_price": 31959,
+    "max_price": 406498,
+    "preferred_categories": [
+      2,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 885,
+    "min_price": 108994,
+    "max_price": 365405,
+    "preferred_categories": [
+      2,
+      4,
+      7
+    ]
+  },
+  {
+    "user_id": 886,
+    "min_price": 104025,
+    "max_price": 280593,
+    "preferred_categories": [
+      1,
+      3,
+      12
+    ]
+  },
+  {
+    "user_id": 887,
+    "min_price": 182917,
+    "max_price": 275781,
+    "preferred_categories": [
+      1,
+      2,
+      10
+    ]
+  },
+  {
+    "user_id": 888,
+    "min_price": 51336,
+    "max_price": 278623,
+    "preferred_categories": [
+      1,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 889,
+    "min_price": 137118,
+    "max_price": 479862,
+    "preferred_categories": [
+      1,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 890,
+    "min_price": 109092,
+    "max_price": 371046,
+    "preferred_categories": [
+      4,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 891,
+    "min_price": 133532,
+    "max_price": 226188,
+    "preferred_categories": [
+      2,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 892,
+    "min_price": 178951,
+    "max_price": 413603,
+    "preferred_categories": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 893,
+    "min_price": 191499,
+    "max_price": 330993,
+    "preferred_categories": [
+      2,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 894,
+    "min_price": 144381,
+    "max_price": 487445,
+    "preferred_categories": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "user_id": 895,
+    "min_price": 102496,
+    "max_price": 446419,
+    "preferred_categories": [
+      2,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 896,
+    "min_price": 159943,
+    "max_price": 411668,
+    "preferred_categories": [
+      9,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 897,
+    "min_price": 49946,
+    "max_price": 274151,
+    "preferred_categories": [
+      7,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 898,
+    "min_price": 173407,
+    "max_price": 454904,
+    "preferred_categories": [
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 899,
+    "min_price": 42955,
+    "max_price": 468542,
+    "preferred_categories": [
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 900,
+    "min_price": 61101,
+    "max_price": 317048,
+    "preferred_categories": [
+      6,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 901,
+    "min_price": 74675,
+    "max_price": 385289,
+    "preferred_categories": [
+      1,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 902,
+    "min_price": 72409,
+    "max_price": 266676,
+    "preferred_categories": [
+      3,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 903,
+    "min_price": 100314,
+    "max_price": 254136,
+    "preferred_categories": [
+      2,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 904,
+    "min_price": 151225,
+    "max_price": 314605,
+    "preferred_categories": [
+      1,
+      5,
+      8
+    ]
+  },
+  {
+    "user_id": 905,
+    "min_price": 45195,
+    "max_price": 459648,
+    "preferred_categories": [
+      6,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 906,
+    "min_price": 86609,
+    "max_price": 295585,
+    "preferred_categories": [
+      2,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 907,
+    "min_price": 75883,
+    "max_price": 371041,
+    "preferred_categories": [
+      3,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 908,
+    "min_price": 57193,
+    "max_price": 371542,
+    "preferred_categories": [
+      4,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 909,
+    "min_price": 32255,
+    "max_price": 419290,
+    "preferred_categories": [
+      5,
+      6,
+      12
+    ]
+  },
+  {
+    "user_id": 910,
+    "min_price": 154274,
+    "max_price": 332905,
+    "preferred_categories": [
+      2,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 911,
+    "min_price": 92842,
+    "max_price": 396616,
+    "preferred_categories": [
+      1,
+      2,
+      8
+    ]
+  },
+  {
+    "user_id": 912,
+    "min_price": 72568,
+    "max_price": 225868,
+    "preferred_categories": [
+      4,
+      5,
+      11
+    ]
+  },
+  {
+    "user_id": 913,
+    "min_price": 158045,
+    "max_price": 483313,
+    "preferred_categories": [
+      3,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 914,
+    "min_price": 59021,
+    "max_price": 409500,
+    "preferred_categories": [
+      8,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 915,
+    "min_price": 136188,
+    "max_price": 347719,
+    "preferred_categories": [
+      1,
+      3,
+      6
+    ]
+  },
+  {
+    "user_id": 916,
+    "min_price": 70254,
+    "max_price": 300122,
+    "preferred_categories": [
+      3,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 917,
+    "min_price": 172369,
+    "max_price": 306186,
+    "preferred_categories": [
+      7,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 918,
+    "min_price": 48222,
+    "max_price": 317909,
+    "preferred_categories": [
+      8,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 919,
+    "min_price": 51965,
+    "max_price": 243993,
+    "preferred_categories": [
+      7,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 920,
+    "min_price": 172458,
+    "max_price": 322095,
+    "preferred_categories": [
+      1,
+      2,
+      7
+    ]
+  },
+  {
+    "user_id": 921,
+    "min_price": 60419,
+    "max_price": 305860,
+    "preferred_categories": [
+      3,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 922,
+    "min_price": 24312,
+    "max_price": 399045,
+    "preferred_categories": [
+      1,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 923,
+    "min_price": 25075,
+    "max_price": 466188,
+    "preferred_categories": [
+      5,
+      6,
+      12
+    ]
+  },
+  {
+    "user_id": 924,
+    "min_price": 44907,
+    "max_price": 328821,
+    "preferred_categories": [
+      1,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 925,
+    "min_price": 194685,
+    "max_price": 392780,
+    "preferred_categories": [
+      2,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 926,
+    "min_price": 186881,
+    "max_price": 263701,
+    "preferred_categories": [
+      5,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 927,
+    "min_price": 149804,
+    "max_price": 485278,
+    "preferred_categories": [
+      2,
+      3,
+      9
+    ]
+  },
+  {
+    "user_id": 928,
+    "min_price": 25740,
+    "max_price": 265979,
+    "preferred_categories": [
+      5,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 929,
+    "min_price": 13802,
+    "max_price": 296060,
+    "preferred_categories": [
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "user_id": 930,
+    "min_price": 183938,
+    "max_price": 314827,
+    "preferred_categories": [
+      2,
+      3,
+      10
+    ]
+  },
+  {
+    "user_id": 931,
+    "min_price": 75977,
+    "max_price": 327857,
+    "preferred_categories": [
+      1,
+      4,
+      6
+    ]
+  },
+  {
+    "user_id": 932,
+    "min_price": 195946,
+    "max_price": 336696,
+    "preferred_categories": [
+      3,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 933,
+    "min_price": 61627,
+    "max_price": 381827,
+    "preferred_categories": [
+      5,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 934,
+    "min_price": 37800,
+    "max_price": 402772,
+    "preferred_categories": [
+      5,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 935,
+    "min_price": 103666,
+    "max_price": 419875,
+    "preferred_categories": [
+      4,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 936,
+    "min_price": 147215,
+    "max_price": 370256,
+    "preferred_categories": [
+      3,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 937,
+    "min_price": 81170,
+    "max_price": 499515,
+    "preferred_categories": [
+      2,
+      4,
+      9
+    ]
+  },
+  {
+    "user_id": 938,
+    "min_price": 123869,
+    "max_price": 489669,
+    "preferred_categories": [
+      3,
+      4,
+      9
+    ]
+  },
+  {
+    "user_id": 939,
+    "min_price": 157598,
+    "max_price": 318548,
+    "preferred_categories": [
+      8,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 940,
+    "min_price": 73800,
+    "max_price": 378058,
+    "preferred_categories": [
+      3,
+      8,
+      12
+    ]
+  },
+  {
+    "user_id": 941,
+    "min_price": 155387,
+    "max_price": 295093,
+    "preferred_categories": [
+      4,
+      7,
+      10
+    ]
+  },
+  {
+    "user_id": 942,
+    "min_price": 77953,
+    "max_price": 255137,
+    "preferred_categories": [
+      4,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 943,
+    "min_price": 175620,
+    "max_price": 460003,
+    "preferred_categories": [
+      3,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 944,
+    "min_price": 67087,
+    "max_price": 435210,
+    "preferred_categories": [
+      7,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 945,
+    "min_price": 21594,
+    "max_price": 408719,
+    "preferred_categories": [
+      9,
+      11,
+      12
+    ]
+  },
+  {
+    "user_id": 946,
+    "min_price": 64387,
+    "max_price": 442983,
+    "preferred_categories": [
+      1,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 947,
+    "min_price": 170553,
+    "max_price": 417183,
+    "preferred_categories": [
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "user_id": 948,
+    "min_price": 60047,
+    "max_price": 245504,
+    "preferred_categories": [
+      6,
+      8,
+      9
+    ]
+  },
+  {
+    "user_id": 949,
+    "min_price": 99657,
+    "max_price": 253896,
+    "preferred_categories": [
+      1,
+      2,
+      8
+    ]
+  },
+  {
+    "user_id": 950,
+    "min_price": 78417,
+    "max_price": 360681,
+    "preferred_categories": [
+      6,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 951,
+    "min_price": 140616,
+    "max_price": 217587,
+    "preferred_categories": [
+      2,
+      3,
+      9
+    ]
+  },
+  {
+    "user_id": 952,
+    "min_price": 26457,
+    "max_price": 399434,
+    "preferred_categories": [
+      2,
+      6,
+      7
+    ]
+  },
+  {
+    "user_id": 953,
+    "min_price": 142051,
+    "max_price": 311115,
+    "preferred_categories": [
+      1,
+      5,
+      7
+    ]
+  },
+  {
+    "user_id": 954,
+    "min_price": 130072,
+    "max_price": 468873,
+    "preferred_categories": [
+      8,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 955,
+    "min_price": 54418,
+    "max_price": 387628,
+    "preferred_categories": [
+      3,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 956,
+    "min_price": 79285,
+    "max_price": 311418,
+    "preferred_categories": [
+      3,
+      6,
+      12
+    ]
+  },
+  {
+    "user_id": 957,
+    "min_price": 153537,
+    "max_price": 282189,
+    "preferred_categories": [
+      1,
+      6,
+      9
+    ]
+  },
+  {
+    "user_id": 958,
+    "min_price": 113714,
+    "max_price": 242619,
+    "preferred_categories": [
+      7,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 959,
+    "min_price": 187624,
+    "max_price": 326593,
+    "preferred_categories": [
+      5,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 960,
+    "min_price": 105388,
+    "max_price": 219358,
+    "preferred_categories": [
+      1,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 961,
+    "min_price": 34643,
+    "max_price": 212481,
+    "preferred_categories": [
+      7,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 962,
+    "min_price": 142931,
+    "max_price": 493117,
+    "preferred_categories": [
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 963,
+    "min_price": 79402,
+    "max_price": 256384,
+    "preferred_categories": [
+      3,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 964,
+    "min_price": 99297,
+    "max_price": 496916,
+    "preferred_categories": [
+      1,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 965,
+    "min_price": 174792,
+    "max_price": 423393,
+    "preferred_categories": [
+      2,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 966,
+    "min_price": 177801,
+    "max_price": 473484,
+    "preferred_categories": [
+      1,
+      5,
+      6
+    ]
+  },
+  {
+    "user_id": 967,
+    "min_price": 80404,
+    "max_price": 371779,
+    "preferred_categories": [
+      5,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 968,
+    "min_price": 71324,
+    "max_price": 384400,
+    "preferred_categories": [
+      3,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 969,
+    "min_price": 143787,
+    "max_price": 217937,
+    "preferred_categories": [
+      1,
+      5,
+      10
+    ]
+  },
+  {
+    "user_id": 970,
+    "min_price": 98135,
+    "max_price": 213566,
+    "preferred_categories": [
+      1,
+      6,
+      10
+    ]
+  },
+  {
+    "user_id": 971,
+    "min_price": 56182,
+    "max_price": 289192,
+    "preferred_categories": [
+      2,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 972,
+    "min_price": 73657,
+    "max_price": 403598,
+    "preferred_categories": [
+      3,
+      6,
+      8
+    ]
+  },
+  {
+    "user_id": 973,
+    "min_price": 130990,
+    "max_price": 284210,
+    "preferred_categories": [
+      1,
+      4,
+      8
+    ]
+  },
+  {
+    "user_id": 974,
+    "min_price": 40083,
+    "max_price": 401410,
+    "preferred_categories": [
+      2,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 975,
+    "min_price": 22859,
+    "max_price": 337305,
+    "preferred_categories": [
+      4,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 976,
+    "min_price": 158974,
+    "max_price": 226419,
+    "preferred_categories": [
+      4,
+      6,
+      12
+    ]
+  },
+  {
+    "user_id": 977,
+    "min_price": 105993,
+    "max_price": 316248,
+    "preferred_categories": [
+      4,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 978,
+    "min_price": 180018,
+    "max_price": 319823,
+    "preferred_categories": [
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 979,
+    "min_price": 123010,
+    "max_price": 468990,
+    "preferred_categories": [
+      2,
+      4,
+      12
+    ]
+  },
+  {
+    "user_id": 980,
+    "min_price": 147220,
+    "max_price": 403627,
+    "preferred_categories": [
+      7,
+      9,
+      11
+    ]
+  },
+  {
+    "user_id": 981,
+    "min_price": 57958,
+    "max_price": 317225,
+    "preferred_categories": [
+      5,
+      6,
+      11
+    ]
+  },
+  {
+    "user_id": 982,
+    "min_price": 168922,
+    "max_price": 229734,
+    "preferred_categories": [
+      4,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 983,
+    "min_price": 155375,
+    "max_price": 468070,
+    "preferred_categories": [
+      4,
+      7,
+      8
+    ]
+  },
+  {
+    "user_id": 984,
+    "min_price": 174360,
+    "max_price": 252884,
+    "preferred_categories": [
+      4,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 985,
+    "min_price": 100568,
+    "max_price": 466428,
+    "preferred_categories": [
+      6,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 986,
+    "min_price": 72172,
+    "max_price": 452565,
+    "preferred_categories": [
+      6,
+      7,
+      12
+    ]
+  },
+  {
+    "user_id": 987,
+    "min_price": 170895,
+    "max_price": 220362,
+    "preferred_categories": [
+      4,
+      7,
+      11
+    ]
+  },
+  {
+    "user_id": 988,
+    "min_price": 101907,
+    "max_price": 270701,
+    "preferred_categories": [
+      6,
+      8,
+      11
+    ]
+  },
+  {
+    "user_id": 989,
+    "min_price": 45376,
+    "max_price": 391764,
+    "preferred_categories": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "user_id": 990,
+    "min_price": 145908,
+    "max_price": 305302,
+    "preferred_categories": [
+      6,
+      9,
+      10
+    ]
+  },
+  {
+    "user_id": 991,
+    "min_price": 130869,
+    "max_price": 356465,
+    "preferred_categories": [
+      1,
+      4,
+      9
+    ]
+  },
+  {
+    "user_id": 992,
+    "min_price": 156699,
+    "max_price": 260584,
+    "preferred_categories": [
+      6,
+      8,
+      10
+    ]
+  },
+  {
+    "user_id": 993,
+    "min_price": 101853,
+    "max_price": 264824,
+    "preferred_categories": [
+      4,
+      7,
+      9
+    ]
+  },
+  {
+    "user_id": 994,
+    "min_price": 55028,
+    "max_price": 229223,
+    "preferred_categories": [
+      1,
+      5,
+      9
+    ]
+  },
+  {
+    "user_id": 995,
+    "min_price": 14602,
+    "max_price": 226950,
+    "preferred_categories": [
+      4,
+      10,
+      11
+    ]
+  },
+  {
+    "user_id": 996,
+    "min_price": 36439,
+    "max_price": 280148,
+    "preferred_categories": [
+      5,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 997,
+    "min_price": 51432,
+    "max_price": 254227,
+    "preferred_categories": [
+      7,
+      10,
+      12
+    ]
+  },
+  {
+    "user_id": 998,
+    "min_price": 168755,
+    "max_price": 404381,
+    "preferred_categories": [
+      1,
+      9,
+      12
+    ]
+  },
+  {
+    "user_id": 999,
+    "min_price": 17476,
+    "max_price": 265544,
+    "preferred_categories": [
+      2,
+      4,
+      6
+    ]
+  },
+  {
+    "user_id": 1000,
+    "min_price": 67260,
+    "max_price": 348762,
+    "preferred_categories": [
+      4,
+      5,
+      12
+    ]
+  },
+  {
+    "user_id": 1004,
+    "min_price": 10000,
+    "max_price": 90000,
+    "preferred_categories": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "user_id": 1005,
+    "min_price": 10000,
+    "max_price": 500000,
+    "preferred_categories": [
+      2,
+      5,
+      8
+    ]
+  }
+]
