@@ -24,3 +24,6 @@ logs/
 /storage/input_json/restaurants/.gitkeep
 /storage/input_json/user/.gitkeep
 /storage/output_feedback_json/.gitkeep
+
+# CatBoost 관련 파일 무시
+catboost_info/
