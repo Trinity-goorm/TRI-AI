@@ -21,12 +21,16 @@ router = APIRouter()
 
 # 글로벌 변수 초기화
 globals_dict = {}
+model_initializing = False  # 모델 초기화 상태를 추적하는 전역 변수
 
 # 초기 데이터 로딩 및 모델 학습
 def initialize_model():
-    global globals_dict
+    global globals_dict, model_initializing
     
     try:
+        # 초기화 상태 설정
+        model_initializing = True
+        
         # 식당 데이터 로드
         df_raw = load_restaurant_json_files(str(RESTAURANTS_DIR))
         
@@ -71,23 +75,48 @@ def initialize_model():
         globals_dict["user_data_frames"] = user_data_frames
         
         logger.info("모델 초기화 성공")
+        # 초기화 완료 상태로 설정
+        model_initializing = False
     except Exception as e:
         logger.error(f"Error during initialization: {e}", exc_info=True)
         globals_dict = {}
+        # 초기화 실패 상태로 설정
+        model_initializing = False
 
 # 서버 시작 시 모델 초기화
 initialize_model()
 
+# recommend 함수 내부 수정
 @router.post("",
              response_model=Dict[str, Any],
              responses={
                  200: {"description": "Success"},
                  400: {"description": "Bad Request"},
-                 500: {"description": "Internal Server Error"}
+                 503: {"description": "Service Unavailable - Model not initialized yet"}
              })
+
 async def recommend(user_data: UserData, background_tasks: BackgroundTasks):
     """사용자 데이터를 받아 개인화된 추천 결과를 생성하고, 결과를 파일로 저장합니다."""
+    global model_initializing
+    
     try:
+        # 모델 초기화 상태 확인
+        if not globals_dict or "stacking_reg" not in globals_dict or "df_model" not in globals_dict:
+            # 모델이 초기화 중인지, 아니면 초기화에 실패했는지 구분
+            if model_initializing:
+                raise HTTPException(
+                    status_code=503, 
+                    detail="모델 초기화가 진행 중입니다. 잠시 후 다시 시도해주세요.",
+                    headers={"Retry-After": "30"}  # 30초 후 재시도 권장
+                )
+            else:
+                # 초기화 실패 또는 아직 시작되지 않음
+                raise HTTPException(
+                    status_code=503, 
+                    detail="모델 데이터가 초기화되지 않았습니다. 서버 관리자에게 문의하세요.",
+                    headers={"Retry-After": "300"}  # 5분 후 재시도 권장
+                )
+
         user_id = user_data.user_id
         preferred_categories = user_data.preferred_categories
     
@@ -101,8 +130,6 @@ async def recommend(user_data: UserData, background_tasks: BackgroundTasks):
             raise HTTPException(status_code=400, detail="유효한 선호 카테고리를 입력해주세요.")
         
         df_model = globals_dict.get("df_model")
-        if df_model is None:
-            raise HTTPException(status_code=500, detail="모델 데이터가 초기화되지 않았습니다.")
         
         # 사용자가 선호하는 카테고리의 식당만 필터링
         filtered_df = df_model[df_model["category_id"].isin(preferred_ids)].copy()
@@ -121,7 +148,7 @@ async def recommend(user_data: UserData, background_tasks: BackgroundTasks):
             globals_dict["scaler"],
             user_features=user_features_df  # 사용자 특성 데이터 전달 (없으면 None)
         )
-
+        
         # 백그라운드 작업으로 추천 결과 저장
         async def save_recommendation():
             try:

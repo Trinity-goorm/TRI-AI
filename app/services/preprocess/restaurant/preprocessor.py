@@ -80,14 +80,39 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
     
     # 6. time_range 처리
     try:
-        df['open_time'] = df['time_range'].apply(extract_open_time)
-        df['close_time'] = df['time_range'].apply(extract_close_time)
-        df['open_minutes'] = df['open_time'].apply(convert_to_minutes)
-        df['close_minutes'] = df['close_time'].apply(convert_to_minutes)
-        df['duration'] = df.apply(
-            lambda row: compute_duration(row['open_minutes'], row['close_minutes']), axis=1
-        )
-        df['duration_hours'] = df['duration'] / 60.0
+        if 'time_range' in df.columns:
+            # 기존 코드: time_range 필드가 있는 경우
+            df['open_time'] = df['time_range'].apply(extract_open_time)
+            df['close_time'] = df['time_range'].apply(extract_close_time)
+            df['open_minutes'] = df['open_time'].apply(convert_to_minutes)
+            df['close_minutes'] = df['close_time'].apply(convert_to_minutes)
+            df['duration'] = df.apply(
+                lambda row: compute_duration(row['open_minutes'], row['close_minutes']), axis=1
+            )
+            df['duration_hours'] = df['duration'] / 60.0
+        elif 'duration_hours' in df.columns and isinstance(df['duration_hours'].iloc[0], str):
+            # duration_hours가 문자열 형식인 경우 ("12:00 ~ 24:00" 형식)
+            # 영업 시작 시간과 종료 시간 추출
+            df['open_time'] = df['duration_hours'].apply(lambda x: x.split(' ~ ')[0] if isinstance(x, str) and ' ~ ' in x else '00:00')
+            df['close_time'] = df['duration_hours'].apply(lambda x: x.split(' ~ ')[1] if isinstance(x, str) and ' ~ ' in x else '00:00')
+            df['open_minutes'] = df['open_time'].apply(convert_to_minutes)
+            df['close_minutes'] = df['close_time'].apply(convert_to_minutes)
+            df['duration'] = df.apply(
+                lambda row: compute_duration(row['open_minutes'], row['close_minutes']), axis=1
+            )
+            # duration_hours가 이미 있으므로 재계산 불필요
+        else:
+            # 둘 다 없거나 duration_hours가 이미 숫자 형식인 경우
+            logger.warning("time_range 필드가 없고 duration_hours가 문자열 형식이 아닙니다. 기본값을 설정합니다.")
+            df['open_time'] = '00:00'
+            df['close_time'] = '24:00'
+            df['open_minutes'] = 0
+            df['close_minutes'] = 1440  # 24시간 * 60분
+            df['duration'] = 1440
+            if 'duration_hours' not in df.columns:
+                df['duration_hours'] = 24.0
+        
+        # 공통 처리: open_hour와 close_hour 계산
         df['open_hour'] = df['open_time'].apply(lambda x: float(x.split(":")[0]) if x and ":" in x else None)
         df['close_hour'] = df['close_time'].apply(lambda x: None if x=="24:00" else (float(x.split(":")[0]) if x and ":" in x else None))
     except Exception as e:
