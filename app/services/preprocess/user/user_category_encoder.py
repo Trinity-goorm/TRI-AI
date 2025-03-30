@@ -1,3 +1,5 @@
+# app/services/preprocess/user/user_category_encoder.py
+
 import logging
 
 # 모듈 로거 설정

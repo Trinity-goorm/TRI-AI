@@ -12,11 +12,11 @@ logger = logging.getLogger(__name__)
 
 def load_restaurant_json_files(directory: str) -> pd.DataFrame:
     """
-    주어진 디렉토리 내의 모든 <카테고리명>_restaurants_table.json 파일들을 읽어
+    주어진 디렉토리 내의 모든 <카테고리명>_restaurant_data.json 파일들을 읽어
     데이터를 합쳐 하나의 DataFrame으로 반환합니다.
     """
     # 디렉토리 내의 모든 JSON 파일 경로 찾기
-    file_pattern = os.path.join(directory, "restaurants_table*.json")
+    file_pattern = os.path.join(directory, "restaurant_data*.json")
     json_files = glob.glob(file_pattern)
     
     if not json_files:

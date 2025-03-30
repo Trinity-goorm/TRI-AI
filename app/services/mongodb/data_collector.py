@@ -6,7 +6,7 @@ from datetime import datetime
 from app.config import RESTAURANTS_DIR, USER_DIR
 from app.services.mongodb.data_converter import process_and_save_data, cleanup_old_files
 
-logger = logging.getLogger("mongodb.data_collector")
+logger = logging.getLogger(__name__)
 
 def process_restaurant_data(db, timestamp):
     """MongoDB에서 레스토랑 관련 데이터 처리 및 저장"""

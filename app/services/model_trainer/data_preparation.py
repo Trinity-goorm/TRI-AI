@@ -1,5 +1,5 @@
 # app/services/model_trainer/data_preparation.py
-# # 데이터 전처리(결측치 보완, 스케일링, 데이터 분할 등)
+# 데이터 전처리(결측치 보완, 스케일링, 데이터 분할 등)
 
 import numpy as np
 import pandas as pd

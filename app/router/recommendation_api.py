@@ -1,7 +1,10 @@
+# app/router/recommendation_api.py
+
 import os
 import time
 import json
 import logging
+import pandas as pd
 from fastapi import APIRouter, HTTPException, BackgroundTasks
 from app.config import RESTAURANTS_DIR, USER_DIR, FEEDBACK_DIR
 from app.schema.recommendation_schema import UserData, RecommendationItem, CATEGORY_MAPPING
@@ -9,6 +12,7 @@ from app.services.preprocess.restaurant.data_loader import load_restaurant_json_
 from app.services.preprocess.restaurant.preprocessor import preprocess_data
 from app.services.model_trainer import train_model
 from app.services.model_trainer.recommendation import generate_recommendations
+from app.services.preprocess.user.user_preprocess import user_preprocess_data  # 사용자 데이터 전처리 모듈 추가
 from typing import List, Dict, Any
 
 # 라우터 설정
@@ -26,16 +30,44 @@ def initialize_model():
         # 식당 데이터 로드
         df_raw = load_restaurant_json_files(str(RESTAURANTS_DIR))
         
-        # 사용자 데이터 로드 (향후 사용)
+        # 사용자 데이터 로드 및 전처리
         user_data_frames = load_user_json_files(str(USER_DIR))
         
-        # 데이터 전처리
+        # 사용자 데이터 전처리 및 특성 추출
+        try:
+            # 전처리된 사용자 특성 파일 경로
+            user_features_path = os.path.join(str(USER_DIR), "preprocessed_user_features.csv")
+            
+            # 이미 전처리된 파일이 있는지 확인
+            if os.path.exists(user_features_path):
+                logger.info(f"기존 전처리된 사용자 특성 파일 로드: {user_features_path}")
+                user_features_df = pd.read_csv(user_features_path)
+            else:
+                # 사용자 데이터 전처리 실행
+                logger.info("사용자 데이터 전처리 시작")
+                user_features_df = user_preprocess_data(
+                    user_data_frames, 
+                    save_path=user_features_path
+                )
+                logger.info(f"사용자 데이터 전처리 완료: {len(user_features_df)}명의 사용자 데이터")
+            
+            # 전역 변수에 사용자 특성 데이터 저장
+            globals_dict["user_features_df"] = user_features_df
+        except Exception as user_err:
+            logger.error(f"사용자 데이터 전처리 중 오류 발생: {user_err}", exc_info=True)
+            # 오류가 발생해도 계속 진행 (기본 추천은 가능하도록)
+            globals_dict["user_features_df"] = None
+        
+        # 식당 데이터 전처리
         df_final = preprocess_data(df_raw)
         
         # 모델 학습
-        globals_dict = train_model(df_final)
+        model_dict = train_model(df_final)
         
-        # 사용자 데이터 저장 (향후 개인화 추천에 사용)
+        # 모델 관련 객체 저장
+        globals_dict.update(model_dict)
+        
+        # 원본 사용자 데이터 저장 (필요시)
         globals_dict["user_data_frames"] = user_data_frames
         
         logger.info("모델 초기화 성공")
@@ -47,14 +79,14 @@ def initialize_model():
 initialize_model()
 
 @router.post("",
-             response_model=Dict[str, Any],  # 구체적인 응답 모델이 필요하다면 별도로 정의
+             response_model=Dict[str, Any],
              responses={
                  200: {"description": "Success"},
                  400: {"description": "Bad Request"},
                  500: {"description": "Internal Server Error"}
              })
 async def recommend(user_data: UserData, background_tasks: BackgroundTasks):
-    """사용자 데이터를 받아 추천 결과를 생성하고, 결과를 파일로 저장합니다."""
+    """사용자 데이터를 받아 개인화된 추천 결과를 생성하고, 결과를 파일로 저장합니다."""
     try:
         user_id = user_data.user_id
         preferred_categories = user_data.preferred_categories
@@ -72,17 +104,22 @@ async def recommend(user_data: UserData, background_tasks: BackgroundTasks):
         if df_model is None:
             raise HTTPException(status_code=500, detail="모델 데이터가 초기화되지 않았습니다.")
         
+        # 사용자가 선호하는 카테고리의 식당만 필터링
         filtered_df = df_model[df_model["category_id"].isin(preferred_ids)].copy()
         if filtered_df.empty:
             raise HTTPException(status_code=400, detail="해당 선호 카테고리에 해당하는 식당 데이터가 없습니다.")
         
-        # 추천 결과 생성 (generate_recommendations는 JSON 문자열을 반환)
+        # 전처리된 사용자 특성 데이터 가져오기
+        user_features_df = globals_dict.get("user_features_df")
+        
+        # 추천 결과 생성 (개인화된 추천)
         result_json = generate_recommendations(
             filtered_df, 
             globals_dict["stacking_reg"], 
             globals_dict["model_features"], 
             user_id,
-            globals_dict["scaler"]
+            globals_dict["scaler"],
+            user_features=user_features_df  # 사용자 특성 데이터 전달 (없으면 None)
         )
 
         # 백그라운드 작업으로 추천 결과 저장

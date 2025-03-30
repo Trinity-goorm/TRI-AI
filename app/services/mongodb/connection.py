@@ -12,7 +12,7 @@ try:
 except ImportError:
     has_sshtunnel = False
 
-logger = logging.getLogger("mongodb.connection")
+logger = logging.getLogger(__name__)
 load_dotenv()
 
 def get_mongodb_connection():
