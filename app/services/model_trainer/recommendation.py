@@ -54,24 +54,44 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
         is_new_user = True
         user_row = None
         
-        if user_features is not None: # 사용자 데이터가 전혀 없는 경우 - 신규 유저
-            user_row = user_features[user_features['user_id'] == user_id]
-            if not user_row.empty:
+        # 사용자 ID를 문자열로 변환
+        user_id_str = str(user_id)
+        logger.info(f"사용자 ID(str): {user_id_str}의 추천 생성 시작")
+        
+        if user_features is not None and not user_features.empty:
+            # 디버깅을 위한 사용자 ID 목록과 타입 로깅
+            logger.debug(f"사용자 특성 데이터 크기: {user_features.shape}")
+            sample_ids = user_features['user_id'].head(5).values
+            logger.debug(f"사용자 ID 샘플(상위 5개): {sample_ids}")
+            logger.debug(f"사용자 ID 타입: {type(user_features['user_id'].iloc[0])}")
+            
+            # 모든 ID를 문자열로 변환하여 비교
+            user_features['user_id_str'] = user_features['user_id'].astype(str)
+            
+            # 변환된 ID로 검색
+            matching_rows = user_features[user_features['user_id_str'] == user_id_str]
+            
+            if not matching_rows.empty:
                 is_new_user = False
-                logger.info(f"사용자 ID {user_id}의 개인화된 추천 생성 중...")
+                user_row = matching_rows.iloc[0:1]  # 첫 번째 일치 행만 사용
+                logger.info(f"ID {user_id_str}의 사용자 데이터 찾음 - 개인화 추천 생성")
                 
-                # 기존 사용자 처리 로직 (가격 필터링 등)
-                if 'price' in data_filtered.columns and 'max_price' in user_row.columns:
+                # 가격 필터링 (기존 사용자만)
+                if 'max_price' in user_row.columns and 'price' in data_filtered.columns:
                     max_price = user_row['max_price'].values[0]
                     if max_price > 0:
                         logger.debug(f"사용자 최대 가격 {max_price}원 이하의 식당으로 필터링")
                         data_filtered = data_filtered[data_filtered['price'] <= max_price].copy()
-                
+            else:
+                logger.info(f"ID {user_id_str}의 사용자 데이터를 찾을 수 없음 - 카테고리 기반 기본 추천 생성")
+        else:
+            logger.info("사용자 특성 데이터가 없음 - 카테고리 기반 기본 추천 생성")
+        
         # 카테고리 보너스 점수 초기화 (기존/신규 사용자 모두 적용)
         data_filtered['category_bonus'] = 0.0
         
         # 선호 카테고리 보너스 적용 로직
-        if not is_new_user:
+        if not is_new_user and user_row is not None:
             # 기존 사용자: 선호 카테고리 데이터 기반 보너스
             for i in range(1, 13):
                 category_col = f"category_{i}"
@@ -85,7 +105,7 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
         else:
             # 신규 사용자: 필터링된 모든 식당은 사용자가 선택한 카테고리에 해당
             # 모든 식당에 동일한 카테고리 보너스 부여
-            logger.info(f"신규 사용자 ID {user_id}를 위한 카테고리 기반 추천 생성 중...")
+            logger.info(f"신규 사용자용 카테고리 기반 추천 생성")
             data_filtered['category_bonus'] = 0.3
 
         # 모델 예측을 위한 피처 준비 (기존/신규 사용자 모두 동일)
@@ -143,8 +163,13 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
             lambda x: sigmoid_transform(x, A_VALUE, B_VALUE)
         )
 
-        # 상위 15개 추천 추출
+        # composite_score 기준 내림차순 정렬
         recommendations_all = data_filtered.sort_values(by='composite_score', ascending=False)
+
+        # 중복 제거를 위해 restaurant_id를 기준으로 첫 번째 레코드만 유지
+        recommendations_all = recommendations_all.drop_duplicates(subset=['restaurant_id'], keep='first')
+
+        # 상위 15개 추천 추출
         top15 = recommendations_all[['category_id', 'restaurant_id', 'score', 'predicted_score', 'composite_score']].head(15).copy()
         
         # 결과 포맷팅

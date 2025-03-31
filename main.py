@@ -88,31 +88,56 @@ async def general_exception_handler(request: Request, exc: Exception):
         content={"detail": "서버 내부 오류가 발생했습니다."},
     )
 
+# 첫 번째 초기화 여부를 추적하는 전역 변수
+initial_sync_completed = False
+
 # 서버 시작 이벤트
 @app.on_event("startup")
 async def startup_event():
+    global initial_sync_completed
+    
     logger.info("애플리케이션 시작")
     
     # FEEDBACK_DIR이 존재하는지 확인하고 없으면 생성
     os.makedirs(str(FEEDBACK_DIR), exist_ok=True)
     
-    # 시작 시 데이터 동기화 (설정에 따라)
-    sync_on_startup = os.environ.get('SYNC_ON_STARTUP', 'false').lower() == 'true'
-    if sync_on_startup:
-        logger.info("시작 시 데이터 동기화 활성화")
-        # RDS 대신 MongoDB 사용
+    # 최초 한 번만 실행되도록 함
+    if not initial_sync_completed:
+        # 데이터 동기화 실행
+        logger.info("MongoDB 데이터 동기화 시작...")
         from app.services.background_tasks import run_initial_sync
-        asyncio.create_task(run_initial_sync())
-    
-    # 주기적 데이터 동기화 작업 시작
-    sync_interval = float(os.environ.get('SYNC_INTERVAL_HOURS', '24'))
-    if sync_interval > 0:
-        from app.services.background_tasks import periodic_data_sync
-        asyncio.create_task(periodic_data_sync(sync_interval))
-        logger.info(f"주기적 데이터 동기화 태스크 시작 (간격: {sync_interval}시간)")
+        sync_result = await run_initial_sync()  # 여기서 await를 사용하여 동기화 완료 기다림
+        
+        if sync_result:
+            logger.info("MongoDB 데이터 동기화 완료, 모델 초기화 시작...")
+            # 모델 초기화 함수 호출
+            from app.router.recommendation_api import initialize_model
+            init_result = initialize_model()
+            
+            if init_result:
+                logger.info("모델 초기화 성공")
+            else:
+                logger.error("모델 초기화 실패")
+        else:
+            logger.error("MongoDB 데이터 동기화 실패")
+        
+        # 초기화 완료 표시
+        initial_sync_completed = True
+        
+        # 주기적 데이터 동기화 작업 시작 (최초 동기화와 별도로 실행)
+        sync_interval = float(os.environ.get('SYNC_INTERVAL_HOURS', '24'))
+        if sync_interval > 0:
+            from app.services.background_tasks import periodic_data_sync
+            asyncio.create_task(periodic_data_sync(sync_interval))
+            logger.info(f"주기적 데이터 동기화 태스크 시작 (간격: {sync_interval}시간)")
     
     logger.info("애플리케이션 초기화 완료")
 
+# 서버 종료 이벤트
+@app.on_event("shutdown")
+async def shutdown_event():
+    logger.info("서버를 종료합니다.")
+    # 필요한 정리 작업 수행
 
 # 서버 실행
 if __name__ == "__main__":

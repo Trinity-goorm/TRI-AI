@@ -1,163 +1,190 @@
 # app/services/preprocess/user/user_feature_extractor.py
 
-from .user_category_encoder import user_encode_categories
 import logging
+import numpy as np
+from typing import List, Dict, Any
 
-# 모듈 로거 설정
+# 로거 설정
 logger = logging.getLogger(__name__)
 
-def user_extract_features(user_data_list):
+def user_extract_basic_info(user: Dict[str, Any]) -> Dict[str, Any]:
     """
-    사용자 데이터 리스트에서 필요한 특성 추출
+    사용자 기본 정보를 추출하는 함수
     
     Args:
-        user_data_list: 사용자 데이터 리스트
-        
+        user: 사용자 데이터 딕셔너리
+    
     Returns:
-        list: 추출된 특성 딕셔너리 리스트
+        Dict: 추출된 사용자 기본 정보
     """
-    logger.info(f"총 {len(user_data_list)}명의 사용자에 대한 특성 추출 시작")
-    user_features_list = []
+    result = {}
     
-    for i, user in enumerate(user_data_list):
-        # 기본 사용자 정보 추출
-        features = user_extract_basic_info(user)
-        
-        # 가격 및 카테고리 정보 추출
-        user_extract_preferences(user, features)
-        
-        # 예약 정보 추출
-        user_extract_reservation_info(user, features)
-        
-        # 찜 정보 추출
-        user_extract_like_info(user, features)
-        
-        # 파생 변수 계산
-        user_calculate_derived_features(features)
-        
-        user_features_list.append(features)
-        
-        # 로깅 - 진행 상황 (100명마다 로그)
-        if (i+1) % 100 == 0 or i+1 == len(user_data_list):
-            logger.debug(f"사용자 특성 추출 진행 중: {i+1}/{len(user_data_list)}")
+    # 로그에 데이터 구조 출력 (디버깅용)
+    logger.debug(f"사용자 데이터 키: {list(user.keys())}")
     
-    logger.info(f"사용자 특성 추출 완료. 총 {len(user_features_list)}개의 특성 집합 생성")
-    return user_features_list
-
-def user_extract_basic_info(user):
-    """사용자의 기본 정보 추출"""
-    try:
-        # 기존 구조로 시도
-        if "user_info" in user and "user_id" in user["user_info"]:
-            user_id = user["user_info"]["user_id"]
-            logger.debug(f"사용자 ID {user_id}의 기본 정보 추출 (user_info 구조)")
-            return {
-                "user_id": user_id
-            }
-        # 다른 가능한 구조로 시도
-        elif "user_id" in user:
-            user_id = user["user_id"]
-            logger.debug(f"사용자 ID {user_id}의 기본 정보 추출 (직접 user_id)")
-            return {
-                "user_id": user_id
-            }
-        else:
-            # 데이터 구조 디버깅을 위한 로깅
-            logger.error(f"알 수 없는 사용자 데이터 구조: {list(user.keys())}")
-            # 임시 ID 생성
-            return {
-                "user_id": f"unknown_{hash(str(user))}"
-            }
-    except Exception as e:
-        logger.error(f"사용자 기본 정보 추출 중 오류: {e}")
-        logger.debug(f"데이터 구조: {user}")
-        # 오류 발생 시 임시 ID 생성
-        return {
-            "user_id": f"error_{hash(str(user))}"
-        }
-
-def user_extract_preferences(user, features):
-    """사용자의 가격 및 카테고리 선호도 정보 추출"""
-    user_id = features["user_id"]
+    # 1. user_info에서 ID 찾기
+    if "user_info" in user and isinstance(user["user_info"], dict) and "user_id" in user["user_info"]:
+        result["user_id"] = user["user_info"]["user_id"]
+        logger.debug(f"user_info에서 user_id {result['user_id']} 추출")
     
-    if "preferences" in user:
-        logger.debug(f"사용자 ID {user_id}의 선호도 정보 추출")
-        
-        # 가격 정보 - max_price만 사용
-        features["max_price"] = user["preferences"]["max_price"]
-        
-        # 카테고리 정보
-        preferred_categories = user["preferences"]["preferred_categories"]
-        logger.debug(f"사용자 ID {user_id}의 선호 카테고리: {preferred_categories}")
-        user_encode_categories(features, preferred_categories)
+    # 2. preferences에서 ID 찾기
+    elif "preferences" in user and isinstance(user["preferences"], dict) and "user_id" in user["preferences"]:
+        result["user_id"] = user["preferences"]["user_id"]
+        logger.debug(f"preferences에서 user_id {result['user_id']} 추출")
+    
+    # 3. reservations에서 ID 찾기
+    elif "reservations" in user and isinstance(user["reservations"], list) and len(user["reservations"]) > 0:
+        for res in user["reservations"]:
+            if isinstance(res, dict) and "user_id" in res:
+                result["user_id"] = res["user_id"]
+                logger.debug(f"reservations에서 user_id {result['user_id']} 추출")
+                break
+    
+    # 4. likes에서 ID 찾기
+    elif "likes" in user and isinstance(user["likes"], list) and len(user["likes"]) > 0:
+        for like in user["likes"]:
+            if isinstance(like, dict) and "user_id" in like:
+                result["user_id"] = like["user_id"]
+                logger.debug(f"likes에서 user_id {result['user_id']} 추출")
+                break
+    
+    # 5. 최상위 레벨에서 ID 찾기
+    elif "user_id" in user:
+        result["user_id"] = user["user_id"]
+        logger.debug(f"최상위에서 user_id {result['user_id']} 추출")
     else:
-        logger.warning(f"사용자 ID {user_id}에 선호도 정보가 없습니다. 기본값 사용")
-        features["max_price"] = 0
-        user_encode_categories(features, [])
-
-def user_extract_reservation_info(user, features):
-    """사용자의 예약 정보 추출"""
-    user_id = features["user_id"]
+        logger.warning(f"사용자 ID를 찾을 수 없습니다: {user.keys()}")
+        return {}
     
-    try:
-        if "reservations" in user:
-            user_reservations = user["reservations"]
-            
-            # 데이터 유형 검사
-            if user_reservations and isinstance(user_reservations, list):
-                if all(isinstance(r, dict) for r in user_reservations):
-                    # 딕셔너리 목록인 경우 (예상된 구조)
-                    completed_reservations = [r for r in user_reservations if r.get("status") == "COMPLETED"]
-                    features["completed_reservations"] = len(completed_reservations)
-                else:
-                    # 문자열 등의 목록인 경우
-                    logger.warning(f"사용자 ID {user_id}의 예약 정보가 예상 형식이 아닙니다. 첫 번째 항목 유형: {type(user_reservations[0])}")
-                    features["completed_reservations"] = len(user_reservations)  # 모든 예약을 완료로 간주
-            else:
-                # 빈 목록이거나 목록이 아닌 경우
-                logger.warning(f"사용자 ID {user_id}의 예약 정보가 비어 있거나 목록이 아닙니다: {type(user_reservations)}")
-                features["completed_reservations"] = 0
-                
-            logger.debug(f"사용자 ID {user_id}의 완료된 예약 수: {features['completed_reservations']}")
+    # 정수 또는 문자열 ID를 문자열로 통일
+    result["user_id"] = str(result["user_id"])
+    
+    # 선호 가격 범위 (preferences에서)
+    if "preferences" in user and isinstance(user["preferences"], dict):
+        pref = user["preferences"]
+        if "max_price" in pref:
+            result["max_price"] = pref["max_price"]
+        if "min_price" in pref:
+            result["min_price"] = pref["min_price"]
+        
+        # 선호 카테고리 처리
+        if "preferred_categories" in pref and isinstance(pref["preferred_categories"], list):
+            # 카테고리 ID를 원-핫 인코딩으로 변환
+            for cat_id in range(1, 13):  # 1부터 12까지
+                cat_key = f"category_{cat_id}"
+                result[cat_key] = 1 if cat_id in pref["preferred_categories"] else 0
         else:
-            logger.warning(f"사용자 ID {user_id}에 예약 정보가 없습니다. 기본값 사용")
-            features["completed_reservations"] = 0
-    except Exception as e:
-        logger.error(f"사용자 ID {user_id}의 예약 정보 추출 중 오류: {e}")
-        # 오류 발생 시 기본값 사용
-        features["completed_reservations"] = 0
-
-def user_extract_like_info(user, features):
-    """사용자의 찜 정보 추출"""
-    user_id = features["user_id"]
-    
-    try:
-        if "likes" in user:
-            user_likes = user["likes"]
-            
-            # 데이터 유형 검사
-            if isinstance(user_likes, list):
-                features["total_likes"] = len(user_likes)
-            else:
-                logger.warning(f"사용자 ID {user_id}의 찜 정보가 목록이 아닙니다: {type(user_likes)}")
-                features["total_likes"] = 0
-                
-            logger.debug(f"사용자 ID {user_id}의 찜 수: {features['total_likes']}")
-        else:
-            logger.warning(f"사용자 ID {user_id}에 찜 정보가 없습니다. 기본값 사용")
-            features["total_likes"] = 0
-    except Exception as e:
-        logger.error(f"사용자 ID {user_id}의 찜 정보 추출 중 오류: {e}")
-        features["total_likes"] = 0
-
-def user_calculate_derived_features(features):
-    """파생 변수 계산"""
-    user_id = features["user_id"]
-    
-    # like_to_reservation_ratio 계산 (찜 대비 예약 비율)
-    if features["completed_reservations"] > 0:
-        features["like_to_reservation_ratio"] = features["total_likes"] / features["completed_reservations"]
+            # 카테고리 데이터가 없는 경우 모두 0으로 설정
+            for cat_id in range(1, 13):
+                result[f"category_{cat_id}"] = 0
     else:
-        features["like_to_reservation_ratio"] = 5.0  # 예약 없이 찜만 있는 경우 최대값 설정
+        # preferences 데이터가 없는 경우 기본값 설정
+        result["max_price"] = 0
+        # 카테고리 모두 0으로 설정
+        for cat_id in range(1, 13):
+            result[f"category_{cat_id}"] = 0
     
-    logger.debug(f"사용자 ID {user_id}의 파생 변수 계산 완료")
+    return result
+
+def user_extract_reservation_features(user: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    사용자 예약 관련 특성을 추출하는 함수
+    
+    Args:
+        user: 사용자 데이터 딕셔너리
+    
+    Returns:
+        Dict: 추출된 예약 관련 특성
+    """
+    result = {}
+    
+    if "reservations" not in user or not isinstance(user["reservations"], list):
+        result["completed_reservations"] = 0
+        result["reservation_completion_rate"] = 0.0
+        return result
+    
+    # 전체 예약 수
+    total_reservations = len(user["reservations"])
+    result["total_reservations"] = total_reservations
+    
+    # 완료된 예약 수
+    completed = sum(1 for res in user["reservations"] if res.get("status") == "COMPLETED")
+    result["completed_reservations"] = completed
+    
+    # 예약 완료율
+    result["reservation_completion_rate"] = round(completed / total_reservations, 2) if total_reservations > 0 else 0.0
+    
+    return result
+
+def user_extract_like_features(user: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    사용자 찜 관련 특성을 추출하는 함수
+    
+    Args:
+        user: 사용자 데이터 딕셔너리
+    
+    Returns:
+        Dict: 추출된 찜 관련 특성
+    """
+    result = {}
+    
+    if "likes" not in user or not isinstance(user["likes"], list):
+        result["total_likes"] = 0
+        return result
+    
+    # 전체 찜 수
+    result["total_likes"] = len(user["likes"])
+    
+    return result
+
+def user_extract_features(user_data_list: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    사용자 데이터 리스트에서 필요한 특성을 추출하는 함수
+    
+    Args:
+        user_data_list: 사용자 데이터 딕셔너리 목록
+    
+    Returns:
+        List[Dict]: 추출된 특성의 딕셔너리 목록
+    """
+    result = []
+    
+    for idx, user in enumerate(user_data_list):
+        try:
+            # 기본 정보 추출
+            user_features = user_extract_basic_info(user)
+            
+            # 사용자 ID가 없는 경우 건너뜀
+            if not user_features:
+                logger.warning(f"유효한 사용자 ID가 없는 데이터 건너뜀: {idx+1}번째 항목")
+                continue
+            
+            # 예약 관련 특성 추출
+            reservation_features = user_extract_reservation_features(user)
+            user_features.update(reservation_features)
+            
+            # 찜 관련 특성 추출
+            like_features = user_extract_like_features(user)
+            user_features.update(like_features)
+            
+            # 복합 지표 계산
+            # 1. 찜/예약 비율
+            if user_features.get("completed_reservations", 0) > 0:
+                user_features["like_to_reservation_ratio"] = round(
+                    user_features.get("total_likes", 0) / user_features.get("completed_reservations", 1), 
+                    2
+                )
+            else:
+                # 예약이 없는 경우 기본값 설정
+                user_features["like_to_reservation_ratio"] = 5.0 if user_features.get("total_likes", 0) > 0 else 0.0
+            
+            # 추출 결과가 유효한 경우 결과 리스트에 추가
+            if user_features["user_id"]:
+                result.append(user_features)
+            
+        except Exception as e:
+            logger.error(f"사용자 특성 추출 중 오류 발생: {idx+1}번째 항목 - {str(e)}", exc_info=True)
+            # 오류가 있어도 계속 진행
+    
+    logger.info(f"총 {len(result)}명의 사용자 특성 추출 완료")
+    return result
