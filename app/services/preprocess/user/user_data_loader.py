@@ -172,5 +172,3 @@ def user_load_data(data_source):
         # 수집된 데이터로 사용자별 구조화
         data = restructure_user_data(combined_data)
         return data
-    
-    # 나머지 코드는 동일...

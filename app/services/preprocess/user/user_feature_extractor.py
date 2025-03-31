@@ -19,25 +19,19 @@ def user_extract_basic_info(user: Dict[str, Any]) -> Dict[str, Any]:
     """
     result = {}
     
-    # 로그에 데이터 구조 출력 (디버깅용)
-    logger.debug(f"사용자 데이터 키: {list(user.keys())}")
-    
     # 1. user_info에서 ID 찾기
     if "user_info" in user and isinstance(user["user_info"], dict) and "user_id" in user["user_info"]:
         result["user_id"] = user["user_info"]["user_id"]
-        logger.debug(f"user_info에서 user_id {result['user_id']} 추출")
     
     # 2. preferences에서 ID 찾기
     elif "preferences" in user and isinstance(user["preferences"], dict) and "user_id" in user["preferences"]:
         result["user_id"] = user["preferences"]["user_id"]
-        logger.debug(f"preferences에서 user_id {result['user_id']} 추출")
     
     # 3. reservations에서 ID 찾기
     elif "reservations" in user and isinstance(user["reservations"], list) and len(user["reservations"]) > 0:
         for res in user["reservations"]:
             if isinstance(res, dict) and "user_id" in res:
                 result["user_id"] = res["user_id"]
-                logger.debug(f"reservations에서 user_id {result['user_id']} 추출")
                 break
     
     # 4. likes에서 ID 찾기
@@ -45,13 +39,11 @@ def user_extract_basic_info(user: Dict[str, Any]) -> Dict[str, Any]:
         for like in user["likes"]:
             if isinstance(like, dict) and "user_id" in like:
                 result["user_id"] = like["user_id"]
-                logger.debug(f"likes에서 user_id {result['user_id']} 추출")
                 break
     
     # 5. 최상위 레벨에서 ID 찾기
     elif "user_id" in user:
         result["user_id"] = user["user_id"]
-        logger.debug(f"최상위에서 user_id {result['user_id']} 추출")
     else:
         logger.warning(f"사용자 ID를 찾을 수 없습니다: {user.keys()}")
         return {}
@@ -171,9 +163,7 @@ def user_extract_features(user_data_list: List[Dict[str, Any]]) -> List[Dict[str
             # 1. 찜/예약 비율
             if user_features.get("completed_reservations", 0) > 0:
                 user_features["like_to_reservation_ratio"] = round(
-                    user_features.get("total_likes", 0) / user_features.get("completed_reservations", 1), 
-                    2
-                )
+                    user_features.get("total_likes", 0) / user_features.get("completed_reservations", 1), 2)
             else:
                 # 예약이 없는 경우 기본값 설정
                 user_features["like_to_reservation_ratio"] = 5.0 if user_features.get("total_likes", 0) > 0 else 0.0
