@@ -62,26 +62,40 @@ def load_user_json_files(directory: str) -> Dict[str, pd.DataFrame]:
         user_data_frames = {}
         
         # 1. 사용자 가격 범위 선호도 데이터
-        pref_files = [f for f in dir_path.glob('user_preference_*.json')]
+        pref_patterns = ['user_preference_*.json', 'user_preferences_*.json']
+        pref_files = []
+        for pattern in pref_patterns:
+            pref_files.extend([f for f in dir_path.glob(pattern)])
+
         if pref_files:
             latest_file = max(pref_files, key=lambda x: x.stat().st_mtime)
             with open(latest_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-            user_data_frames["user_preference"] = pd.DataFrame(data)
-            logger.info(f"사용자 가격 범위 선호도 데이터 로드 완료: {len(data)}개 항목")
+            # 파일 구조에 맞게 데이터 추출
+            if isinstance(data, list):
+                user_data_frames["user_preference"] = pd.DataFrame(data)
+            elif isinstance(data, dict) and "preferences" in data:
+                user_data_frames["user_preference"] = pd.DataFrame(data["preferences"])
+            logger.info(f"사용자 가격 범위 선호도 데이터 로드 완료: {len(user_data_frames['user_preference'])}개 항목")
         else:
             logger.warning("사용자 가격 범위 선호도 데이터 파일을 찾을 수 없습니다.")
-        
-        # 2. 사용자 카테고리 선호도 데이터
-        cat_pref_files = [f for f in dir_path.glob('user_preference_categories_*.json')]
-        if cat_pref_files:
-            latest_file = max(cat_pref_files, key=lambda x: x.stat().st_mtime)
-            with open(latest_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            user_data_frames["user_preference_categories"] = pd.DataFrame(data)
-            logger.info(f"사용자 카테고리 선호도 데이터 로드 완료: {len(data)}개 항목")
-        else:
-            logger.warning("사용자 카테고리 선호도 데이터 파일을 찾을 수 없습니다.")
+
+        # 2. 사용자 카테고리 선호도 데이터 (같은 파일에 있을 수 있음)
+        if pref_files and "user_preference" in user_data_frames:
+            # 이미 로드한 파일에서 카테고리 정보 추출 시도
+            if "preferred_categories" in user_data_frames["user_preference"].columns:
+                # 이미 같은 파일에 카테고리 정보가 있는 경우
+                cat_data = []
+                for _, row in user_data_frames["user_preference"].iterrows():
+                    if "preferred_categories" in row and isinstance(row["preferred_categories"], list):
+                        cat_data.append({
+                            "user_id": row.get("user_id"),
+                            "categories": row["preferred_categories"]
+                        })
+                if cat_data:
+                    user_data_frames["user_preference_categories"] = pd.DataFrame(cat_data)
+                    logger.info(f"사용자 카테고리 선호도 데이터 추출 완료: {len(cat_data)}개 항목")
+                    # 다음 블록으로 이동하지 않도록 return
         
         # 3. 찜 데이터
         like_files = [f for f in dir_path.glob('likes_*.json')]
@@ -100,15 +114,27 @@ def load_user_json_files(directory: str) -> Dict[str, pd.DataFrame]:
             latest_file = max(reservation_files, key=lambda x: x.stat().st_mtime)
             with open(latest_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-            user_data_frames["reservations"] = pd.DataFrame(data)
+            user_data_frames["reserva치tions"] = pd.DataFrame(data)
             logger.info(f"예약 데이터 로드 완료: {len(data)}개 항목")
             
-            # 완료된 예약만 필터링
+            # 완료된 예약만 필터링 - 개선된 코드
             if "reservations" in user_data_frames and "status" in user_data_frames["reservations"].columns:
-                user_data_frames["reservations"] = user_data_frames["reservations"][
-                    user_data_frames["reservations"]["status"] == "Complete"
-                ]
-                logger.info(f"완료된 예약만 필터링: {len(user_data_frames['reservations'])}개 항목")
+                # 상태 값 확인 (디버깅용)
+                unique_statuses = user_data_frames["reservations"]["status"].unique()
+                logger.debug(f"예약 상태 값 목록: {unique_statuses}")
+                
+                # 대소문자를 무시하고 "COMPLETED" 또는 "Complete" 상태 필터링
+                reservations_df = user_data_frames["reservations"]
+                completed_mask = reservations_df["status"].str.upper().isin(["COMPLETED", "COMPLETE"])
+                completed_reservations = reservations_df[completed_mask]
+                
+                logger.info(f"완료된 예약만 필터링: {len(completed_reservations)}개 항목")
+                
+                # 완료된 예약이 없으면 전체 예약 데이터 사용
+                if len(completed_reservations) == 0:
+                    logger.warning("완료된 예약이 없어 모든 예약 데이터를 사용합니다.")
+                else:
+                    user_data_frames["reservations"] = completed_reservations
         else:
             logger.warning("예약 데이터 파일을 찾을 수 없습니다.")
         
