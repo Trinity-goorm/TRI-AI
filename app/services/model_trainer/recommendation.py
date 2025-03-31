@@ -60,10 +60,7 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
         
         if user_features is not None and not user_features.empty:
             # 디버깅을 위한 사용자 ID 목록과 타입 로깅
-            logger.debug(f"사용자 특성 데이터 크기: {user_features.shape}")
             sample_ids = user_features['user_id'].head(5).values
-            logger.debug(f"사용자 ID 샘플(상위 5개): {sample_ids}")
-            logger.debug(f"사용자 ID 타입: {type(user_features['user_id'].iloc[0])}")
             
             # 모든 ID를 문자열로 변환하여 비교
             user_features['user_id_str'] = user_features['user_id'].astype(str)
@@ -80,7 +77,6 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
                 if 'max_price' in user_row.columns and 'price' in data_filtered.columns:
                     max_price = user_row['max_price'].values[0]
                     if max_price > 0:
-                        logger.debug(f"사용자 최대 가격 {max_price}원 이하의 식당으로 필터링")
                         data_filtered = data_filtered[data_filtered['price'] <= max_price].copy()
             else:
                 logger.info(f"ID {user_id_str}의 사용자 데이터를 찾을 수 없음 - 카테고리 기반 기본 추천 생성")
@@ -97,15 +93,12 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
                 category_col = f"category_{i}"
                 if category_col in user_row.columns and user_row[category_col].values[0] == 1:
                     data_filtered.loc[data_filtered['category_id'] == i, 'category_bonus'] = 0.3
-                    logger.debug(f"카테고리 {i}에 기본 보너스 0.3 적용")
                     
                     if i in [4, 7, 9, 10]:  # 중요 카테고리
                         data_filtered.loc[data_filtered['category_id'] == i, 'category_bonus'] += 0.2
-                        logger.debug(f"중요 카테고리 {i}에 추가 보너스 0.2 적용")
         else:
             # 신규 사용자: 필터링된 모든 식당은 사용자가 선택한 카테고리에 해당
             # 모든 식당에 동일한 카테고리 보너스 부여
-            logger.info(f"신규 사용자용 카테고리 기반 추천 생성")
             data_filtered['category_bonus'] = 0.3
 
         # 모델 예측을 위한 피처 준비 (기존/신규 사용자 모두 동일)
@@ -141,20 +134,17 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
         if not is_new_user and 'completed_reservations' in user_row.columns:
             completed_reservations = user_row['completed_reservations'].values[0]
             if completed_reservations > 3:
-                logger.debug(f"예약 경험이 많은 사용자에게 예약 가능 식당 가중치 부여")
                 data_filtered.loc[data_filtered['caution_예약가능'] == 1, 'composite_score'] += 0.2
             
             if 'like_to_reservation_ratio' in user_row.columns:
                 ratio = user_row['like_to_reservation_ratio'].values[0]
                 if ratio > 2.0:
-                    logger.debug(f"찜 대비 예약 비율이 높은 사용자에게 인기 식당 가중치 부여")
                     data_filtered['popularity_bonus'] = 0.15 * (np.log(data_filtered['review'] + 1) / np.log(1000))
                     data_filtered['composite_score'] += data_filtered['popularity_bonus']
         
         # 신규 사용자를 위한 추가 처리: 리뷰 수에 약간의 가중치
         elif is_new_user:
             # 신규 사용자는 인기 있는(리뷰가 많은) 식당에 약간의 가중치
-            logger.debug("신규 사용자를 위해 리뷰가 많은 식당에 추가 가중치 부여")
             data_filtered['popularity_bonus'] = 0.1 * (np.log(data_filtered['review'] + 1) / np.log(1000))
             data_filtered['composite_score'] += data_filtered['popularity_bonus']
         
