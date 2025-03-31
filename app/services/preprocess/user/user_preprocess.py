@@ -1,6 +1,8 @@
 # app/services/preprocess/user/user_preprocess.py
 
 import logging
+import pandas as pd  # 이 줄을 추가
+import os
 from .user_data_loader import user_load_data, get_latest_user_data_file
 from .user_feature_extractor import user_extract_features
 from .user_data_processor import user_convert_to_dataframe, user_check_missing_features, user_save_to_csv
@@ -24,13 +26,13 @@ def user_preprocess_data(data_source, save_path=None):
     # 데이터 소스가 지정되지 않은 경우 기본 경로 사용
     if data_source is None:
         try:
-            data_source = get_latest_user_data_file("storage/input_json/user/")
-            logger.info(f"기본 경로에서 최신 사용자 데이터 파일 사용: {data_source}")
-        except FileNotFoundError as e:
-            logger.error(f"기본 경로에서 사용자 데이터 파일을 찾을 수 없습니다: {str(e)}")
+            data_source = os.path.join("storage/input_json/user/")
+            logger.info(f"기본 경로 사용: {data_source}")
+        except Exception as e:
+            logger.error(f"기본 경로 사용 중 오류: {str(e)}")
             raise
 
-    # 필수 특성 목록 - 최종 변수 목록으로 업데이트
+    # 필수 특성 목록
     required_features = [
         "user_id", 
         "max_price",
@@ -38,7 +40,7 @@ def user_preprocess_data(data_source, save_path=None):
         "category_5", "category_6", "category_7", "category_8", 
         "category_9", "category_10", "category_11", "category_12",
         "completed_reservations",
-        "reservation_completion_rate",  # 선택적 변수
+        "reservation_completion_rate",
         "total_likes", 
         "like_to_reservation_ratio"
     ]
@@ -47,9 +49,29 @@ def user_preprocess_data(data_source, save_path=None):
     logger.info("1단계: 사용자 데이터 로드")
     user_data_list = user_load_data(data_source)
     
+    # 로드된 데이터 검증
+    if not user_data_list:
+        logger.warning("로드된 사용자 데이터가 없습니다. 빈 데이터프레임을 반환합니다.")
+        empty_df = pd.DataFrame(columns=required_features)
+        if save_path:
+            user_save_to_csv(empty_df, save_path)
+        return empty_df
+    
+    # 데이터 샘플 로깅
+    if len(user_data_list) > 0:
+        logger.debug(f"첫 번째 사용자 데이터 샘플: {user_data_list[0].keys()}")
+    
     # 2. 특성 추출
     logger.info("2단계: 사용자 특성 추출")
     user_features_list = user_extract_features(user_data_list)
+    
+    # 특성 추출 결과 검증
+    if not user_features_list:
+        logger.warning("사용자 특성이 추출되지 않았습니다. 빈 데이터프레임을 반환합니다.")
+        empty_df = pd.DataFrame(columns=required_features)
+        if save_path:
+            user_save_to_csv(empty_df, save_path)
+        return empty_df
     
     # 3. 데이터프레임으로 변환
     logger.info("3단계: 특성 데이터프레임 변환")
