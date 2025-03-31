@@ -13,6 +13,7 @@ from app.services.preprocess.restaurant.preprocessor import preprocess_data
 from app.services.model_trainer import train_model
 from app.services.model_trainer.recommendation import generate_recommendations
 from app.services.preprocess.user.user_preprocess import user_preprocess_data  # 사용자 데이터 전처리 모듈 추가
+from app.services.evaluation.evaluator import evaluate_recommendation_model
 from typing import List, Dict, Any
 from datetime import datetime
 
@@ -172,6 +173,36 @@ async def check_model_status():
         })
     
     return status
+
+# 평가 지표 확인 엔드포인트 추가
+@router.get("/evaluate", response_model=Dict[str, Any])
+async def evaluate_model():
+    """현재 추천 모델의 성능 지표를 계산합니다."""
+    global globals_dict, model_initializing
+    
+    try:
+        # 모델 초기화 상태 확인
+        if not globals_dict or "stacking_reg" not in globals_dict or "df_model" not in globals_dict:
+            raise HTTPException(
+                status_code=503, 
+                detail="모델이 초기화되지 않았습니다. 먼저 모델을 초기화하세요.",
+                headers={"Retry-After": "30"}
+            )
+        
+        # 모델 평가
+        metrics = evaluate_recommendation_model(
+            globals_dict,  # 모델 관련 객체
+            globals_dict.get("df_model"),  # 식당 데이터
+            globals_dict.get("user_features_df")  # 사용자 특성 데이터
+        )
+        
+        return metrics
+    
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"모델 평가 중 오류 발생: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
 
 # recommend 함수 내부 수정
 @router.post("",
