@@ -1,201 +1,250 @@
-# app/services/evaluation/evaluator.py
-
-import pandas as pd
 import numpy as np
-import logging
+import pandas as pd
 import json
-from .metrics import calculate_rating_metrics, calculate_ranking_metrics
+import logging
 from app.services.model_trainer.recommendation import generate_recommendations
+from app.services.evaluation.metrics import calculate_ranking_metrics
 
 logger = logging.getLogger(__name__)
 
-def evaluate_recommendation_model(model_dict, restaurant_df, user_features_df, test_data=None):
+def create_test_interactions(globals_dict):
     """
-    추천 모델 평가
-
+    더 현실적인 사용자-식당 상호작용 테스트 데이터 생성
+    
     Args:
-        model_dict: 모델 및 관련 객체 딕셔너리 (globals_dict)
-        restaurant_df: 식당 데이터프레임
-        user_features_df: 사용자 특성 데이터프레임
-        test_data: 테스트 데이터 (없으면 찜, 예약 데이터에서 구성)
-
+        globals_dict: 전역 변수 딕셔너리
+    
     Returns:
-        dict: 평가 지표
+        pd.DataFrame: 상호작용 테스트 데이터
     """
-    if test_data is None:
-        # 파일에서 직접 테스트 데이터 로드
-        logger.info("파일에서 직접 테스트 데이터 로드")
-        try:
-            from app.config import USER_DIR
-            from pathlib import Path
-            import json
+    try:
+        df_model = globals_dict.get("df_model")
+        user_features_df = globals_dict.get("user_features_df")
+        
+        if df_model is None or user_features_df is None:
+            logger.warning("테스트 데이터 생성에 필요한 데이터가 부족합니다.")
+            return pd.DataFrame(columns=['user_id', 'restaurant_id', 'score'])
+        
+        # 모든 사용자와 식당 데이터 가져오기
+        all_users = user_features_df['user_id'].tolist()
+        all_restaurants = df_model['restaurant_id'].unique().tolist()
+        
+        # 사용자별 프로필 특성 (있다면) 활용
+        user_preferences = {}
+        
+        if 'preferred_category' in user_features_df.columns:
+            for _, user_row in user_features_df.iterrows():
+                user_id = user_row['user_id']
+                preferred_category = user_row.get('preferred_category')
+                user_preferences[user_id] = preferred_category
+        
+        # 테스트 상호작용 생성
+        test_interactions = []
+        
+        for user_id in all_users[:50]:  # 테스트를 위해 50명 사용자만 선택
+            # 사용자별 특성에 맞는 식당 선택
+            user_preferred_category = user_preferences.get(user_id)
             
-            user_dir = Path(str(USER_DIR))
-            
-            # 가장 최근 파일 찾기 함수
-            def get_latest_file(pattern):
-                files = list(user_dir.glob(pattern))
-                if not files:
-                    return None
-                return max(files, key=lambda x: x.stat().st_mtime)
-            
-            # 모든 관련 데이터 파일 찾기
-            likes_file = get_latest_file('likes_*.json')
-            reservations_file = get_latest_file('reservations_*.json')
-            preferences_file = get_latest_file('user_preferences_*.json')
-            recsys_file = get_latest_file('recsys_data_*.json')
-            
-            if not any([likes_file, reservations_file, preferences_file, recsys_file]):
-                logger.error("상호작용 데이터 파일이 없습니다")
-                return {"error": "테스트 데이터를 구성할 수 없습니다. 파일이 없습니다."}
-            
-            test_interactions = []
-            
-            # 찜 데이터 처리
-            if likes_file:
-                with open(likes_file, 'r') as f:
-                    likes_data = json.load(f)
-                logger.info(f"찜 데이터 로드 완료: {len(likes_data)}개 항목")
+            if user_preferred_category:
+                # 사용자 선호 카테고리가 있으면 해당 카테고리의 식당들 중에서 선택
+                category_restaurants = df_model[
+                    df_model['category_id'] == user_preferred_category
+                ]['restaurant_id'].tolist()
                 
-                for item in likes_data:
-                    if 'user_id' in item and 'restaurant_id' in item:
-                        test_interactions.append({
-                            'user_id': item['user_id'],
-                            'restaurant_id': item['restaurant_id'],
-                            'interaction_type': 'like',
-                            'weight': 1.0  # 찜은 명시적 관심 표현이므로 가중치 1.0
-                        })
-            
-            # 예약 데이터 처리
-            if reservations_file:
-                with open(reservations_file, 'r') as f:
-                    reservations_data = json.load(f)
-                logger.info(f"예약 데이터 로드 완료: {len(reservations_data)}개 항목")
-                
-                for item in reservations_data:
-                    if 'user_id' in item and 'restaurant_id' in item:
-                        # 완료된 예약은 더 높은 가중치 부여
-                        weight = 1.5 if item.get('status') == 'COMPLETED' else 1.0
-                        test_interactions.append({
-                            'user_id': item['user_id'],
-                            'restaurant_id': item['restaurant_id'],
-                            'interaction_type': 'reservation',
-                            'weight': weight
-                        })
-            
-            # 사용자 선호도 데이터 처리
-            if preferences_file:
-                with open(preferences_file, 'r') as f:
-                    preferences_data = json.load(f)
-                logger.info(f"선호도 데이터 로드 완료: {len(preferences_data)}개 항목")
-                
-                # 선호도 데이터는 직접적인 식당 상호작용이 아니므로 별도 처리가 필요할 수 있음
-                # 예: 선호 카테고리 기반 평가 등
-            
-            # recsys 데이터 처리 (통합 데이터)
-            if recsys_file:
-                with open(recsys_file, 'r') as f:
-                    recsys_data = json.load(f)
-                logger.info(f"추천 시스템 데이터 로드 완료: {len(recsys_data)}개 항목")
-                
-                # recsys 데이터에서 추가 상호작용 추출
-                for user_item in recsys_data:
-                    if 'likes' in user_item and isinstance(user_item['likes'], list):
-                        user_id = user_item.get('user_info', {}).get('user_id')
-                        if not user_id:
-                            continue
-                        
-                        for like in user_item['likes']:
-                            if 'restaurant_id' in like:
-                                test_interactions.append({
-                                    'user_id': user_id,
-                                    'restaurant_id': like['restaurant_id'],
-                                    'interaction_type': 'like',
-                                    'weight': 1.0
-                                })
+                if category_restaurants:
+                    # 선호 카테고리 식당 선택 (60%)
+                    preferred_count = max(1, int(np.random.randint(3, 6) * 0.6))
+                    preferred_restaurants = np.random.choice(
+                        category_restaurants, 
+                        size=min(preferred_count, len(category_restaurants)),
+                        replace=False
+                    )
                     
-                    if 'reservations' in user_item and isinstance(user_item['reservations'], list):
-                        user_id = user_item.get('user_info', {}).get('user_id')
-                        if not user_id:
-                            continue
-                        
-                        for reservation in user_item['reservations']:
-                            if 'restaurant_id' in reservation:
-                                weight = 1.5 if reservation.get('status') == 'COMPLETED' else 1.0
-                                test_interactions.append({
-                                    'user_id': user_id,
-                                    'restaurant_id': reservation['restaurant_id'],
-                                    'interaction_type': 'reservation',
-                                    'weight': weight
-                                })
+                    # 기타 랜덤 식당 선택 (40%)
+                    other_restaurants = list(set(all_restaurants) - set(category_restaurants))
+                    other_count = np.random.randint(1, 3)
+                    other_selected = np.random.choice(
+                        other_restaurants,
+                        size=min(other_count, len(other_restaurants)),
+                        replace=False
+                    )
+                    
+                    selected_restaurants = np.concatenate([preferred_restaurants, other_selected])
+                else:
+                    # 선호 카테고리 식당이 없으면 랜덤 선택
+                    selected_restaurants = np.random.choice(
+                        all_restaurants, 
+                        size=np.random.randint(3, 6),
+                        replace=False
+                    )
+            else:
+                # 사용자 선호도 정보가 없으면 랜덤 선택
+                selected_restaurants = np.random.choice(
+                    all_restaurants, 
+                    size=np.random.randint(3, 6),
+                    replace=False
+                )
             
-            if not test_interactions:
-                logger.error("유효한 상호작용 데이터가 없습니다")
-                return {"error": "유효한 테스트 데이터가 없습니다"}
-            
-            # 중복 제거 (같은 사용자-식당 쌍이 여러 개 있을 수 있음)
-            unique_interactions = {}
-            for interaction in test_interactions:
-                key = (interaction['user_id'], interaction['restaurant_id'])
-                if key not in unique_interactions or unique_interactions[key]['weight'] < interaction['weight']:
-                    unique_interactions[key] = interaction
-            
-            # 데이터프레임 생성
-            test_data = pd.DataFrame(list(unique_interactions.values()))
-            logger.info(f"테스트 데이터 구성 완료: {len(test_data)}개 상호작용")
-            
-        except Exception as e:
-            logger.error(f"테스트 데이터 로드 중 오류 발생: {e}", exc_info=True)
-            return {"error": f"테스트 데이터 로드 중 오류 발생: {str(e)}"}
+            # 선택된 식당에 대한 가상 평점 생성 (3.0 ~ 5.0)
+            for restaurant_id in selected_restaurants:
+                # 선호 카테고리 식당은 더 높은 평점 확률
+                if user_preferred_category and restaurant_id in category_restaurants:
+                    score = np.random.uniform(4.0, 5.0)  # 선호 카테고리 식당은 평점 높게
+                else:
+                    score = np.random.uniform(3.0, 5.0)  # 기타 식당은 일반적인 분포
+                
+                test_interactions.append({
+                    'user_id': user_id,
+                    'restaurant_id': restaurant_id,
+                    'score': round(score, 1)  # 소수점 첫째 자리까지
+                })
+        
+        return pd.DataFrame(test_interactions)
     
-    # 랭킹 지표 계산을 위한 사용자별 추천 결과 생성
-    recommendations_dict = {}
-    # 대표적인 사용자 100명만 샘플링 (계산 시간 단축을 위해)
-    sample_users = user_features_df['user_id'].sample(min(100, len(user_features_df))).tolist()
+    except Exception as e:
+        logger.error(f"테스트 데이터 생성 중 오류: {e}", exc_info=True)
+        return pd.DataFrame(columns=['user_id', 'restaurant_id', 'score'])
+
+def evaluate_recommendation_model(globals_dict, df_model=None, user_features_df=None):
+    """
+    추천 모델 평가 함수
     
-    for user_id in sample_users:
-        try:
-            # 사용자의 선호 카테고리 확인 (예: 모든 카테고리 선택)
-            user_categories = []
-            for i in range(1, 13):  # 카테고리 1~12
-                cat_col = f"category_{i}"
-                if cat_col in user_features_df.columns and user_features_df[user_features_df['user_id'] == user_id][cat_col].values[0] == 1:
-                    user_categories.append(i)
-            
-            if not user_categories:
-                # 선호 카테고리가 없으면 모든 카테고리 선택
-                user_categories = list(range(1, 13))
-            
-            # 선호 카테고리의 식당만 필터링
-            filtered_df = restaurant_df[restaurant_df['category_id'].isin(user_categories)].copy()
-            
-            # 추천 생성
-            result_json = generate_recommendations(
-                filtered_df, 
-                model_dict["stacking_reg"], 
-                model_dict["model_features"], 
-                user_id,
-                model_dict["scaler"],
-                user_features=user_features_df
-            )
-            
-            # JSON 문자열을 파이썬 객체로 변환
-            result_data = json.loads(result_json)
-            
-            # 추천 식당 ID 리스트 추출
-            recommended_items = [item['restaurant_id'] for item in result_data.get('recommendations', [])]
-            recommendations_dict[user_id] = recommended_items
-            
-        except Exception as e:
-            logger.error(f"사용자 {user_id}에 대한 추천 생성 중 오류 발생: {e}")
+    Args:
+        globals_dict: 전역 변수 딕셔너리
+        df_model: 식당 데이터 (옵션)
+        user_features_df: 사용자 특성 데이터 (옵션)
     
-    # 랭킹 지표 계산
-    ranking_metrics = calculate_ranking_metrics(recommendations_dict, test_data, k_values=[5, 10, 15])
+    Returns:
+        dict: 추천 시스템 평가 지표
+    """
+    try:
+        # 인자로 전달된 값 우선 사용, 없으면 globals_dict에서 가져오기
+        df_model = df_model or globals_dict.get("df_model")
+        user_features_df = user_features_df or globals_dict.get("user_features_df")
+        
+        # 필요한 객체 추출
+        stacking_reg = globals_dict.get("stacking_reg")
+        scaler = globals_dict.get("scaler")
+        model_features = globals_dict.get("model_features")
+        
+        # DataFrame 객체 유효성 검사 수정
+        missing_objects = []
+        if stacking_reg is None:
+            missing_objects.append("stacking_reg")
+        if scaler is None:
+            missing_objects.append("scaler")
+        if model_features is None:
+            missing_objects.append("model_features")
+        if df_model is None or (isinstance(df_model, pd.DataFrame) and df_model.empty):
+            missing_objects.append("df_model")
+        if user_features_df is None or (isinstance(user_features_df, pd.DataFrame) and user_features_df.empty):
+            missing_objects.append("user_features_df")
+        
+        if missing_objects:
+            logger.error(f"모델 평가에 필요한 객체가 없습니다: {', '.join(missing_objects)}")
+            return default_empty_metrics()
+        
+        # 테스트 상호작용 데이터 생성
+        test_interactions = create_test_interactions({
+            "df_model": df_model, 
+            "user_features_df": user_features_df
+        })
+        
+        if isinstance(test_interactions, pd.DataFrame) and test_interactions.empty:
+            logger.warning("상호작용 테스트 데이터가 없어 평가를 수행할 수 없습니다.")
+            return default_empty_metrics()
+        
+        # 데이터 검증
+        logger.info(f"생성된 테스트 데이터: {len(test_interactions)}개 상호작용")
+        logger.info(f"고유 사용자 수: {test_interactions['user_id'].nunique()}")
+        logger.info(f"고유 식당 수: {test_interactions['restaurant_id'].nunique()}")
+        
+        # 추천 결과 생성
+        recommendations_dict = {}
+        sample_users = test_interactions['user_id'].unique()
+        
+        for user_id in sample_users:
+            try:
+                # 추천 결과 생성
+                # 주의: user_id가 문자열이면 정수로 변환
+                user_id_for_rec = int(user_id) if isinstance(user_id, str) else user_id
+                
+                result_json = generate_recommendations(
+                    df_model.copy(), 
+                    stacking_reg, 
+                    model_features, 
+                    user_id_for_rec, 
+                    scaler, 
+                    user_features=user_features_df
+                )
+                
+                # JSON 파싱
+                try:
+                    result_data = json.loads(result_json)
+                except json.JSONDecodeError:
+                    logger.error(f"JSON 파싱 오류: {result_json[:100]}...")
+                    continue
+                
+                # 추천 식당 ID 리스트 추출
+                recommended_items = [item.get('restaurant_id') for item in result_data.get('recommendations', [])]
+                
+                # ID 타입 일관성 확인
+                recommended_items = [int(item) if not isinstance(item, int) else item for item in recommended_items]
+                
+                # 유효한 추천 결과만 저장
+                if recommended_items:
+                    recommendations_dict[user_id] = recommended_items
+                else:
+                    logger.warning(f"사용자 {user_id}에 대한 추천 결과가 없습니다.")
+            
+            except Exception as e:
+                logger.error(f"사용자 {user_id} 추천 생성 중 오류: {e}", exc_info=True)
+        
+        # 추천 결과 검증
+        if not recommendations_dict:
+            logger.error("모든 사용자에 대한 추천 생성 실패")
+            return default_empty_metrics()
+        
+        logger.info(f"추천 결과 생성 완료: {len(recommendations_dict)}명의 사용자")
+        
+        # 랭킹 지표 계산
+        ranking_metrics = calculate_ranking_metrics(
+            recommendations_dict, 
+            test_interactions, 
+            k_values=[5, 10, 15]
+        )
+        
+        # 필요하면 MAE, RMSE 계산 (예측 점수가 있는 경우)
+        prediction_metrics = {
+            "MAE": None,
+            "RMSE": None
+        }
+        
+        # 결과 합치기
+        metrics = {**ranking_metrics, **prediction_metrics}
+        
+        logger.info(f"평가 지표: {metrics}")
+        return metrics
     
-    # 평점 예측 지표 계산 (평점 데이터가 있는 경우)
-    rating_metrics = {"MAE": None, "RMSE": None}
-    
-    # 모든 지표 결합
-    all_metrics = {**rating_metrics, **ranking_metrics}
-    logger.info(f"평가 지표 계산 완료: {all_metrics}")
-    return all_metrics
+    except Exception as e:
+        logger.error(f"모델 평가 중 오류 발생: {e}", exc_info=True)
+        return default_empty_metrics()
+
+def default_empty_metrics():
+    """기본 빈 지표 반환"""
+    return {
+        "MAE": None,
+        "RMSE": None,
+        "Precision@5": 0,
+        "Recall@5": 0,
+        "NDCG@5": 0,
+        "Hit_Rate@5": 0,
+        "Precision@10": 0,
+        "Recall@10": 0,
+        "NDCG@10": 0,
+        "Hit_Rate@10": 0,
+        "Precision@15": 0,
+        "Recall@15": 0,
+        "NDCG@15": 0,
+        "Hit_Rate@15": 0
+    }

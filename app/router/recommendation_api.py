@@ -190,11 +190,7 @@ async def evaluate_model():
             )
         
         # 모델 평가
-        metrics = evaluate_recommendation_model(
-            globals_dict,  # 모델 관련 객체
-            globals_dict.get("df_model"),  # 식당 데이터
-            globals_dict.get("user_features_df")  # 사용자 특성 데이터
-        )
+        metrics = evaluate_recommendation_model(globals_dict)
         
         return metrics
     

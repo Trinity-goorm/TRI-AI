@@ -31,7 +31,37 @@ def sigmoid_transform(x, a, b):
     
     except Exception as e:
         logger.error(f"sigmoid_transform 오류: {e}", exc_info=True)
-        raise
+        raise e
+
+def calculate_category_diversity_bonus(data_filtered):
+    """
+    카테고리별 다양성을 고려한 보너스 점수 계산
+    
+    Args:
+        data_filtered (pd.DataFrame): 식당 데이터
+    
+    Returns:
+        pd.DataFrame: 다양성 보너스가 추가된 데이터프레임
+    """
+    try:
+        # 카테고리별 식당 수 계산
+        category_counts = data_filtered['category_id'].value_counts()
+        total_restaurants = len(data_filtered)
+        
+        # 카테고리별 희소성 계산 (희소한 카테고리에 더 높은 보너스)
+        diversity_bonus = 1 - (category_counts / total_restaurants)
+        
+        # 보너스 점수 매핑
+        category_bonus_map = diversity_bonus.to_dict()
+        
+        # 각 식당의 카테고리에 따라 보너스 점수 할당
+        data_filtered['category_diversity_bonus'] = data_filtered['category_id'].map(category_bonus_map).fillna(0)
+        
+        return data_filtered
+    
+    except Exception as e:
+        logger.error(f"calculate_category_diversity_bonus 오류: {e}", exc_info=True)
+        return data_filtered
 
 def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_features: list, user_id: str, scaler, user_features: pd.DataFrame = None) -> dict:
     """
@@ -71,7 +101,6 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
             if not matching_rows.empty:
                 is_new_user = False
                 user_row = matching_rows.iloc[0:1]  # 첫 번째 일치 행만 사용
-                logger.info(f"ID {user_id_str}의 사용자 데이터 찾음 - 개인화 추천 생성")
                 
                 # 가격 필터링 (기존 사용자만)
                 if 'max_price' in user_row.columns and 'price' in data_filtered.columns:
@@ -100,6 +129,12 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
             # 신규 사용자: 필터링된 모든 식당은 사용자가 선택한 카테고리에 해당
             # 모든 식당에 동일한 카테고리 보너스 부여
             data_filtered['category_bonus'] = 0.3
+
+        # 카테고리 다양성 보너스 추가
+        data_filtered = calculate_category_diversity_bonus(data_filtered)
+        
+        # 카테고리 다양성 보너스 통합 (10% 가중)
+        data_filtered['category_bonus'] += data_filtered.get('category_diversity_bonus', 0) * 0.1
 
         # 모델 예측을 위한 피처 준비 (기존/신규 사용자 모두 동일)
         for feature in model_features:
@@ -138,9 +173,18 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
             
             if 'like_to_reservation_ratio' in user_row.columns:
                 ratio = user_row['like_to_reservation_ratio'].values[0]
-                if ratio > 2.0:
-                    data_filtered['popularity_bonus'] = 0.15 * (np.log(data_filtered['review'] + 1) / np.log(1000))
-                    data_filtered['composite_score'] += data_filtered['popularity_bonus']
+                # 찜/예약 비율에 따른 세분화된 보너스 로직
+                if ratio < 1.0:
+                    bonus_multiplier = 0.05
+                elif 1.0 <= ratio < 2.0:
+                    bonus_multiplier = 0.1
+                else:
+                    bonus_multiplier = 0.15
+                
+                data_filtered['popularity_bonus'] = bonus_multiplier * (
+                    np.log(data_filtered['review'] + 1) / np.log(1000)
+                )
+                data_filtered['composite_score'] += data_filtered['popularity_bonus']
         
         # 신규 사용자를 위한 추가 처리: 리뷰 수에 약간의 가중치
         elif is_new_user:
@@ -162,18 +206,26 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
         # 상위 15개 추천 추출
         top15 = recommendations_all[['category_id', 'restaurant_id', 'score', 'predicted_score', 'composite_score']].head(15).copy()
         
-        # 결과 포맷팅
+        # 결과 포맷팅 부분 수정
         top15['category_id'] = top15['category_id'].astype(int)
         top15['restaurant_id'] = top15['restaurant_id'].astype(int)
         top15['score'] = top15['score'].astype(float)
         top15['predicted_score'] = top15['predicted_score'].round(3)
         top15['composite_score'] = top15['composite_score'].round(3)
 
-        # 결과 딕셔너리 생성
+        # 결과 딕셔너리 생성 - NumPy 타입을 기본 Python 타입으로 변환
         result_dict = {
-            "user": user_id,
-            "is_new_user": is_new_user,  # 신규 사용자 여부 표시 (옵션)
-            "recommendations": json.loads(top15.to_json(orient='records', force_ascii=False))
+            "user": int(user_id),  # int64를 기본 int로 변환
+            "is_new_user": bool(is_new_user),  # bool로 명시적 변환
+            "recommendations": [
+                {
+                    "category_id": int(row['category_id']),
+                    "restaurant_id": int(row['restaurant_id']),
+                    "score": float(row['score']),
+                    "predicted_score": float(row['predicted_score']),
+                    "composite_score": float(row['composite_score'])
+                } for _, row in top15.iterrows()
+            ]
         }
 
         # JSON 문자열 변환

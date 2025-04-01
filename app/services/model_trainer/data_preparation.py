@@ -13,14 +13,21 @@ import logging
 logger = logging.getLogger(__name__)
 
 def prepare_data(df: pd.DataFrame, required_cols: list) -> pd.DataFrame:
-    """
-    필수 컬럼에 결측치가 있는 행 제거 및 기본 전처리.
-    """
     try:
+        # 기존 코드 + 추가 데이터 품질 검증
         df_clean = df.dropna(subset=required_cols).copy()
-        # 평점 미제공 처리: score와 review가 모두 0이면 score를 NaN으로 설정
-        df_clean.loc[(df_clean['score'] == 0) & (df_clean['review'] == 0), 'score'] = np.nan
-        df_clean['score_provided'] = df_clean['score'].notna().astype(int)
+        
+        # 이상치 처리 강화
+        df_clean['review'] = df_clean['review'].clip(lower=0)
+        df_clean['score'] = df_clean['score'].clip(lower=0, upper=5)
+        
+        # 데이터 정규성 검증
+        df_clean['log_review'] = np.log1p(df_clean['review'])
+        df_clean['log_score'] = np.log1p(df_clean['score'])
+        
+        # 상호작용 특성 추가
+        df_clean['review_duration'] = df_clean['review'] * df_clean['duration_hours']
+        
         return df_clean
     except Exception as e:
         logger.error(f"prepare_data 오류: {e}", exc_info=True)

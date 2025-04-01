@@ -186,3 +186,100 @@ def calculate_ranking_metrics(recommendations_dict, test_interactions, k_values=
             results[f'Hit_Rate@{k}'] = 0.0
     
     return results
+
+def calculate_segment_performance(recommendations_dict, test_interactions, k_values=[5, 10, 15]):
+    """
+    사용자 세그먼트별 추천 시스템 성능 평가
+    
+    Args:
+        recommendations_dict: 사용자별 추천 아이템 딕셔너리 {user_id: [restaurant_id, ...]}
+        test_interactions: 테스트 데이터 (사용자가 실제로 상호작용한 아이템)
+        k_values: 평가할 K 값 리스트
+    
+    Returns:
+        dict: 사용자 세그먼트별 성능 지표
+    """
+    # 사용자 세그먼트 정의 함수
+    def categorize_user(user_id, interactions):
+        """
+        사용자 세그먼트 분류
+        
+        Args:
+            user_id: 사용자 ID
+            interactions: 사용자 상호작용 데이터
+        
+        Returns:
+            str: 사용자 세그먼트 ('new', 'active', 'inactive')
+        """
+        user_interactions = interactions[interactions['user_id'] == user_id]
+        
+        if len(user_interactions) == 0:
+            return 'new'
+        elif len(user_interactions) > 10:
+            return 'active'
+        else:
+            return 'inactive'
+    
+    # 사용자별 관련 아이템 딕셔너리 구성
+    user_relevant_items = {}
+    for _, row in test_interactions.iterrows():
+        user_id = row['user_id']
+        restaurant_id = row['restaurant_id']
+        
+        if user_id not in user_relevant_items:
+            user_relevant_items[user_id] = []
+        
+        user_relevant_items[user_id].append(restaurant_id)
+    
+    # 세그먼트별 성능 저장 딕셔너리
+    segment_metrics = {
+        'new': {f'Precision@{k}': [] for k in k_values} | 
+               {f'Recall@{k}': [] for k in k_values} | 
+               {f'NDCG@{k}': [] for k in k_values} | 
+               {f'Hit_Rate@{k}': [] for k in k_values},
+        'active': {f'Precision@{k}': [] for k in k_values} | 
+                  {f'Recall@{k}': [] for k in k_values} | 
+                  {f'NDCG@{k}': [] for k in k_values} | 
+                  {f'Hit_Rate@{k}': [] for k in k_values},
+        'inactive': {f'Precision@{k}': [] for k in k_values} | 
+                    {f'Recall@{k}': [] for k in k_values} | 
+                    {f'NDCG@{k}': [] for k in k_values} | 
+                    {f'Hit_Rate@{k}': [] for k in k_values}
+    }
+    
+    # 각 사용자별 세그먼트 성능 계산
+    for user_id, recommended_items in recommendations_dict.items():
+        # 사용자 세그먼트 분류
+        segment = categorize_user(user_id, test_interactions)
+        
+        # 해당 사용자의 관련 아이템
+        if user_id not in user_relevant_items:
+            continue
+        
+        relevant_items = user_relevant_items[user_id]
+        
+        # K 값별 성능 계산
+        for k in k_values:
+            segment_metrics[segment][f'Precision@{k}'].append(
+                precision_at_k(recommended_items, relevant_items, k)
+            )
+            segment_metrics[segment][f'Recall@{k}'].append(
+                recall_at_k(recommended_items, relevant_items, k)
+            )
+            segment_metrics[segment][f'NDCG@{k}'].append(
+                ndcg_at_k(recommended_items, relevant_items, k)
+            )
+            segment_metrics[segment][f'Hit_Rate@{k}'].append(
+                hit_rate_at_k(recommended_items, relevant_items, k)
+            )
+    
+    # 세그먼트별 평균 성능 계산
+    segment_performance = {}
+    for segment, metrics in segment_metrics.items():
+        segment_performance[segment] = {}
+        for metric, values in metrics.items():
+            segment_performance[segment][metric] = (
+                np.mean(values) if values else 0.0
+            )
+    
+    return segment_performance
