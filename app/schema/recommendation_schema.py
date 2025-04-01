@@ -1,7 +1,7 @@
 # app/models/recommendation_schema.py
 
 from pydantic import BaseModel, Field
-from typing import List, Annotated
+from typing import Dict, Any, List, Optional, Annotated
 
 class RecommendationItem(BaseModel):
     category_id: int
@@ -30,3 +30,15 @@ class UserData(BaseModel):
     user_id: str
     # 선호 카테고리는 최소 1개, 최대 3개 (Pydantic v2 방식)
     preferred_categories: Annotated[List[str], Field(min_length=1, max_length=3)]
+
+class RecommendationEvaluationResponse(BaseModel):
+    metrics: Dict[str, Any]
+    status: str
+
+class HyperparameterOptimizationRequest(BaseModel):
+    n_trials: Optional[int] = 30
+    timeout: Optional[int] = 300
+
+class HyperparameterOptimizationResponse(BaseModel):
+    best_parameters: Dict[str, Any]
+    status: str
