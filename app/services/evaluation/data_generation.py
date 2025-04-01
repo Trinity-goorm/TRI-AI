@@ -40,7 +40,7 @@ def create_test_interactions(globals_dict):
         # 테스트 상호작용 생성
         test_interactions = []
         
-        for user_id in all_users[:50]:  # 테스트를 위해 50명 사용자만 선택
+        for user_id in all_users[:100]:  # 테스트를 위해 100명 사용자만 선택
             # 사용자별 특성에 맞는 식당 선택
             user_preferred_category = user_preferences.get(user_id)
             

@@ -215,7 +215,13 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
         }
 
         # JSON 문자열 변환
-        result_json = json.dumps(result_dict, ensure_ascii=False, indent=4)
+        result_json = json.dumps(
+            result_dict,
+            ensure_ascii=False,
+            indent=4,
+            default=lambda o: int(o) if isinstance(o, np.int64) else o
+        )
+
         logger.info(f"{'신규' if is_new_user else '기존'} 사용자 추천 결과 생성 완료")
         return result_json
     
