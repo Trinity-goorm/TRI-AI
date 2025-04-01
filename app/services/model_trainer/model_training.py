@@ -103,8 +103,7 @@ def train_lgb(X, y, n_jobs=-1):
         lgb_model = lgb.LGBMRegressor(
             random_state=42, 
             verbose=-1, 
-            min_split_gain=0,
-            early_stopping_rounds=10
+            min_split_gain=0
         )
         
         grid = GridSearchCV(lgb_model, param_grid, cv=3, scoring='r2', n_jobs=n_jobs)
