@@ -27,9 +27,9 @@ CATEGORY_MAPPING = {
 }
 
 class UserData(BaseModel):
-    user_id: str
+    user_id: Annotated[int, Field(alias="userId")]
     # 선호 카테고리는 최소 1개, 최대 3개 (Pydantic v2 방식)
-    preferred_categories: Annotated[List[str], Field(min_length=1, max_length=3)]
+    preferred_categories: Annotated[List[str], Field(alias="preferredCategories", min_length=1, max_length=3)]
 
 class RecommendationEvaluationResponse(BaseModel):
     metrics: Dict[str, Any]
