@@ -18,6 +18,100 @@ warnings.filterwarnings("ignore", message="There appear to be")
 
 logger = logging.getLogger(__name__)
 
+def enhance_feature_engineering(df_prepared):
+    """
+    향상된 특성 엔지니어링 함수
+    
+    Args:
+        df_prepared: 기본 전처리가 완료된 데이터프레임
+    
+    Returns:
+        df_prepared: 향상된 특성이 추가된 데이터프레임
+    """
+    try:
+        logger.debug("향상된 특성 엔지니어링 시작...")
+        
+        # 1. 카테고리별 희소성 계산
+        category_counts = df_prepared['category_id'].value_counts()
+        total_restaurants = len(df_prepared)
+        category_sparsity = 1 - (category_counts / total_restaurants)
+        
+        # 2. 카테고리 다양성 특성 추가
+        df_prepared['category_diversity_score'] = df_prepared['category_id'].map(
+            category_sparsity.to_dict()
+        ).fillna(0)
+        
+        # 3. 카테고리 인기도 측정
+        category_avg_rating = df_prepared.groupby('category_id')['score'].mean()
+        category_avg_reviews = df_prepared.groupby('category_id')['review'].mean()
+        
+        df_prepared['category_avg_rating'] = df_prepared['category_id'].map(
+            category_avg_rating.to_dict()
+        ).fillna(df_prepared['score'].mean())
+        
+        df_prepared['category_avg_reviews'] = df_prepared['category_id'].map(
+            category_avg_reviews.to_dict()
+        ).fillna(df_prepared['review'].mean())
+        
+        # 4. 식당 인기도 점수
+        df_prepared['popularity_score'] = (
+            df_prepared['score'] * 0.6 +
+            np.log1p(df_prepared['review']) * 0.4
+        )
+        
+        # 5. 리뷰 기반 상호작용 강도 - 가중치 최적화
+        df_prepared['interaction_intensity'] = (
+            df_prepared['review'] * 0.4 + 
+            df_prepared['duration_hours'] * 0.25 + 
+            np.log1p(df_prepared['review']) * 0.35
+        )
+        
+        # 6. 식당 대비 카테고리 성능 (식당이 해당 카테고리 내에서 얼마나 좋은지)
+        df_prepared['rating_vs_category'] = df_prepared['score'] - df_prepared['category_avg_rating']
+        df_prepared['reviews_vs_category'] = df_prepared['review'] / (df_prepared['category_avg_reviews'] + 1)
+        
+        # 7. 복합 특성들
+        # 복합 평점: 카테고리 다양성과 평점 결합
+        df_prepared['composite_rating'] = (
+            df_prepared['score'] * 0.7 + 
+            df_prepared['category_diversity_score'] * 0.2 +
+            df_prepared['rating_vs_category'] * 0.1
+        )
+        
+        # 복합 인기도: 리뷰 수와 운영 시간 결합
+        df_prepared['engagement_score'] = (
+            np.log1p(df_prepared['review']) * 0.7 +
+            (df_prepared['duration_hours'] / 24) * 0.3
+        )
+        
+        # 8. 식당 특성과 카테고리 인기도의 상호작용
+        df_prepared['category_quality_interaction'] = (
+            df_prepared['score'] * df_prepared['category_avg_rating']
+        )
+        
+        # 9. 리뷰 밀도 (시간당 리뷰 수)
+        df_prepared['review_density'] = df_prepared['review'] / (df_prepared['duration_hours'] + 1)
+        
+        # 10. 편의 시설 복합 점수
+        convenience_cols = [col for col in df_prepared.columns if col.startswith('conv_')]
+        if convenience_cols:
+            df_prepared['convenience_score'] = df_prepared[convenience_cols].sum(axis=1)
+        
+        # 11. 리뷰 영향력 비율
+        global_avg_rating = df_prepared['score'].mean()
+        df_prepared['bayesian_rating'] = (
+            (df_prepared['review'] * df_prepared['score'] + 10 * global_avg_rating) /
+            (df_prepared['review'] + 10)
+        )
+        
+        logger.debug("향상된 특성 엔지니어링 완료")
+        return df_prepared
+        
+    except Exception as e:
+        logger.error(f"향상된 특성 엔지니어링 중 오류 발생: {e}", exc_info=True)
+        # 오류가 발생해도 원본 데이터프레임 반환
+        return df_prepared
+    
 def train_model(df_final):
     """
     전처리된 DataFrame을 입력받아 모델 학습과 평가, 앙상블 모델 학습까지 수행합니다.
@@ -62,36 +156,14 @@ def train_model(df_final):
             
             df_prepared['duration_hours'] = df_prepared['duration_hours'].apply(extract_hours_diff)
         
-        # 이제 숫자 연산 수행
+        # 기본 피처 생성
         df_prepared['log_review'] = np.log(df_prepared['review'] + 1)
         df_prepared['review_duration'] = df_prepared['review'] * df_prepared['duration_hours']
         
-        # 카테고리 다양성 및 개인화를 위한 특성 엔지니어링
+        # 향상된 특성 엔지니어링 적용
+        df_prepared = enhance_feature_engineering(df_prepared)
         
-        # 1. 카테고리별 희소성 계산
-        category_counts = df_prepared['category_id'].value_counts()
-        total_restaurants = len(df_prepared)
-        category_sparsity = 1 - (category_counts / total_restaurants)
-        
-        # 2. 카테고리 다양성 특성 추가
-        df_prepared['category_diversity_score'] = df_prepared['category_id'].map(
-            category_sparsity.to_dict()
-        ).fillna(0)
-        
-        # 3. 리뷰 기반 상호작용 특성
-        df_prepared['interaction_intensity'] = (
-            df_prepared['review'] * 0.5 + 
-            df_prepared['duration_hours'] * 0.3 + 
-            np.log(df_prepared['review'] + 1) * 0.2
-        )
-        
-        # 4. 복합 평점 특성
-        df_prepared['composite_rating'] = (
-            df_prepared['score'] * 0.7 + 
-            df_prepared['category_diversity_score'] * 0.3
-        )
-        
-        logger.debug("고급 특성 엔지니어링이 완료되었습니다.")
+        logger.debug("특성 엔지니어링이 완료되었습니다.")
     except Exception as e:
         logger.error(f"train_model - 피처 생성 오류: {e}", exc_info=True)
         raise e
@@ -104,8 +176,14 @@ def train_model(df_final):
             'review', 'duration_hours', 'conv_WIFI', 'conv_주차', 
             'caution_예약가능', 'log_review', 'review_duration',
             'category_diversity_score', 'interaction_intensity', 
-            'composite_rating'
+            'composite_rating', 'popularity_score', 'rating_vs_category',
+            'reviews_vs_category', 'engagement_score', 'category_quality_interaction',
+            'review_density', 'bayesian_rating'
         ]
+        
+        # 존재하는 피처만 선택 (일부 특성이 생성되지 않을 수 있음)
+        model_features = [f for f in model_features if f in df_prepared.columns]
+        
         target = 'score'
         X = df_prepared[model_features]
         y = df_prepared[target]
@@ -160,6 +238,4 @@ def train_model(df_final):
         "stacking_reg": stacking_reg,
         "model_features": model_features,
         "df_model": df_prepared
-    }
-
-
+        }

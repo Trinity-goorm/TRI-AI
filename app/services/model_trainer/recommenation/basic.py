@@ -1,14 +1,28 @@
-# app/services/model_trainer/recommendation.py
+# app/services/model_trainer/recommendation/basic.py
 
 from app.setting import A_VALUE, B_VALUE, REVIEW_WEIGHT, CAUTION_WEIGHT, CONVENIENCE_WEIGHT
 import numpy as np
 import json
 import pandas as pd
 import logging
+from .diversity import calculate_category_diversity_bonus
+from .cold_start import enhance_cold_start_recommendations
 
 logger = logging.getLogger(__name__)
 
 def compute_composite_score(row, review_weight, caution_weight, convenience_weight):
+    """
+    복합 점수 계산 함수
+    
+    Args:
+        row: 데이터 행
+        review_weight: 리뷰 가중치
+        caution_weight: 주의사항 가중치
+        convenience_weight: 편의시설 가중치
+        
+    Returns:
+        float: 계산된 복합 점수
+    """
     try:
         base = row['final_score']
         review_val = float(row['review'])
@@ -26,6 +40,17 @@ def compute_composite_score(row, review_weight, caution_weight, convenience_weig
 
 
 def sigmoid_transform(x, a, b):
+    """
+    시그모이드 변환 함수
+    
+    Args:
+        x: 입력 값
+        a: 시그모이드 기울기 파라미터
+        b: 시그모이드 중심점 파라미터
+        
+    Returns:
+        float: 변환된 값
+    """
     try:
         return 5 * (1 / (1 + np.exp(-a * (x - b))))
     
@@ -33,35 +58,6 @@ def sigmoid_transform(x, a, b):
         logger.error(f"sigmoid_transform 오류: {e}", exc_info=True)
         raise e
 
-def calculate_category_diversity_bonus(data_filtered):
-    """
-    카테고리별 다양성을 고려한 보너스 점수 계산
-    
-    Args:
-        data_filtered (pd.DataFrame): 식당 데이터
-    
-    Returns:
-        pd.DataFrame: 다양성 보너스가 추가된 데이터프레임
-    """
-    try:
-        # 카테고리별 식당 수 계산
-        category_counts = data_filtered['category_id'].value_counts()
-        total_restaurants = len(data_filtered)
-        
-        # 카테고리별 희소성 계산 (희소한 카테고리에 더 높은 보너스)
-        diversity_bonus = 1 - (category_counts / total_restaurants)
-        
-        # 보너스 점수 매핑
-        category_bonus_map = diversity_bonus.to_dict()
-        
-        # 각 식당의 카테고리에 따라 보너스 점수 할당
-        data_filtered['category_diversity_bonus'] = data_filtered['category_id'].map(category_bonus_map).fillna(0)
-        
-        return data_filtered
-    
-    except Exception as e:
-        logger.error(f"calculate_category_diversity_bonus 오류: {e}", exc_info=True)
-        return data_filtered
 
 def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_features: list, user_id: str, scaler, user_features: pd.DataFrame = None) -> dict:
     """
@@ -188,10 +184,8 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
         
         # 신규 사용자를 위한 추가 처리: 리뷰 수에 약간의 가중치
         elif is_new_user:
-            # 신규 사용자는 인기 있는(리뷰가 많은) 식당에 약간의 가중치
-            data_filtered['popularity_bonus'] = 0.1 * (np.log(data_filtered['review'] + 1) / np.log(1000))
-            data_filtered['composite_score'] += data_filtered['popularity_bonus']
-        
+            data_filtered = enhance_cold_start_recommendations(data_filtered, user_id, user_features)
+
         # 최종 점수 시그모이드 변환
         data_filtered['composite_score'] = data_filtered['composite_score'].apply(
             lambda x: sigmoid_transform(x, A_VALUE, B_VALUE)
@@ -206,26 +200,18 @@ def generate_recommendations(data_filtered: pd.DataFrame, stacking_reg, model_fe
         # 상위 15개 추천 추출
         top15 = recommendations_all[['category_id', 'restaurant_id', 'score', 'predicted_score', 'composite_score']].head(15).copy()
         
-        # 결과 포맷팅 부분 수정
+        # 결과 포맷팅
         top15['category_id'] = top15['category_id'].astype(int)
         top15['restaurant_id'] = top15['restaurant_id'].astype(int)
         top15['score'] = top15['score'].astype(float)
         top15['predicted_score'] = top15['predicted_score'].round(3)
         top15['composite_score'] = top15['composite_score'].round(3)
 
-        # 결과 딕셔너리 생성 - NumPy 타입을 기본 Python 타입으로 변환
+        # 결과 딕셔너리 생성
         result_dict = {
-            "user": int(user_id),  # int64를 기본 int로 변환
-            "is_new_user": bool(is_new_user),  # bool로 명시적 변환
-            "recommendations": [
-                {
-                    "category_id": int(row['category_id']),
-                    "restaurant_id": int(row['restaurant_id']),
-                    "score": float(row['score']),
-                    "predicted_score": float(row['predicted_score']),
-                    "composite_score": float(row['composite_score'])
-                } for _, row in top15.iterrows()
-            ]
+            "user": user_id,
+            "is_new_user": is_new_user,  # 신규 사용자 여부 표시 (옵션)
+            "recommendations": json.loads(top15.to_json(orient='records', force_ascii=False))
         }
 
         # JSON 문자열 변환

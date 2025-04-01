@@ -33,14 +33,33 @@ def prepare_data(df: pd.DataFrame, required_cols: list) -> pd.DataFrame:
         logger.error(f"prepare_data 오류: {e}", exc_info=True)
         raise e
 
-def impute_and_clip(df: pd.DataFrame, impute_cols: list) -> pd.DataFrame:
+def impute_and_clip(df: pd.DataFrame, impute_cols: list, min_values=None, max_values=None) -> pd.DataFrame:
     """
-    IterativeImputer를 사용하여 결측치 보완 후, score의 최댓값을 5.0으로 클리핑.
+    IterativeImputer를 사용하여 결측치 보완 후, 지정된 범위로 클리핑.
+    
+    Args:
+        df: 입력 데이터프레임
+        impute_cols: 결측치를 보완할 컬럼 리스트
+        min_values: 컬럼별 최소값 딕셔너리 (예: {'score': 0})
+        max_values: 컬럼별 최대값 딕셔너리 (예: {'score': 5})
     """
     try:
+        # 기본값 설정
+        min_values = min_values or {'score': 0}
+        max_values = max_values or {'score': 5.0}
+        
         imputer = IterativeImputer(estimator=BayesianRidge(), random_state=42, max_iter=10, initial_strategy='median')
         df[impute_cols] = imputer.fit_transform(df[impute_cols])
-        df.loc[df['score'] > 5, 'score'] = 5.0
+        
+        # 각 컬럼별로 클리핑 적용
+        for col, min_val in min_values.items():
+            if col in df.columns:
+                df[col] = df[col].clip(lower=min_val)
+                
+        for col, max_val in max_values.items():
+            if col in df.columns:
+                df[col] = df[col].clip(upper=max_val)
+                
         return df
     except Exception as e:
         logger.error(f"impute_and_clip 오류: {e}", exc_info=True)

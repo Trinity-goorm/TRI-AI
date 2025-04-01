@@ -28,11 +28,11 @@ if hasattr(multiprocessing, 'freeze_support'):
 
 logger = logging.getLogger(__name__)
 
-def train_ridge(X, y):
+def train_ridge(X, y, n_jobs=-1):
     try:
         param_grid = {'alpha': [0.0001, 0.001, 0.01, 0.1, 1, 10]}
         ridge = Ridge()
-        grid = GridSearchCV(ridge, param_grid, cv=3, scoring='r2', n_jobs=1)
+        grid = GridSearchCV(ridge, param_grid, cv=3, scoring='r2', n_jobs=n_jobs)
         grid.fit(X, y)
         return grid.best_estimator_
     except Exception as e:
@@ -92,13 +92,22 @@ def train_xgb(X, y):
         logger.error(f"train_xgb 오류: {e}", exc_info=True)
         raise e
 
-def train_lgb(X, y):
+# 조기 종료 조건 추가 (LightGBM)
+def train_lgb(X, y, n_jobs=-1):
     try:
         param_grid = {'n_estimators': [50, 100],
-                    'max_depth': [3, 5, 7, -1],
-                    'learning_rate': [0.01, 0.1]}
-        lgb_model = lgb.LGBMRegressor(random_state=42, verbose=-1, min_split_gain=0)
-        grid = GridSearchCV(lgb_model, param_grid, cv=3, scoring='r2', n_jobs=1)
+                     'max_depth': [3, 5, 7, -1],
+                     'learning_rate': [0.01, 0.1]}
+        
+        # 조기 종료 조건 추가
+        lgb_model = lgb.LGBMRegressor(
+            random_state=42, 
+            verbose=-1, 
+            min_split_gain=0,
+            early_stopping_rounds=10
+        )
+        
+        grid = GridSearchCV(lgb_model, param_grid, cv=3, scoring='r2', n_jobs=n_jobs)
         grid.fit(X, y)
         return grid.best_estimator_
     except Exception as e:
